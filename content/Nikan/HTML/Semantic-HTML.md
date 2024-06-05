@@ -1,4 +1,4 @@
-[[<img>]]: 
+[[img element]]: 
 		always use alt text
 			good practice to add a period at the end to make the screen reader to a small pause
 		background images and decorative images or images used for spacing should have an empty alt attribute so that they are skipped
