@@ -11,6 +11,8 @@
 	1. State Hooks: `useState(); useReducer()`
 	2. context Hooks: `useContext()`
 	3. ref Hooks: `useRef()`
-	4. effect Hooks: `useEffect()`
+	4. [[useEffect]]: `useEffect()`
 	5. performance: `useMemo(); useCallback()`
-	
+
+
+[[strictMode]] is weird, basically mounts and unmounts everything multiple times, it might mess up the use effect stuff tho especially if theyre earlier on in the page like what is happening with the header stuff. 
