@@ -4,6 +4,7 @@
 		background images and decorative images or images used for spacing should have an empty alt attribute so that they are skipped
 			if no alt attribute included the screen reader will read the file name instead which can be confusing 
 			 icons should also have an empty alt attribute
+		[[Responsive Best Practices]]: also have to use sizes and srcset attributes to serve different images to devices of different pixel density or size
 	[[<a>]] links have to be descriptive 
 		if you want to make an entire section clickable its best to put an empty link inside and change the dimensions of the tag using [[position: absolute]]
 		add hover effect to links and clickable items
