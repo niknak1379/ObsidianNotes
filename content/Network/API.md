@@ -18,3 +18,7 @@ Pros:
 1. Flexibility in Architecture:
 2. Security: you can implement SLA with rate limiting
 3. Analytics: have the data on what APIs ur users are using the most
+
+
+### Making an API? 
+
