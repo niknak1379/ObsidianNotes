@@ -14,7 +14,8 @@
 	parts:
 		1. Schema: blueprint for all the data that the client can query for
 		2. query: request for data that follows the schema structure
-		3. Resolver: called
+		3. Resolver: called to retrieve the data in the query, can request data from multiple sources
+		4. Mutations: Modifying data on the service
 
 [[gRPC]]: 
 	[video link for this](https://www.youtube.com/watch?v=hVrwuMnCtok)
