@@ -14,4 +14,4 @@ hotkeys:
 - search cmd shft f
 - quick open cmd o
 
-[[WEB APP]]
+links: `[link|customName]` or `[name](link url)`

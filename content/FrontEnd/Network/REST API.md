@@ -1,1 +1,0 @@
-Follows [[Request Response Model]]
