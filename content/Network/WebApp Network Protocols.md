@@ -11,7 +11,10 @@
 		This is called [[Full Duplex/Bidirectional Communication]]: server can initiate setting requests
 
 [[graphQL]]:
-	
+	parts:
+		1. Schema: blueprint for all the data that the client can query for
+		2. query: request for data that follows the schema structure
+		3. Resolver: called
 
 [[gRPC]]: 
 	[video link for this](https://www.youtube.com/watch?v=hVrwuMnCtok)
