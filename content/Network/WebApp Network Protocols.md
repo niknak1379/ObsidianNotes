@@ -16,6 +16,7 @@
 		2. query: request for data that follows the schema structure
 		3. Resolver: called to retrieve the data in the query, can request data from multiple sources
 		4. Mutations: Modifying data on the service
+	no over-fetching, better for complex data requests such as nested fields
 
 [[gRPC]]: 
 	[video link for this](https://www.youtube.com/watch?v=hVrwuMnCtok)
