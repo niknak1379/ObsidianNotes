@@ -50,12 +50,11 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			1. rent a virtual server(EC2)
 			2. fixed pricing
 			3. unutilized processing power if not that many users or scaled badly 
-			
 	[[Microservice]]: multiple different services
 		1. Development Experience:
 			1. `7:26` for the graph chart
 			2. the [[monolith]] turns into an [[API gateway]] that just redirects the requests to their microservice using an HTTP or a GRPC call. 
-			3. you handle the separations using [[Containers]] (Kubernetes and [[Docker]]).
+			3. you handle the separations using [[Docker]] (Kubernetes and [[Docker]]).
 			4. integration tests are hard
 			5. Code will be nice and clean, but the infrastructure will be complicated
 		2. Scalability:
