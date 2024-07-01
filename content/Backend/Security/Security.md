@@ -6,3 +6,4 @@ HTTPS makes it unreadable
 TLS handshake:
 browser sends client hello to the server
 Server sends a hello back and a certificate including a public key back to the browser
+Public key is used in **Asymmetric Encryption**. ( data encrypted by the pubic key c)
