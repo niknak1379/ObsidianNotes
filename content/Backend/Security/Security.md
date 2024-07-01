@@ -8,5 +8,5 @@ TLS handshake:
 browser sends client hello to the server
 Server sends a hello back and a certificate including a public key back to the browser
 Public key is used in **Asymmetric Encryption**. ( data encrypted by the pubic key can only be decrypted by the private key).
-Key exchange: shared encryption key to encrypt data (assymetric encription)
-but computationaly 
+Key exchange: shared encryption key to encrypt data (asymmetric encryption)
+but computational expensive so not used for large amounts of data. 

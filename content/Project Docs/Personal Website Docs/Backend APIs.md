@@ -4,3 +4,7 @@ Have an API that checks if the last data is valid and just serves the cached. Ap
 
 ## accessing other APIs
 maybe look up what flask is
+
+
+## security
+encryption for the user password part som
