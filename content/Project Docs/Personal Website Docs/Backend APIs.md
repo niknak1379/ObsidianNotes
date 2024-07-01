@@ -7,4 +7,4 @@ maybe look up what flask is
 
 
 ## security
-encryption for the user password part som
+encryption for the user password part somehow. 
