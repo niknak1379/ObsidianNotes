@@ -6,7 +6,7 @@
 Basically the client makes a request and the Gateway acting as a [[Monolith]] redirects the API to the API of the appropriate [[Microservice]].
 	1. protocol translations
 		you can change the protocol for each microservice(https from client to http to microservices)
-	2. Security
+	2. [[Security]]
 	3. common functionality (put common logic in the monolith)
 
 ## API management:
