@@ -30,7 +30,7 @@ How you do computing for a program:
 		4. you `ssh` into the cloud computer and just deploy as normal
 
 
-## Monolith vs Microservice
+## Monolith vs [[Microservice - Design Patterns]]
 https://www.youtube.com/watch?v=1A9tPOfp6NA
 	[[Monolith]]: One service does everything
 		1. Development Experience: 
@@ -50,10 +50,10 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			1. rent a virtual server(EC2)
 			2. fixed pricing
 			3. unutilized processing power if not that many users or scaled badly 
-	[[Microservice]]: multiple different services
+	[[Microservice - Design Patterns]]: multiple different services
 		1. Development Experience:
 			1. `7:26` for the graph chart
-			2. the [[monolith]] turns into an [[API gateway]] that just redirects the requests to their microservice using an HTTP or a GRPC call. 
+			2. the [[monolith]] turns into an [[API gateway]] that just redirects the requests to their [[Microservice - Design Patterns]] using an HTTP or a GRPC call. 
 			3. you handle the separations using [[Docker]] (Kubernetes and [[Docker]]).
 			4. integration tests are hard
 			5. Code will be nice and clean, but the infrastructure will be complicated
@@ -65,7 +65,7 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			1. failures are isolated per service
 		5. Cost:
 			1. deploy managed Kubernetes clusters(AWS EKS)
-			2. Bin packing problem: how to allocate resources to each microservice can be hard
+			2. Bin packing problem: how to allocate resources to each [[Microservice - Design Patterns]] can be hard
 	[[Serverless]]: no services, just functions
 		1. Development Experience:
 			1. no infrostructure - simple code
