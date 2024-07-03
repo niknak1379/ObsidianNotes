@@ -19,7 +19,7 @@ since now there is atomicity between databases, a new problem happens: if one da
 ## CQRS pattern - Command Query Responsibility Segregation
 Basically have different DBs for Reads and Writes, since reads happen way more often, we can scale the read database separate from the write database.
 
-Consisteny:
+Consistency:
 1. when one write is happening write to all copies(a lot of overhead)
 2. just copy the write DB everytime there is a write.
 3. if time isnt critical(you dont have to update the reads within the same second as the write):
@@ -29,7 +29,7 @@ Consisteny:
 used for finance stuff(not stock market that needs real time) banks that need transactions from the past. or a government records system, that you need to have the previous records.
 
 you append evenets to the database.
-you have an entire **Event Log(kafka stream)** 
+you have an entire **Event Log(kafka stream)**, the stream is looking for an event and when it happens it streams all of it into the DB
 ## Shared Database anti-pattern
 1. its an anti pattern because loses the main feature of micro-services: **Modularity and scalability and isolation**
 2. Could cause **Deadlocks** (race conditions) none of the transactions can proceed.

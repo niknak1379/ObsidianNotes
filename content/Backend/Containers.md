@@ -11,13 +11,13 @@ Use Cases
 3. legacy(running apps on legacy OSs and not change the main OS)
 
 ## Container:
-mostly used for [[Microservice - Design Patterns|micro-services]].
+mostly used for [[Microservice|micro-services]].
 virtualization at the OS level. 
 only whats installed in them they are able to access, provides isolation of process. 
 
 ### [[Docker]]:
 use cases:
-1. [[Microservice - Design Patterns]]
+1. [[Microservice]]
 2. rapid development and deployment
 3. resource efficiency(smaller footprint than VMs)
 ### Kubernetes:

@@ -20,7 +20,7 @@
 
 [[gRPC]]: 
 	[video link for this](https://www.youtube.com/watch?v=hVrwuMnCtok)
-	mostly used for communication between [[Microservice - Design Patterns|micro-services]]. 
+	mostly used for communication between [[Microservice|micro-services]]. 
 	convenient because handles the http protocols for u?
 	**Protocol Buffers**: basically type checks and other types of checks for the message before it actually gets delivered.
 	[[REST]] uses JSON and since theyre key value pairs there is no compression of the payload, but gRPC messages are able to be sent as binaries since you can define ur own protocols, so the payloads can be much smaller and compressed.

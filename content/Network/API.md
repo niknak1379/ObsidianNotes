@@ -3,9 +3,9 @@
 2. Interaction APIs: basically anything that isn't a service API
 ## [[API Gateway]]:
 [IBM video explaining it](https://www.youtube.com/watch?v=hWRRdICvMNs&list=PLOspHqNVtKAAAq9pHWlEiRUVcYMCcu4X0&index=1)
-Basically the client makes a request and the Gateway acting as a [[Monolith]] redirects the API to the API of the appropriate [[Microservice - Design Patterns]].
+Basically the client makes a request and the Gateway acting as a [[Monolith]] redirects the API to the API of the appropriate [[Microservice]].
 	1. protocol translations
-		you can change the protocol for each [[Microservice - Design Patterns]](https from client to http to microservices)
+		you can change the protocol for each [[Microservice]](https from client to http to microservices)
 	2. [[Security]]
 	3. common functionality (put common logic in the monolith)
 
