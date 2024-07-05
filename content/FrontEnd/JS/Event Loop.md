@@ -12,3 +12,5 @@ event loop and concurrency:
 		**separate call back queue for the APIs**: that once the waiting is done, the code gets pushed on to those.
 	Event Loop: basically looks at both the stack and the call back queue, and as long as the stack is empty pushes one from the call back queue onto the stack 
 	There is also a **render queue** that has priority over the call back queue and they work together when the stack is empty.
+
+Theres also micro tasks queue(micro tasks are things like promises(like fetch and async await things)). 

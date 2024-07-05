@@ -80,3 +80,10 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			2. no infrastructure that needs to be managed
 		5. Cost:
 
+## Self Contained Systems- SCS
+https://www.youtube.com/watch?v=xkQ9VaNTwxM
+basically an application that is made up of a lot of different smaller applications, each with their own UI, DB, and microservices, monoliths, etc...
+there is redundant data copying since they cant access each others data you just copy it over and keep redundant DBs in the overall system.
+Uses AMQP to handle talks between SCSs asynchronously.
+
+systems are somewhat decoupled and can be scaled independantly 

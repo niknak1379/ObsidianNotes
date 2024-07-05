@@ -16,7 +16,7 @@ Database management systems.
 language u can use to read create and update data. 
 1. [[Querying]]
 2. [[Relating]]
-3. Designing
+3. [[Designing]]
 4. Writing
 5. Viewing
 6. Optimizing

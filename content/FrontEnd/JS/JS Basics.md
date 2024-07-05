@@ -36,3 +36,14 @@ People had to create immediately invoked functions to capture correct values fro
 Variables declared with `var` keyword are [hoisted and _initialized_](https://dev.to/godcrampy/the-secret-of-hoisting-in-javascript-egi) which means they are accessible in their enclosing scope even before they are declared, however their value is `undefined` before the declaration statement is reached:
 
 `let` variables are [hoisted but _not initialized_](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-hoisted) until their definition is evaluated. Accessing them before the initialization results in a `ReferenceError`. The variable is said to be in [the temporal dead zone](https://stackoverflow.com/questions/33198849/what-is-the-temporal-dead-zone) from the start of the block until the declaration statement is processed.
+
+# Promises, `async`
+async keyword makes the function always return a promise.
+you chain the async function with `.then` to get the actual value
+`await` keyword also does the same thing as .then does.
+
+
+Promises have 3 states:
+1. pending
+2. resolved
+3. rejected
