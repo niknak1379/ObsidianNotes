@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=90pVRK49AQM
 How you do computing for a program:
 1. you own the machine
 2. you do it on the cloud
-	1. Managed (S3):
+	1.  Managed (S3):
 	2. [[Serverless]] (Lambda, AWS): 
 		1. they give you a URL instead of an IP address
 			1. bc by definition ur code is not binded to a server

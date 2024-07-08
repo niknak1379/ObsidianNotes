@@ -47,7 +47,7 @@ you basically send both the old and new state(values of whatever is being transf
 In ***1*** you only do the new state.
 ### 3.  Event Sourcing
 use #kafka-streaming for this. mainly used in #FinTech
-Some examples in the [[Microservice|micro-services]] page for how to handle [[Database - intro|data-bases]].
+Some examples in the [[Microservice|micro-services]] page for how to handle [[Database|data-bases]].
 basically have a database that captures the events.
 
 Pros:
@@ -58,7 +58,7 @@ Cons:
 1. hard to [[Querying|query]] the data base. since you have to rebuild everything to access the state that you want. **CQRS** solves this problem
 
 ### 4. Command Query Responsibility Segregation(CQRS)
-Some examples in the [[Microservice|micro-services]] page for how to handle [[Database - intro|data-bases]].
+Some examples in the [[Microservice|micro-services]] page for how to handle [[Database|data-bases]].
 
 Basically having different DBs for reads and writes and scaling them separately
 
