@@ -18,6 +18,6 @@ language u can use to read create and update data.
 2. [[Relating]]
 3. [[Designing]]
 4. [[Writing]]
-5. Viewing
-6. Optimizing
+5. [[Viewing]]
+6. [[Optimizing]]
 7. Scaling
