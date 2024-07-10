@@ -60,7 +60,7 @@ Cons:
 ### 4. Command Query Responsibility Segregation(CQRS)
 Some examples in the [[Microservice|micro-services]] page for how to handle [[Database|data-bases]].
 
-Basically having different DBs for reads and writes and scaling them separately
+Basically having different DBs for reads and writes and scaling them separately([[Read Replica]])
 
 Still have to make sure that the two databases match and are synchronized
 1. write into all DBs
@@ -68,7 +68,7 @@ Still have to make sure that the two databases match and are synchronized
 However these all take time, so you do not have instantaneous consistency but **Eventual Consistency**.  **but thats not viable for an event driven architecture**
 
 How it Works:
-you have to separate event stream DBs one for writes and one for reads. Kafka can also publish the events and store them, so you have a service that is subscribed to the write event stream, and each time the write event stream, publishes, the Upsert Service(which can also act as a message broker) updates the read stream DB. 
+you have to separate event stream DBs one for writes and one for reads. Kafka can also publish the events and store them, so you have a service that is subscribed to the write event stream, and each time the write event stream, publishes, the Upstream Service(which can also act as a message broker) updates the read stream DB. 
 
 The read DB also has a materialized view- so you dont have to go through all the events if you want to like get the sum or the average of all the states that are logged in the DB, the materialized view can be refreshed using SQL everytime the DB is updated. 
 

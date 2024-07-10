@@ -1,3 +1,4 @@
+#SQL-Basics
 ## Inserting data
 use `INSERT INTO`
 ``` sql

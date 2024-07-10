@@ -17,7 +17,7 @@ since now there is atomicity between databases, a new problem happens: if one da
 	if there are too many microservices with their own databases its going to be very messy, which results in the **SAGA pattern**.
 
 ## CQRS pattern - Command Query Responsibility Segregation
-Basically have different DBs for Reads and Writes, since reads happen way more often, we can scale the read database separate from the write database.
+Basically have different DBs for Reads and Writes([[Read Replica]], since reads happen way more often, we can scale the read database separate from the write database.
 
 Consistency:
 1. when one write is happening write to all copies(a lot of overhead)

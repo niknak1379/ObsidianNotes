@@ -1,3 +1,4 @@
+#SQL-Basics
 ## Schemas
 the structure that was used to make the database, basically shows the commands that were used to make the DB
 invoke by `.schema`
@@ -9,7 +10,7 @@ process of making the data more efficient, like separating out one giant table i
 
 so you make a DB first `sqllite3 sth.db`, then u create a table through the sqllite or whatever software
 
-``` sql
+``` sqlite
 CREATE TABLE riders (
     "id",
     "name"
