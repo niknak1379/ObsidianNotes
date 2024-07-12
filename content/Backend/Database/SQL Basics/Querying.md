@@ -1,4 +1,4 @@
-#SQL-Basics
+#Backend #Database #SQL-Basics 
 ## Select
 Key word used to select a row inside of a table in the DB
 `SELECT 'row name' FROM 'tablename';`

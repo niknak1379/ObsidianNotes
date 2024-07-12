@@ -1,4 +1,4 @@
-#SQL-Basics
+#Backend #Database #SQL-Basics 
 ## Index
 basically instead of seraching the entire table's each row using [[Linear Search]] for the title or whatever, we can make an index that is used to search the table probably using [[Binary Search]]
 

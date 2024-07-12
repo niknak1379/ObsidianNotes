@@ -1,3 +1,4 @@
+#CSS #FrontEnd
 Doing min height to make sure that on very big screens the content doesnt get really spread out.
 and doing max-width with and margin-inline: auto; so that a container is centered on the screen.
 

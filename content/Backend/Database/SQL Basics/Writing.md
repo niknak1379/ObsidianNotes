@@ -1,4 +1,4 @@
-#SQL-Basics
+#Backend #Database #SQL-Basics 
 ## Inserting data
 use `INSERT INTO`
 ``` sql

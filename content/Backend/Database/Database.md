@@ -1,3 +1,4 @@
+#Backend #Database
 Compared to spread sheets
 1. better scale
 2. better frequency for writes and reads

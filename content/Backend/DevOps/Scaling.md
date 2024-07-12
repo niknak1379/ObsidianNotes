@@ -1,3 +1,4 @@
+#Backend #DevOps
 https://www.youtube.com/watch?v=IYhZ6Ic1d8k
 ## Horizontal 
 you basically have multiple instances of the server running,

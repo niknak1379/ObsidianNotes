@@ -1,4 +1,4 @@
-#SQL-Basics
+#Backend #Database #SQL-Basics 
 ## Views
 Virtual Tables made by querying like joining multiple tables together, that can be saved?
 why use views:

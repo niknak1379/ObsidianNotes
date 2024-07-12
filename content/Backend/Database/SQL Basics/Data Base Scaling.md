@@ -1,3 +1,4 @@
+#Backend #Database #SQL-Basics 
 ## [[MySQL]]
 
 its an entire SQL server that can have multiple data bases inside, you also have to log in, this seems weird tho.
@@ -97,6 +98,19 @@ GRANT SELECT ON `rideshare`.`analysis` TO 'carter';
 ```
 
 ## SQL Injection Attacks
+you can just ask things youre not supposed to by adding UNION or OR statements.
+```
+    SELECT * FROM `accounts`
+    WHERE `id` = 1 UNION SELECT * FROM `accounts`;
+```
 
+How to Prevent them:
+`PREPARE` Statements: it cleans up the input and makes sure weird things do not run. 
+```mysql
+PREPARE `balance_check`
+FROM 'SELECT * FROM `accounts`
+WHERE `id` = ?';
 
-
+SET @id = 1;
+EXECUTE `balance_check` USING @id;
+```

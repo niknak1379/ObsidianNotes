@@ -1,3 +1,4 @@
+#Backend #DevOps
 ## VM:
 virtualization at the hardware level
 Sth called a **HyperVisor(HV)** basically divides at a hardware level and manages the allocation of resources between different VMs. 

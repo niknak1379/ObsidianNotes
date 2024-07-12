@@ -1,4 +1,4 @@
-#SQL-Basics
+#Backend #Database #SQL-Basics 
 ## Schemas
 the structure that was used to make the database, basically shows the commands that were used to make the DB
 invoke by `.schema`
