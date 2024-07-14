@@ -3,7 +3,7 @@ title: Obsidian Tutorial
 tags:
 ---
 
-#Tags
+#Obsidian
 _italics_- should wrap it with \*
 **bold** - is double astrics on both sides
 lists - dash at the start or a number at the start
@@ -15,3 +15,5 @@ hotkeys:
 - quick open cmd o
 
 links: `[link|customName]` or `[name](link url)`
+
+
