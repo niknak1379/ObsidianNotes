@@ -3,7 +3,6 @@ creation date: 2024-07-12 12:09
 modification date: Friday 12th July 2024 12:09:15
 ---
 #Backend #Frameworks #ExpressJS
-<< [[2024-07-11]] | [[2024-07-13]] >>
 
 # Routing
 https://dev.to/mrrishimeena/understanding-expressjs-router-nodejs-a-comprehensive-guide-59o8

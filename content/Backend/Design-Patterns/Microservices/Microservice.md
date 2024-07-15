@@ -6,7 +6,7 @@ different ways to couple micro-services with databases.
 
 ## Saga pattern
 has a **Message Broker**:
-	they all send an event to the message brocker, and are subscribed to each others events, so one waits for the event of the last microservice to be processed and then proceeds with its own thing. If anything happens (error) you dont proceed with the forwards databases and you rollback any changes already processed.
+	they all send an event to the message broker, and are subscribed to each others events, so one waits for the event of the last microservice to be processed and then proceeds with its own thing. If anything happens (error) you dont proceed with the forwards databases and you rollback any changes already processed.
 ## API composition pattern
 you have one parent microservice that sends events to multiple microservices with their own DBs.
 ### Distributed Transactions Problem:
@@ -22,15 +22,15 @@ Basically have different DBs for Reads and Writes([[Read Replica]], since reads 
 
 Consistency:
 1. when one write is happening write to all copies(a lot of overhead)
-2. just copy the write DB everytime there is a write.
-3. if time isnt critical(you dont have to update the reads within the same second as the write):
+2. just copy the write DB every time there is a write.
+3. if time isn't critical(you don't have to update the reads within the same second as the write):
 	1. use event sourcing pattern explained bellow
 
 ## Event Sourcing Pattern
 used for finance stuff(not stock market that needs real time) banks that need transactions from the past. or a government records system, that you need to have the previous records.
 
-you append evenets to the database.
-you have an entire **Event Log(kafka stream)**, the stream is looking for an event and when it happens it streams all of it into the DB
+you append events to the database.
+you have an entire **Event Log(Kafka stream)**, the stream is looking for an event and when it happens it streams all of it into the DB
 ## Shared Database anti-pattern
 1. its an anti pattern because loses the main feature of micro-services: **Modularity and scalability and isolation**
 2. Could cause **Deadlocks** (race conditions) none of the transactions can proceed.

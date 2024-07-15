@@ -86,5 +86,6 @@ https://www.youtube.com/watch?v=xkQ9VaNTwxM
 basically an application that is made up of a lot of different smaller applications, each with their own UI, DB, and microservices, monoliths, etc...
 there is redundant data copying since they cant access each others data you just copy it over and keep redundant DBs in the overall system.
 Uses AMQP to handle talks between SCSs asynchronously.
+kind of like amazon, amazon movies, ecomerce, music, theyre all their own thing, and just come together at the end. 
 
 systems are somewhat decoupled and can be scaled independantly 

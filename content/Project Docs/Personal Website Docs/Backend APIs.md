@@ -11,4 +11,4 @@ https://www.youtube.com/watch?v=utJ66ZevCU4
 
 
 ## security
-encryption for the user password part somehow. 
+encryption for the user password part somehow.[[Auth0]] 
