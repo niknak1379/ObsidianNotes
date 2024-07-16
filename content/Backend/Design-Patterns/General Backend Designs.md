@@ -20,10 +20,10 @@ How you do computing for a program:
 	2. [[Serverless]] (Lambda, AWS): 
 		1. they give you a URL instead of an IP address
 			1. bc by definition ur code is not binded to a server
-			2. AWS basically refers the request to whatever server instance their load balancer algorithm determines
+			2. AWS basically refers the request to whatever server instance their [[Load Balancer]] algorithm determines
 			3. you lose a lot of features, sometimes you wont even have access to node
 		2. it is slower than serverful, because serverful is always there but this has to run the algorithm 
-	3. [[Monolith]] (non-managed server)(EC2):
+	3. [[Monolith]] (non-managed server)([[AWS Intro|EC2]]):
 		1. has an IP address 
 			1. always points to the same machine
 		2. you have linux access to the server so you can do anything you want
@@ -43,18 +43,18 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			2. not great for horizantally scale
 		3. Response Time:
 			1. lowest latency,
-			2. not many hoops for the request to jump through such as load balancers, etc...
+			2. not many hoops for the request to jump through such as [[Load Balancer]]s, etc...
 		4. Reliability: 
 			1. single point of failure
 				1. if process crashes all of it crashes, even if horizontally scaled since all instances are the same they will eventually crash.
 		5. Cost:
-			1. rent a virtual server(EC2)
+			1. rent a virtual server([[AWS Intro|EC2]])
 			2. fixed pricing
 			3. unutilized processing power if not that many users or scaled badly 
 	[[Microservice]]: multiple different services
 		1. Development Experience:
 			1. `7:26` for the graph chart
-			2. the [[monolith]] turns into an [[API gateway]] that just redirects the requests to their [[Microservice]] using an HTTP or a GRPC call. 
+			2. the [[monolith]] turns into an [[API Gateway]] that just redirects the requests to their [[Microservice]] using an HTTP or a GRPC call. 
 			3. you handle the separations using [[Docker]] (Kubernetes and [[Docker]]).
 			4. integration tests are hard
 			5. Code will be nice and clean, but the infrastructure will be complicated
@@ -86,6 +86,6 @@ https://www.youtube.com/watch?v=xkQ9VaNTwxM
 basically an application that is made up of a lot of different smaller applications, each with their own UI, DB, and microservices, monoliths, etc...
 there is redundant data copying since they cant access each others data you just copy it over and keep redundant DBs in the overall system.
 Uses AMQP to handle talks between SCSs asynchronously.
-kind of like amazon, amazon movies, ecomerce, music, theyre all their own thing, and just come together at the end. 
+kind of like amazon, amazon movies, e-commerce, music, they're all their own thing, and just come together at the end. 
 
-systems are somewhat decoupled and can be scaled independantly 
+systems are somewhat decoupled and can be scaled independently 

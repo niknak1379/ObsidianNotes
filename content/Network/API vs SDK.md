@@ -6,6 +6,6 @@ communication protocols for apps and services to talk to other apps and services
 	standardizes APIs: SOAP, graphQL, [[REST]]
 	normal request response things
 
-## [[SDK| Software Development Kit]]:
+## [[SDK|Software Development Kit]]:
 
 tool-box of code that call API's for you. 
