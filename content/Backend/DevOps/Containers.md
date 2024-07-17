@@ -21,7 +21,7 @@ use cases:
 1. [[Microservice]]
 2. rapid development and deployment
 3. resource efficiency(smaller footprint than VMs)
-### Kubernetes:
+### [[Kubernetes]]:
 https://www.youtube.com/watch?v=2vMEQ5zs1ko
 very useful for scaling docker containers
 

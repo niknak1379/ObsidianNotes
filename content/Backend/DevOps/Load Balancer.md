@@ -2,7 +2,8 @@
 creation date: 2024-07-15 14:18
 modification date: Monday 15th July 2024 14:18:22
 ---
-#Network
+#Network #DevOps 
+
 << ---------------------------------------------------------------- >>
 
 # Load Balancer

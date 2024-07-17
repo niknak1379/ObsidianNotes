@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=IYhZ6Ic1d8k
 ## Horizontal 
 you basically have multiple instances of the server running,
-the requests go through a [[load balancer]] which then decides which instance to redirect the request to. 
+the requests go through a [[Load Balancer]] which then decides which instance to redirect the request to. 
 1. Statelessness: 
 	1. If the request is a [[REST|restful api]] then you have to handle statelessness and **INSTANCE STICKINESS** so if there is a state in the request, the load balancer knows to redirect the requests from the same client to the same instance in the server. 
 		1. might be not good - for example if the requests are being done by a web-scrapper this could be a lot of requests and would overload that one instance.

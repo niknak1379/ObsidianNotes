@@ -20,3 +20,12 @@
 	1. API validator(a tool that takes in a openAPI specification to see if it passes a certain number of checks)
 	2. API Doc generator
 	3. SDK generator
+
+## API design best practices
+features of a good design:
+1. easy to use and work with
+2. hard to misuse
+3. complete and concise
+
+### Naming
+always use nouns instead of verbs, so 'employess' instead of 'createEmployees' for endpoint addresses
