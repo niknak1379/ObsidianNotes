@@ -17,7 +17,7 @@ There also multi-factor authentication and social logins like apple and google t
 visible steps to grand consent from the user.
 
 ## [[openID-Connect]]
-Auth0 is only authentication, openID is basically a user profile, basically **Single-Sign-on**.
+Auth0 is only authentication, openID is basically a user profile, basically **Single-Sign-on(SSO)**.
 So it gives both an access token and an Identity token.
 
 

@@ -6,4 +6,5 @@ Routing, and routing patterns not in a SPA.
 Caching
 Headless, MACH technologies for architecture - done
 Cloud Native Architecture
-shut down gracefully for scalling down
+shut down gracefully for scaling down
+rate limiting and throttling
