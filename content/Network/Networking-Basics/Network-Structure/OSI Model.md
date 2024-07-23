@@ -31,14 +31,14 @@ Turns the message from ascii and etc formats into machine readable binary format
 Helps setup and manages the connections. Enables sending and receiving data and terminating the connection. and then goes to the transport layer
 
 ## Transport Layer
-Has its own protocols of how the data will be transferred ([[TCP]], [[UDP]]).
+Has its own protocols of how the data will be transferred ([[TCP(Transmission Control Protocol)]], [[UDP(User Datagram Protocol)]]).
 Segmentation: it turns the data that it has received into segments.
 Flow control: controls the amount of data being transported.(like server is sending at 40mbps but client is receiving at only 10, so it has to slow down).
 
 ## Network Layer
 Works for the transmission of data segments transferred from a different network than the local one. **ROUTER** lives over here. 
 
-Logical Addressing (handling [[IP Address]]ing), moves data packets from source to destination.
+Logical Addressing (handling [[IP(Internet Protocol)|IP Address]]ing), moves data packets from source to destination.
 
 ## Data Link Layer
 Packets(contain the IP address of both the sender and the receiver, it also has subnet masking), it also adds the Mac Address of the device and forms a FRAME. Sends the frame to the physical layer

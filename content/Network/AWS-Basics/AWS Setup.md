@@ -1,12 +1,13 @@
 ---
-creation date: 2024-07-18 13:36
-modification date: Thursday 18th July 2024 13:36:27
+creation date: 2024-07-23 12:33
 ---
-#Network #Networking-Basics #Protocols
+#Network #AWS-Basics
 
 << ---------------------------------------------------------------- >>
 
-# TCP
+ --- Last Modified: `$= dv.current().file.mtime`
+
+# AWS Setup
 
 << ---------------------------------------------------------------- >>
 

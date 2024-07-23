@@ -29,3 +29,5 @@ where ur containers and applications actually run.
 
 ## Kubernetes Deployments
 basically you specify the state of the application in a YAML file, and the clusters ensures that the application has that state at all times.
+
+## Kubernetes [[Scaling]]
