@@ -23,7 +23,7 @@ How you do computing for a program:
 			2. AWS basically refers the request to whatever server instance their [[Load Balancer]] algorithm determines
 			3. you lose a lot of features, sometimes you wont even have access to node
 		2. it is slower than serverful, because serverful is always there but this has to run the algorithm 
-	3. [[Monolith]] (non-managed server)([[EC2 Instance|EC2]]):
+	3. [[Monolith]] (non-managed server)([[VPC(Virtual Private ClouD)|EC2]]):
 		1. has an IP address 
 			1. always points to the same machine
 		2. you have linux access to the server so you can do anything you want
@@ -48,7 +48,7 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			1. single point of failure
 				1. if process crashes all of it crashes, even if horizontally scaled since all instances are the same they will eventually crash.
 		5. Cost:
-			1. rent a virtual server([[EC2 Instance|EC2]])
+			1. rent a virtual server([[VPC(Virtual Private ClouD)|EC2]])
 			2. fixed pricing
 			3. unutilized processing power if not that many users or scaled badly 
 	[[Microservice]]: multiple different services
