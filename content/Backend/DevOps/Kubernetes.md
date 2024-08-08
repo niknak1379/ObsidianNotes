@@ -31,3 +31,12 @@ where ur containers and applications actually run.
 basically you specify the state of the application in a YAML file, and the clusters ensures that the application has that state at all times.
 
 ## Kubernetes [[Scaling]]
+https://www.youtube.com/watch?v=jM36M39MA3I&t=48s
+https://www.youtube.com/watch?v=FfDI08sgrYY
+### Kube Scheduler
+Schedules Pods onto Nodes, by default it uses Best Effort Quality of Service to schedule pods,
+
+You also have to set limits on the cpu and memory usage, this is kind of useless, I'm just familiarizing myself with it, I have to actually make one and deploy it to actually learn it.
+
+Theres also a bunch of abstractions like **Services** and stuff that I need to learn. #todo 
+[[Promethius]] for Monitoring

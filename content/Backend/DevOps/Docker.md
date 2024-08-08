@@ -11,4 +11,4 @@ what contain all the code the system and runtime settings, built using **docker 
 instances of the images  that run inside of the docker environment
 
 ## Logs
-[[Promethius, grafana]]
+[[Promethius]], [[grafana]]
