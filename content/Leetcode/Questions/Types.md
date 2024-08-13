@@ -91,12 +91,15 @@ Time complexity O(n)
 Space complexity O(n)
 ### Example Questions
 
-#### Valid Palindrome
-**Summary**:
+#### Valid Palindrome - easy
+**Summary**: 
+have a large string that youre supposed to see if it is a palandrome or not.
 
 **Solution**:
-#### Two Sum Input Array Sorted
-**Summary**:
+
+#### Two Sum Input Array Sorted - easy
+**Summary**: 
+just go through a sorted array to see if they add up to a target Int
 
 **Solution**:
 
