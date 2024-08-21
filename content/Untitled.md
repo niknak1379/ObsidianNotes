@@ -20,3 +20,12 @@ creation date: 2024-08-19 15:28
 74, 74, 73, 73
 
 im going to fucking kill myself why the fuck are they like this.
+
+
+h - len = 4
+3, 6, 7, 11 -- 8 ---- 4.       
+4, 11, 20, 23, 30 -- 6 ---- 23
+4, 11, 20, 23, 30 -- 5 ---- 30
+
+1, 2, 3 -- 12
+1/x, 2/x, 3/x
