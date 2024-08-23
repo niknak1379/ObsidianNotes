@@ -19,7 +19,7 @@ creation date: 2024-08-19 15:28
 +1, -3, +1, 0 
 74, 74, 73, 73
 
-im going to fucking kill myself why the fuck are they like this.
+
 
 
 h - len = 4
@@ -29,3 +29,17 @@ h - len = 4
 
 1, 2, 3 -- 12
 1/x, 2/x, 3/x
+
+
+3, 4, 5, 6, 7, 8, 1, 2    1
+4, 5, 6, 7, 8, 1, 2, 3
+
+1, 2, 3, 4, 5, 6, 7, 10
+2, 3, 4, 5, 6, 7, 10, 1
+
+5, 6, 1, 2, 3, 4
+
+``` python
+x[i] > x[i + 1]: 
+	return i + 1
+```
