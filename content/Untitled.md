@@ -44,3 +44,10 @@ h - len = 4
 x[i] > x[i + 1]: 
 	return i + 1
 ```
+
+
+bcafbjea
+ 1  2
+abcadel
+ 1 2
+bcbadba
