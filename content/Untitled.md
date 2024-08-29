@@ -46,8 +46,14 @@ x[i] > x[i + 1]:
 ```
 
 
-bcafbjea
- 1  2
-abcadel
- 1 2
-bcbadba
+AABB
+1  2
+AABABBA
+
+ABCAA
+BCAAA
+ABCA
+ABBC k = 2
+
+AABCBBA k = 2
+2210000
