@@ -57,3 +57,20 @@ ABBC k = 2
 
 AABCBBA k = 2
 2210000
+
+ab
+
+aedba
+
+```python
+while head:
+            temp = head.next
+            head.next = node
+            node = head
+            head = temp
+        
+```
+head temp
+1 -> 2 -> 3 -> null
+
+3 -> 2 -> 1 -> null
