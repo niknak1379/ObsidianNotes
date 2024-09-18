@@ -7,7 +7,7 @@ creation date: 2024-08-03 11:23
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Untitled
+# Arrays, Hashmaps
 
 << ---------------------------------------------------------------- >>
 
@@ -83,25 +83,4 @@ have an array of integers, and have to return the length of the largest consecut
 **Solution**:
 you put everything in the hashmap in the first iteration., for the second iteration go from the start, if the number is the start of a sequence(num[i] - 1, doesnt exist) then while loop to see how far the sequence exists in the hashmap, and return the longest length.
 
-
-## Two Pointer Algorithm
-you just have two pointers, one from the front and one from the back that go through the list until they meat each other, at that point they have to return something.
-
-Time complexity O(n)
-Space complexity O(n)
-### Example Questions
-
-#### Valid Palindrome - easy
-**Summary**: 
-have a large string that youre supposed to see if it is a palandrome or not.
-
-**Solution**:
-
-#### Two Sum Input Array Sorted - easy
-**Summary**: 
-just go through a sorted array to see if they add up to a target Int
-
-**Solution**:
-
-### Monotonic Decreasing Stack problems
 
