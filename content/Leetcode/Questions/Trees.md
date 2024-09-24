@@ -58,4 +58,47 @@ have a same tree function and recurse through both trees and call it at each nod
 given 2 nodes in a BST, find the lowest common ancestor of them and return its value
 
 **Solution**: 
-this is pretty easy actually just have to make sure about the carry
+Since its a bst the first one that is p < target < q should be returned, so just a normal while loop bst will do.
+
+#### Binary Tree Level Order Travesal - medium
+**Summary**:
+given the root, return the level by level left to right node values.
+
+**Solution**: 
+make a queue with a while loop and a for loop inside of it that goes through and pops the queue and adds it to the result. 
+
+#### Binary Tree Right Side View - medium
+**Summary**:
+return all the nodes that are visible from the right side of a BT
+
+**Solution**: 
+BFS the tree with a queue and append the last node in each level to the result
+
+#### Count Good Nodes in Binary Tree - medium
+**Summary**:
+Given a binary tree `root`, a node _X_ in the tree is named **good** if in the path from root to _X_ there are no nodes with a value _greater than_ X. Return the number of **good** nodes in the binary tree.
+
+**Solution**: 
+just recurse and have a highest count in the recursion option and update it in each node and pass it along.
+
+#### Validate Binary Search Tree - medium
+**Summary**:
+see if a binary search tree is valid. (no lower values on right side etc...)
+
+**Solution**: 
+recurse, but keep a min and max in the rec function that you compare the node value to to change the flag. the start should be float(-inf) and inf
+
+
+#### Kth smallest number in a BST - medium
+**Summary**:
+return the Kth smallest node
+
+**Solution**: 
+just recursively go through it until there is no more left to find the smallest, then pass down the k - 1 everytime you go right, whenever k is zero return that. 
+#### Construct Binary Tree from Inorder and Preorder Traversal - medium
+**Summary**:
+you have an array for in order and pre order traverslas, construct the actual BT.
+
+**Solution**: 
+basically the first one in preorder is root, then find the root in inorder and everything before that is on the left. recurse with the currect lists.
+
