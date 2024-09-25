@@ -102,3 +102,9 @@ you have an array for in order and pre order traverslas, construct the actual BT
 **Solution**: 
 basically the first one in preorder is root, then find the root in inorder and everything before that is on the left. recurse with the currect lists.
 
+#### Binary Tree Maximum Path - hard
+**Summary**:
+get the maximum sum of nodes in a path in a binary tree.
+
+**Solution**: 
+you recursively dfs the tree. 2 cases can happen, either the path only goes through the node that ur on(as the root)(ie the split case) or it goes through the root. you can recurse but keep a separate variable outside of the rec incase of a split case being higher.
