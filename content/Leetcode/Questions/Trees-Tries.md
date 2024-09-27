@@ -108,3 +108,32 @@ get the maximum sum of nodes in a path in a binary tree.
 
 **Solution**: 
 you recursively dfs the tree. 2 cases can happen, either the path only goes through the node that ur on(as the root)(ie the split case) or it goes through the root. you can recurse but keep a separate variable outside of the rec incase of a split case being higher.
+
+#### Serialize and Deserialize Binary Tree - hard
+**Summary**:
+given the root turn it to a string and back.
+
+**Solution**: 
+just do a post order with nones, and just iterate through the list and process it. Since its a list and all the Nones are there you can just go through it index by index with an outside variable in the recursion.
+
+
+
+<< ---------------------------------------------------------------- >>
+# Tries
+
+<< ---------------------------------------------------------------- >>
+
+#### Implement Trie Prefix Tree - medium
+**Summary**:
+make a trie
+
+**Solution**: 
+you just make a tree with a children array or dictionary. First node is empty, the rest have a value and a finish flag(to indicate if they are a word or not)
+
+#### Design and Search Words Data Structure - Medium
+**Summary**:
+Design a data structure that supports adding new words and finding if a string matches any previously added string.
+
+**Solution**: 
+Same thing as last one basically
+
