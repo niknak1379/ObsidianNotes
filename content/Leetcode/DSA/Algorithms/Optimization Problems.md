@@ -40,3 +40,11 @@ used for divisible things?? Knapsack problem but with fractional items is an exa
 # Branch and Bound
 
 << ---------------------------------------------------------------- >>
+
+
+
+1, 2, 8
+1, 3, 5
+3, 4, 6       3, 4, 5
+
+1, 2, 8
