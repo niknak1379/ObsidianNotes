@@ -11,3 +11,6 @@ creation date: 2024-12-10 12:51
 
 << ---------------------------------------------------------------- >>
 
+Djikstra is literally just BFS but with a min heap since its a weighted search instead of a normal queue
+
+
