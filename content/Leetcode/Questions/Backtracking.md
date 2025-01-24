@@ -76,3 +76,12 @@ Given a string containing digits from `2-9` inclusive, return all possible let
 
 **Solution**: 
 have an array of the mappings. DFS one digit at a time, based on the mapping have a for loop that adds each letter of it to the sub array and then dfs the rest at each iteration.
+
+
+#### N Queens - hard
+**Summary**: 
+you have an nxn chess board, return a list of all the possible boards were n queens can be placed on the board without any queens checking one another. 
+
+
+**Solution**: 
+have to have 4 sets to keep track of col queens, row queens, pos diagonal queens and neg diagonal queens. Have a for loop that goes through each row on each iteration of the DFS function. then adds everything to the sets and does a backtrack.
