@@ -25,7 +25,7 @@ its dfs with memoization, so u have to figure out how many lines youre gonna hav
 
 
 
-## Questions
+## Questions 1D
 
 #### Climbing Stairs - easy
 **Summary**: 
@@ -111,5 +111,56 @@ you have an array, return true if you can partition it into two arrays with equa
 
 **Solution**: 
 dfs with memoization, at each index just do a dfs with it counting towards the target and one without and increment the index.
+
+
+## Questions 2D
+
+#### Unique Paths - medium
+**Summary**: 
+you have an mxn grid with a robot on the top left trying to go to the bottom right, while moving only down and right. give the possible number of unique paths the robot can take. 
+
+**Solution**: 
+just dfs it lol with memo
+
+#### Longest Common Subsequence - medium
+**Summary**: 
+given two strings s1 and s2, return the length of their longest common subsequence. if no common subsequence return 0
+
+**Solution**: 
+u can dfs and memo it. basically if the chars are the same u increment both indexes, if not u do the max of increment of each one. 
+
+#### Best Time to Buy and Sell Stock with Cooldown - medium
+**Summary**: 
+have an array of prices for one stock, each index being the price on different days. Whats the maximum profit, if once u sell u cant buy the next day. You cant own more than one stock
+
+**Solution**: 
+u can dfs and memo it. the only u thing u have to keep track of is that u have a choice of waiting to buy and waiting to sell + a enforced cooldown, so u have to max the different dfs trees to get the answer at each position.
+
+#### Coin Change II - medium
+**Summary**: 
+u have an array with the value of the different coins u have and an int being the total amount of money. return the total combinations that can make that amount with the coins u have
+**Solution**: 
+just dfs lol. 
+
+#### Target Sum - medium
+**Summary**: 
+u have an array of nums and a target int. u have +, -. that u can concat to each index to create an expression. return the number of expressions u can make that will evaluate to the target
+
+**Solution**: 
+dfs
+
+#### Interleaving String - medium
+**Summary**: 
+u have s1, s2, s3. find if s3 is a string which can be created by inteleaving of s1 and s2
+
+**Solution**: 
+just dfs and increment each strings index one by one if they match, there is a case where if the first one is a match u still have to do the second one. 
+
+#### Edit Distance - medium
+**Summary**: 
+u have 2 strings, word1, word2, return the minimum number of operations required to turn one into another. Operations: insert, delete, replace a Char
+
+**Solution**: 
+dfs it, if the index chars are the same, u can increment both, then base cases are when u hit the end of a word, where the operation remaining will be delete so u return the amount remaining of the other word, and when not equal u have 3 different branches, replace, delete on one, and delete on another and take the min of those.
 
 
