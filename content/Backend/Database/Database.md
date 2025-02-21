@@ -21,7 +21,7 @@ language u can use to read create and update data.
 4. [[Writing]]
 5. [[Viewing]]
 6. [[Optimizing]]
-7. [[Data Base Scaling| Scaling]]
+7. [[Data Base Scaling|Scaling]]
 
 
 ## AWS Aurora
