@@ -27,10 +27,14 @@ each project:
 3. one for detailed project details. (one to one)
 4. one relational for what tags each project has (many to many)
 
+## Triggers:
+1. one for when inserting a new project-tag relationship make sure if one of its tags doesn't exist in the tag table you add it
+2. 
+
 ## Needed Features:
-6. needs to be sortable by tags, loads the first 10, then after hitting next page, loads the rest on the same page. 
-7. Searchable by name, description, and tags
-8. thats pretty much it
+2. needs to be sortable by tags, loads the first 10, then after hitting next page, loads the rest on the same page. 
+3. Searchable by name, description, and tags
+4. thats pretty much it
 
 **Pretty sure the whole thing has to run in a docker container**
 [[DB Setup]]
