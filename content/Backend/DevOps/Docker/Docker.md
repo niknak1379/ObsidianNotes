@@ -5,12 +5,6 @@ allocate resources among processes
 ## name Spaces
 change access and visibility to other processes in the system. 
 
-## Docker images
-what contain all the code the system and runtime settings, built using **docker files**
-
-## containers
-instances of the images  that run inside of the docker environment
-
 ## Logs
 [[Promethius]], [[grafana]]
 
@@ -62,3 +56,4 @@ basically a text file with instructions on how to build a docker image from norm
 `docker build -t nodeapp:1.0 ./dockerfileDir`
 
 
+## Docker Compose
