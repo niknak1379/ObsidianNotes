@@ -12,11 +12,11 @@ modification date: Thursday 18th July 2024 18:14:55
 
 Internet Protocol Soup
 Similar to the [[OSI Model]] but with 5 layers instead of 7
-1. [[Application Layer]]
-2. [[Transport Layer]]
-3. [[Network Layer]]
-4. [[Data Link Layer]]
-5. Physical Layer
+1. [[07-Application Layer]]
+2. [[04-Transport Layer]]
+3. [[03-Network Layer]]
+4. [[02-Data Link Layer]]
+5. [[01-Physical Layer]]
 
 Application, presentation, session layers from [[OSI Model]] are merged into one. 
 

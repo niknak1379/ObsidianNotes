@@ -18,7 +18,7 @@ Layers:
 4. transportation
 5. network
 6. Data link
-7. Physical\
+7. Physical
 Thats for outgoing signal, for ingoing it starts at physical and goes up.
 
 ## Application Layer

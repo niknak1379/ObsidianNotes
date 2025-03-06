@@ -27,7 +27,7 @@ The first 3 numbers are the network address(they indicate the subnets), and the 
 it masks the network part of the IP address(the first 3), and just give us the host part.
 12.0.0.0/32 so the first 32 bits(3 digits) are fixed and we can only use the last digit.
 
-**in each network the first 2 and last ip addresses are reserved. last one(.255) is the broadcast address, first one (.0) is the network address and second one (.1) is the default gateway adderss**
+**in each network the first 2 and last ip addresses are reserved. last one(.255) is the broadcast address, first one (.0) is the network address and second one (.1) is the default gateway adderss(where the router lives)**
 so V4 has 253 available addresses for each network.
 
 ### Reserved Addresses

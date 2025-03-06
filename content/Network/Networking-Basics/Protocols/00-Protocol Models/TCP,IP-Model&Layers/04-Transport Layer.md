@@ -11,7 +11,7 @@ modification date: NaN
 
 << ---------------------------------------------------------------- >>
 
-Transportation of the data from the Network to the applications is done in the transport layer, the transportation from the network between multiple devices is done in the [[Network Layer]].
+Transportation of the data from the Network to the applications is done in the transport layer, the transportation from the network between multiple devices is done in the [[03-Network Layer]].
 Basically the layer that decides which application on the device to send the data to. 
 
 Located on the actual device

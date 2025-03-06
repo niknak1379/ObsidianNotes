@@ -60,7 +60,7 @@ If the central device fails the network will go down.
 
 ## Structure of Network
 [[OSI Model]]
-[[TCP,IP model]]
+[[TCP,IP Model]]
 
 ## Networking Devices
 ### Repeater
@@ -71,9 +71,9 @@ Types:
 	1. Active hub
 	2. Passive hub
 ### Bridge
-In the [[Data Link Layer]]. A type of repeater with more functionality: it can filter out content by reading MAC addresses from the source
+In the [[02-Data Link Layer]]. A type of repeater with more functionality: it can filter out content by reading MAC addresses from the source
 ### Switch
-A multi-port bridge, also at the [[Data Link Layer]].
+A multi-port bridge, also at the [[02-Data Link Layer]].
 ### Router
 ### Gateway
 A passage that connects 2 networks together. 

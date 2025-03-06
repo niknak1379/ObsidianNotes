@@ -22,8 +22,8 @@ When you send a packet, you start a timer. If the packet was never received, a r
 The receiver device might have received the packet, but the response was never delivered, and as a result the sender will resend the first packet bc the timer is expired. This is resolved through **Sequence numbers**
 
 ## How it works
-* [[Application Layer]] sends lots of raw data and TCP segments the data(divides in chunks) adds headers, checksums, etc...
-* It might collect the data from the [[Network Layer]](Network layer itself divides the data into smaller chunks so transport layer has to put them back together)
+* [[07-Application Layer]] sends lots of raw data and TCP segments the data(divides in chunks) adds headers, checksums, etc...
+* It might collect the data from the [[03-Network Layer]](Network layer itself divides the data into smaller chunks so transport layer has to put them back together)
 * Congestion Control
 * Takes care of odd scenarios
 	* when data does not arrive
