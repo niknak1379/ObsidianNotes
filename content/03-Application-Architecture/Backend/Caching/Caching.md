@@ -24,7 +24,7 @@ multiple cache nodes
 Client makes a request to the cache, if it is there, it returns, if not client makes another request to the database and receives the data, then makes another request to the cache and populates it.
 ### Write-through cache
 
-cache stands in between the [[database]] and the client, so as soon as you make a write request to the cache, the cache is updated and then the DB is updated
+cache stands in between the [[Database]] and the client, so as soon as you make a write request to the cache, the cache is updated and then the DB is updated
 This is called a **PROACTIVE** approach
 Pros:
 	since well synced with the DB, results in fewer reads to the DB

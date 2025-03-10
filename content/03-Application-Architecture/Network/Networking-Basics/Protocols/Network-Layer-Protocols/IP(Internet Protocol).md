@@ -33,7 +33,22 @@ so V4 has 253 available addresses for each network.
 ### Reserved Addresses
 localhost: 127.0.0.1
 loopback addresses
-## IPv6
+
+### Classes
+![[Pasted image 20250310122457.png]]
+
+Class A for example since it has so many networks based on a single address is usually given to really big companies with very big networks like IBM or ATT
+Classes D and E are not accessible and the 127.0.0.0(which is a class A IP address is the reserved local address-this inludes all addresses in its 255.0.0.0 mask as well-)
+
+### Running out of IP addresses:
+#### RFC 1918:
+basically an agreed upon standard that sets aside a number of IP addresses as private IP addresses. Meaning that they don't connect you to the internet and are only accessible by local network. These addresses include:
+![[Pasted image 20250310122910.png]]
+
+[[NAT(Network Access Translator)]] is what translates this local addr ess into the global public address at the [[03-Network Layer]] and [[02-Router|routers]].
+
+**We still ran out of IP addresses tho so here comes:**
+#### IPv6:
 128 bit numbers, it is not backwards compatible.
 ISPS would have to shift a lot of hardware work to adopt it, which is why it is not widely adopted.
 
