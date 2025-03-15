@@ -16,3 +16,4 @@
 
 
 [[strictMode]] is weird, basically mounts and unmounts everything multiple times, it might mess up the use effect stuff tho especially if theyre earlier on in the page like what is happening with the header stuff. 
+
