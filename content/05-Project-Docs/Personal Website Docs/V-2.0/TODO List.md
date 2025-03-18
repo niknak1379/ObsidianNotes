@@ -11,7 +11,11 @@ creation date: 2025-03-15 17:10
 
 << ---------------------------------------------------------------- >>
 
-add error handling and loading for home fetch
-Make an Actual loading and error component for stuff. ur gonna need to for the rest of the pages as well. s
+
 migrate captcha
 fix new project cards
+add search function
+add an ALL option to the Project Status tab
+drop down for that side to make it pretty
+dont have enough to add pages yet but could.
+fix query it should intersect the tags not union them.
