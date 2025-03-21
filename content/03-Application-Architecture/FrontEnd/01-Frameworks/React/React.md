@@ -11,7 +11,7 @@
 	1. State Hooks: `useState(); useReducer()`
 	2. context Hooks: `useContext()`
 	3. ref Hooks: `useRef()`
-	4. [[useEffect]]: `useEffect()`
+	4. [[03-Application-Architecture/FrontEnd/01-Frameworks/React/Hooks/useEffect]]: `useEffect()`
 	5. performance: `useMemo(); useCallback()`
 
 
