@@ -21,6 +21,7 @@ fix new project cards:
 	add a project page(or maybe a pop up, that brings up the large description, tags, etc...)
 add icon for obisidian project notes
 add obsidian links to the DB schema
+hr.headerdivider is the border element for the header for some reason, chnage its border width
 
 OMG mobile view remains fml
 
