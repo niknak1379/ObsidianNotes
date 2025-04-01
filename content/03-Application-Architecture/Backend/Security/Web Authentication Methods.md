@@ -23,7 +23,7 @@ Sessions are remembered either using cookies, or JWTs.
 ### Cookies
 You create a session ID and attach it to the response, with a change in headers and use set-cookie. 
 
-### JWT
+### [[03-Application-Architecture/Backend/Security/JWT|JWT]]
 it is stateless, the server sends the JWT to the client and is usually stored in local storage, cookies, or session storage. and the JWT is then passed along to the server on each request and verified server side. 
 
 ## SSO(Single Sign on)

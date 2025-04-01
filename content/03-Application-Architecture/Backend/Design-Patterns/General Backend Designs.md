@@ -33,7 +33,7 @@ How you do computing for a program:
 
 ## Monolith vs [[Microservice]]
 https://www.youtube.com/watch?v=1A9tPOfp6NA
-	[[Monolith]]: One service does everything
+[[Monolith]]: One service does everything
 		1. Development Experience: 
 			1. simplest one
 			2. **2:41 for architecture graph**

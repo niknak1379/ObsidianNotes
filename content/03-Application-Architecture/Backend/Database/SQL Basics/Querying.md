@@ -46,7 +46,7 @@ just normal if statements have to combine it with `AND` keyword
 ## ORDER BY
 
 `ORDER BY "rating" DESC LIMIT 10;`
-Just visualizes the data in whatever order we do.  can order by multiple Chryteria, `ORODER By "sth" DESC, 'STHELSE" ASC;`
+Just visualizes the data in whatever order we do.  can order by multiple Criteria, `ORODER By "sth" DESC, 'STHELSE" ASC;`
 
 ## Aggregate Functions
 1. COUNT
