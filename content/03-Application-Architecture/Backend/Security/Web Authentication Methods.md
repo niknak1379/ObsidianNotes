@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=LB_lBMWH4-s
 
 ## Password based Authentication
 Could be very insecure if you allow bad passwords, and do not hash the passwords in the Data base, and if you use HTTP. 
-It could be secure tho if you us HTTPS for communications, properly hash with a salt
+It could be secure tho if you use HTTPS for communications, properly hash with a salt
 [Adding Salt to Hashing: A Better Way to Store Passwords - Auth0](https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/)
 
 Sessions are remembered either using cookies, or JWTs. 
