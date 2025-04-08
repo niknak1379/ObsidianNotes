@@ -18,4 +18,7 @@ In order to make sure that attackers do not have access to this token, do not st
 ## Refresh Token
 the token that lives on the server, usually in a cookie that is not able to be accessed by JS or code. Since it is serverside the expiration date on it can be a lot longer than an Auth token so can be around 30 days.
 
+**https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/
+this should be a pretty good article, or as a refreshser, it does talk about them in terms of how they are used in an [[oAuth2.0]] model.**
+
 The server uses this to refresh the expired acess token
