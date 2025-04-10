@@ -1,7 +1,7 @@
 ---
 creation date: 2025-03-15 17:10
 ---
-#05-Project-Docs #Personal Website Docs #V-2.0
+#05-Project-Docs #PersonalWebsiteDocs
 
 << ---------------------------------------------------------------- >>
 

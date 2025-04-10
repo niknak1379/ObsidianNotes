@@ -8,6 +8,7 @@ kanban-plugin: board
 
 **Complete**
 - [x] update DB with correct picture URLs
+- [x] add login and auth
 - [x] update existing img srcs for projects
 - [x] set up s3 with pictures uploaded
 - [x] Migrate footer to a UI component
@@ -24,19 +25,18 @@ kanban-plugin: board
 
 ## in-progress
 
-- [ ] pictures to add: home lab
-	(take actual picture of the PIs)
-- [ ] add login and auth
+- [ ] projects to add: add data to the DB using multer and add to S3 from the EC2 bucket
+- [ ] Set up S3 for write
+- [ ] [[set up add project and update project pages]]
 
 
 ## Not Started
 
-- [ ] projects to add: add data to the DB using multer and add to S3 from the EC2 bucket
-- [ ] Set up S3 for write
+- [ ] pictures to add: home lab
+	(take actual picture of the PIs)
 - [ ] dockerize and deploy backend on E3
 - [ ] update vercel to the new repository
 - [ ] serve express files with https
-- [ ] set up add project and update project pages
 - [ ] caching backend
 - [ ] Projects to add: samans django bs
 - [ ] caching for fetch requests??
