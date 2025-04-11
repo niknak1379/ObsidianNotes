@@ -22,3 +22,11 @@ If I right it into the original page:
 	1. basically could be also the same as the normal with the default being empty, but then if you call it from the edit and pass in the project name as a prop, you can call the DB and get all the information. 
 
 Yeah okay i dont need to write a separate page for it, editing whats already here just with a {accessToken && <></>} is a lot easier.
+
+
+## how interaction works and what is editable?
+
+have all of it in text fields that are editable, pre populate it by that. and then send it to the backend like that.
+
+What to do with the file uploads?
+Have to setup S3 bucket and user upload stuff with multer 
