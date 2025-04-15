@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] add insert into frontend
 - [x] Set up S3 for write
 - [x] projects to add: add data to the DB using multer and add to S3 from the EC2 bucket
 - [x] update DB with correct picture URLs
@@ -27,13 +28,12 @@ kanban-plugin: board
 
 ## in-progress
 
-- [ ] add insert into frontend
+- [ ] update edit so that files are optional and onlg the sent files will be changed on the db
 - [ ] [[set up add project and update project pages]]
 
 
 ## Not Started
 
-- [ ] update edit so that files are optional and onlg the sent files will be changed on the db
 - [ ] update delete to delete photos from s3 on the DB
 - [ ] pictures to add: home lab
 	(take actual picture of the PIs)
