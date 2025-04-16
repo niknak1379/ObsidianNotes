@@ -7,6 +7,12 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] add done to the edit page
+- [x] add done message to add project
+- [x] add laoding, update, and refresh to edit and add project pages, and abort controller, and done messages to the edit and done tabs.
+- [x] [[set up add project and update project pages]]
+- [x] update delete to delete photos from s3 on the DB
+- [x] update edit so that files are optional and onlg the sent files will be changed on the db
 - [x] add insert into frontend
 - [x] Set up S3 for write
 - [x] projects to add: add data to the DB using multer and add to S3 from the EC2 bucket
@@ -28,13 +34,11 @@ kanban-plugin: board
 
 ## in-progress
 
-- [ ] update edit so that files are optional and onlg the sent files will be changed on the db
-- [ ] [[set up add project and update project pages]]
+- [ ] add custom loading to the delete?
 
 
 ## Not Started
 
-- [ ] update delete to delete photos from s3 on the DB
 - [ ] pictures to add: home lab
 	(take actual picture of the PIs)
 - [ ] dockerize and deploy backend on E3
