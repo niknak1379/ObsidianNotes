@@ -7,6 +7,11 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] change font
+- [x] sql injection library for the backend
+- [x] re add projects to DB?
+- [x] do darkmode light mode on edit and add project
+- [x] add custom loading to the delete?
 - [x] add done to the edit page
 - [x] add done message to add project
 - [x] add laoding, update, and refresh to edit and add project pages, and abort controller, and done messages to the edit and done tabs.
@@ -34,24 +39,25 @@ kanban-plugin: board
 
 ## in-progress
 
-- [ ] add custom loading to the delete?
+- [ ] add loaders to the project pictures
+- [ ] update small stuff on v1.0 and v2.0 on the main page
 
 
 ## Not Started
 
+- [ ] dockerize and deploy backend on E3
+- [ ] serve express files with https(manually instead of vercel?, nginx??)
 - [ ] pictures to add: home lab
 	(take actual picture of the PIs)
-- [ ] dockerize and deploy backend on E3
-- [ ] update vercel to the new repository
-- [ ] serve express files with https
-- [ ] caching backend
+- [ ] caching backend(redis?)
 - [ ] Projects to add: samans django bs
-- [ ] caching for fetch requests??
-- [ ] update small stuff on v1.0 and v2.0 on the main page
+- [ ] update vercel to the new repository
+- [ ] write testing for backend?
 
 
 ## Archive
 
+- [ ] caching for fetch requests??
 
 
 ***
