@@ -165,7 +165,89 @@ However, there is one exception to this. **Function components _may_ call `setSo
 ## Improving React Render Performance
 Three main APIs to optimize react performance 
 1. **The primary method is [`React.memo()`](https://react.dev/reference/react/memo)**, a built-in ["higher order component"](https://legacy.reactjs.org/docs/higher-order-components.html) type. It accepts your own component type as an argument, and returns a new wrapper component. The wrapper component's default behavior is to check to see if any of the props have changed, and if not, prevent a re-render. Both function components and class components can be wrapped using `React.memo()`. (A custom comparison callback may be passed in, but it really can only compare the old and new props anyway, so the main use case for a custom compare callback would be only comparing specific props fields instead of all of them.)
-	1. There's also a lesser-known technique as well: **if a React component returns the exact same element reference in its render output as it did the last time, React will skip re-rendering that particular child.** There's at least a couple ways to implement this technique:
+2. There's also a lesser-known technique as well: **if a React component returns the exact same element reference in its render output as it did the last time, React will skip re-rendering that particular child.** There's at least a couple ways to implement this technique:
+	- If you include `props.children` in your output, that element is the same if this component does a state update
+	- If you wrap some elements with `useMemo()`, those will stay the same until the dependencies change
 
-- If you include `props.children` in your output, that element is the same if this component does a state update
-- If you wrap some elements with `useMemo()`, those will stay the same until the dependencies change
+## Immutability and Rerendering
+**State updates in React should always be done immutably**. There are two main reasons why:
+
+- depending on what you mutate and where, it can result in components not rendering when you expected they would render
+- it causes confusion about when and why data actually got updated
+
+Let's look at a couple specific examples.
+
+As we've seen, `React.memo / PureComponent / shouldComponentUpdate` all rely on shallow equality checks of the current props vs the previous props. So, the expectation is that we can know if a prop is a new value, by doing `props.someValue !== prevProps.someValue`.
+
+If you mutate, then `someValue` is the same reference, and those components will assume nothing has changed.
+
+Note that this is _specifically_ when we're trying to optimize performance by avoiding unnecessary re-renders. A render is "unnecessary" or "wasted" if the props haven't changed. If you mutate, the component may wrongly think nothing has changed, and then you wonder why the component didn't re-render.
+
+## Context and Rendering Behavior
+
+In this example, every time `ParentComponent` renders, React will take note that `MyContext.Provider` has been given a new value, and look for components that consume `MyContext` as it continues looping downwards. **When a context provider has a new value, _every_ nested component that consumes that context will be forced to re-render**.
+
+Note that from React's perspective, each context provider only has a single value - doesn't matter whether that's an object, array, or a primitive, it's just one context value. Currently, **there is no way for a component that consumes a context to skip updates caused by new context values, even if it only cares about _part_ of a new value.**
+
+It's time to put some of these pieces together. We know that:
+
+- Calling `setState()` queues a render of that component
+- React recursively renders nested components by default
+- Context providers are given a value by the component that renders them
+- That value normally comes from that parent component's state
+
+This means that **by default, any state update to a parent component that renders a context provider will cause all of its descendants to re-render anyway, regardless of whether they read the context value or not!**.
+
+### optimization example:
+```jsx
+function GreatGrandchildComponent() {
+  return <div>Hi</div>
+}
+
+function GrandchildComponent() {
+    const value = useContext(MyContext);
+    return (
+      <div>
+        {value.a}
+        <GreatGrandchildComponent />
+      </div>
+}
+
+function ChildComponent() {
+    return <GrandchildComponent />
+}
+
+const MemoizedChildComponent = React.memo(ChildComponent);
+
+function ParentComponent() {
+    const [a, setA] = useState(0);
+    const [b, setB] = useState("text");
+
+    const contextValue = {a, b};
+
+    return (
+      <MyContext.Provider value={contextValue}>
+        <MemoizedChildComponent />
+      </MyContext.Provider>
+    )
+}
+```
+
+Now, if we call `setA(42)`:
+
+- `ParentComponent` will render
+- A new `contextValue` reference is created
+- React sees that `MyContext.Provider` has a new context value, and thus any consumers of `MyContext` need to be updated
+- React will try to render `MemoizedChildComponent`, but see that it's wrapped in `React.memo()`. There are no props being passed at all, so the props have not actually changed. React will skip rendering `ChildComponent` entirely.
+- However, there was an update to `MyContext.Provider`, so there _may_ be components further down that need to know about that.
+- React continues downwards and reaches `GrandchildComponent`. It sees that `MyContext` is read by `GrandchildComponent`, and thus it _should_ re-render because there's a new context value. React goes ahead and re-renders `GrandchildComponent`, specifically because of the context change.
+- Because `GrandchildComponent` _did_ render, React then keeps on going and also renders whatever's inside of it. So, React will also re-render `GreatGrandchildComponent`.
+
+## React-Redux Rendering Behavior
+I've seen a lot of folks repeat the phrase "React-Redux uses context inside." Also technically true, but [React-Redux uses context to pass the _Redux store instance_, not the _current state value_](https://blog.isquaredsoftware.com/2020/01/blogged-answers-react-redux-and-context-behavior/). That means that we always pass the same context value into our `<ReactReduxContext.Provider>` over time.
+
+Remember that a Redux store runs all its subscriber notification callbacks whenever an action is dispatched. [UI layers that need to use Redux always subscribe to the Redux store, read the latest state in their subscriber callbacks, diff the values, and force a re-render if the relevant data has changed](https://blog.isquaredsoftware.com/2018/11/react-redux-history-implementation/). The subscription callback process happens _outside_ of React entirely, and React only gets involved if React-Redux _knows_ that the data needed by a specific React component has changed (based on the return values of `mapState` or `useSelector`).
+
+This results in a very different set of performance characteristics than context. Yes, it's likely that fewer components will be rendering all the time, _but_ React-Redux will always have to run the `mapState/useSelector` functions for the entire component tree every time the store state is updated. **Most of the time, the cost of running those selectors is less than the cost of React doing another render pass, so it's usually a net win**, but it _is_ work that has to be done. **However, if those selectors are doing expensive transformations or accidentally returning new values when they shouldn't, that can slow things down**.
+
+

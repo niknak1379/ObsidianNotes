@@ -41,6 +41,7 @@ kanban-plugin: board
 
 - [ ] add loaders to the project pictures
 - [ ] update small stuff on v1.0 and v2.0 on the main page
+- [ ] new font broke the wiggly thing fix it
 
 
 ## Not Started
