@@ -7,6 +7,9 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] add loaders to the project pictures
+- [x] new font broke the wiggly thing fix it
+- [x] setup prettier
 - [x] change font
 - [x] sql injection library for the backend
 - [x] re add projects to DB?
@@ -39,9 +42,7 @@ kanban-plugin: board
 
 ## in-progress
 
-- [ ] add loaders to the project pictures
 - [ ] update small stuff on v1.0 and v2.0 on the main page
-- [ ] new font broke the wiggly thing fix it
 
 
 ## Not Started

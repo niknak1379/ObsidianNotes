@@ -19,7 +19,7 @@ uses multilayer(L3) switches: are able to also work and access with layer 3(ip a
 When designing a network, the devices on the network itself will talk to each other, so having multiple switches connected to the router and then devices on the switches wont be ideal, since that means the interactions between the devices on the network will have to go through the router at all times. 
 
 Tiers:
-1. Access Layer(devices and the swithces connected to the distribution multilayer switch)
+1. Access Layer(devices and the switches connected to the distribution multilayer switch)
 2. Distribution Layer(multilayer switch)
 
 ## 3 Tier Network Design 

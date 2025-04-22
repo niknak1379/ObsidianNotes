@@ -40,8 +40,8 @@ Pros:
 3. increased reliability
 4. setting up retry queues
 Cons:
-1. high decoupling(the publisher will never know if the even has been consumed)
-2. implementation over head
+5. high decoupling(the publisher will never know if the event has been consumed)
+6. implementation over head
 ### 2. Event-Carried State Transfer:
 the only difference with event notification is the data we include in the Event
 you basically send both the old and new state(values of whatever is being transfered).
