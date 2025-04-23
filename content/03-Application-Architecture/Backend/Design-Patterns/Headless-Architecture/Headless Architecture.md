@@ -12,7 +12,7 @@ it is Complete separation of the Frontend Experience from the Backend business a
 basically you use the same APIs on the backend for all different kinds of #FrontEnd systems.
 Apparently useful for E-commerce systems.
 
-## Layers for this Architecture:
+## Layers for this  Architecture:
 ### Experience Layer
 user interface, web apps, native apps, etc...
 ### Application Layer
