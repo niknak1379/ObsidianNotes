@@ -13,7 +13,7 @@ creation date: 2025-04-22 14:25
 
 https://www.youtube.com/watch?v=_UZ1ngy-kOI
 
-# Designing Stages
+# Designing Stages For User Facing Applications
 1. Requirements
 2. Core Entities
 3. API
@@ -95,3 +95,5 @@ Large File Issues: This design only works for files as large as 10 15 MB.
 					3. provides audits and version control(basically what git does lol)
 		3. Reconciliation: 
 			1. periodically do reconciliation if there is inconsistencies between the local and cloud files. 
+
+![[Obsidian/Excalidraw/Pasted image 20250423134629.png]]
