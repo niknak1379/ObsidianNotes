@@ -28,7 +28,7 @@ Functional Requirements(core features of the system):
 - automatically sync files across devices
 
 Non functional requirements(qualities of the system)
-* [[CAP Theorem]](Consistency, availability)
+* [[03-Application-Architecture/Backend/Design-Patterns/System-Design-Basic-Concepts/CAP Theorem]](Consistency, availability)
 	* CAP Theorem: in the context of any distributed data store, it can only guarantee two out of the three of the following: consistency, availability, partition tolerance
 	* In this context Consistency is less important than availability and partition tolerance is a must
 	* this means that if someone in Germany edits a file, it is fine for someone in the US to see the old version of a file(everyone has to see a file at all times no matter what, even if it is an older version)

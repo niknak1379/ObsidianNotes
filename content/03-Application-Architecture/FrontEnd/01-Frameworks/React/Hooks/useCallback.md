@@ -1,7 +1,7 @@
 ---
 creation date: 2025-03-20 15:00
 ---
-#03-Application-Architecture #FrontEnd #01-Frameworks #React
+#FrontEnd #01-Frameworks #React
 
 << ---------------------------------------------------------------- >>
 
