@@ -72,13 +72,40 @@ Balanced binary search tree in memory (red black)
 When an LSM Tree gets too big to be supported in memory, it gets reset and then converted into an immutable SSTable(sorted List).
 This operation is not as expensive(o(n)) since the data is already sorted in an LSM and its inorder traversal is O(n). 
 
-How do you incorporate SSTable files into a read operation?
+### How do you incorporate SSTable files into a read operation?
 1. Look for the key in the LSM tree
 2. Check the most recent SSTable
 	1. keys can be in multiple SSTables(due to immutability) so the most recent is the updated value
 For deleted we perform a Tombstone operation. (turn the most recent value in the SSTable into a tombstone to indicate it is deleted). 
 
-The reads are O9
+The reads are O(logn).
+Since the SStables are already sorted you can Binary Search them.  
+
+#### Read Optimizations:
+**Adding Sparse Indexes**(): 
+Taking certain keys and writing locations on disk. 
+**Bloom Filter**: allows us to see if a key is not in the table. 
+
+#### Compaction:
+since were not actually deleting or updating values and just adding more recent ones to the SSTables, we could be wasting a lot of space in some repeated operations. 
+
+Basically have a two pointer algorithm go through the 2 most recent SSTables and sort them in a new table and if a key is duplicated write the most recent to the new SSTable. 
+
+## Conclusions
+![[Obsidian/Excalidraw/Pasted image 20250428135149.png]]
+
+Indexes:
+Main point is to get faster reads on a specific key value(this will make the writes slower depending on the implementation)
+
+Clustered Indexes( all data of the row itself is stored in the index ) => faster reads
+
+Non Clustered Indexes => they have the address of the row on the disk of the data -> less data duplication
+
+Covered Index: store only some fields rather than all. 
+
+
+Multi Dimensional Indexes(composite indexes): 
+Basically having multiple indexes for multiple fields in a table that allows you to sort and traverse the table by more than one property
 
 
 
