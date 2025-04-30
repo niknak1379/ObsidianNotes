@@ -72,5 +72,33 @@ They are harder to manage tho since they are defined in the database and are har
 
 ## Two Phase Locking - Isolation/Serializability
 
+is a type of Pessimistic concurrency control(any operation has to grab locks for all rows no matter the operation at all times)
 Makes concurrent transactions seem as if they were running on one thread.
 
+You have 2 locks: a reader and a writer lock.
+
+basically multiple threads can read the row at the same time, but if a writer lock is needed, it needs to wait for all the reader locks to be unlocked. 
+
+Issues:
+Two phase locking is really slow since all the deadlocks need to be first detected then resolved.
+
+Also phantom writes are still a possibility since there is no lock for new rows that have not been created yet.
+
+### Predicate Locks
+It locks all rows where a certain property is true for E classTime = 6
+
+Slow to run, have to evaluate the full query
+
+### Index Range Locking
+If the property we are locking is indexed it makes it a lot easier to lock the entire row with that property and do range queries
+
+## Serializable Snapshot Isolation
+Is a type of optimistic concurrency control
+it assumes that multiple transactions can complete at the same time without competing with each other. 
+The locks are automatically off by default, transactions that are determiend to violate a rule are aborted
+
+Make a write to a value
+read the value -> see uncommited write
+Abort since u dont know what the value is supposed to be
+
+Basically each transaction when making a read or a write verifies that no other transaction is modifiying the data its reading or writing. If the check comes back false, the transaction is rolled back. 
