@@ -62,5 +62,71 @@ Causally dependent writes need to be written to the same partition
 
 
 ## Single Leader Replication:
- 
+All writes go to the leader database and that async syncs the follower databases so that they can perform reads. 
+
+Benefits:
+1. many copies of data (increased durability)
+2. higher read throughput
+
+Failure scenario:
+1. follower DB goes down
+	1. we have the replication log coming from the leader DB, we can see up until which log the follower has seen and restart it and have the leader send the replication logs that we are missing
+2. Leader DB Goes Down
+	1. Scenario 1: Leader is up and running but the connection with follower is severed so it thinks the leader is dead
+		1. It might want to replace it with a new leader
+	2. Scenario 2: Lost Writes: Writes are being propagated Asynchronously so if the database goes down before the async message is sent, the writes will have been received but never propagated to the new leader that will be chosen.  
+	3. A leader goes down -> we elect a new leader -> the original leader is back online and we have 2 leaders(split brain)
+		1. They will both accept writes and try to propagate them.
+		2. We need distributed consensus.
+## Multi Leader Replication
+different Topologies:
+1. Circile Topology:
+	1. all the leader nodes are in a circle. 
+		1. if one leader goes down the connection between the nodes will be cut and we cant propagate the writes anymore. 
+2. Star Topology
+	1. One center nodes and then the rest are outer nodes.
+	2. Outer nodes send to center and it propagates to the rest. 
+	3. If the center goes down none of the databases will communicate with each other and the entire system is down. 
+3. All to All Topology
+	1. Problems with writes that have causality dependancies. 
+		1. So messages that our further than the line can be propagated to some nodes faster than the ones before them. 
+		2. How to fix:
+			1. Changing the replication log to keep track of which writes have been seen by what nodes. 
+
+### Write Conflicts with Multi Leader Replication
+
+How to fix concurrent writes(writes happening to the same key at the same time):
+1. Conflict Avoidance:
+	1. All writes to the same key will go to the same replica
+		1. will decrease write throughput
+2. Last Write Wins:
+	1. use the timestamp of the request to the decide which value is written
+		1. timestamp of the receiver nodes. Could work if we could rely on the timestamp of the nodes but we cant because:
+			1. Quartz Crystal -> clock Skew -> will always be away a few nano seconds depending on weather location etc...
+			2. NTP(make a network request to a gloval time server) -> this will introduce latency in the clock system which will make the timestamps to look like they are back in time
+3. Distributed Counter
+	1. Counter with version vectors. So if 2 users are incrementing the same value they also send their version vector to the DB and the DB can merge the increment operation from the 2 different versions.
+		1. When one DB is updated it sends the version vectors to the other one, they diff the versions and see how many writes they need to do to catch up. 
+		2. if two of the new version vectors are off by one it means that the two writes are concurrent (the did not know about each other).
+		3. once the concurrent writes have been identified we can do multiple things:
+			1. make sibling writes
+				1. store both writes in the database for the different versions. 
+					1. next time a read occurs give the user a choice of which value to keep to resolve the merge conflict
+					2. Or have the Database automatically merge them by using CRDTs(Conflict Free Replicated Data Types)
+						1. Data types that conflicts for do not make sense such as counters or sets. 
+#### CRDTs(Conflict Free Replicated Data Types)
+Things that Use this:
+Riak, [[03-Application-Architecture/Backend/Frameworks/Redis/Redis|Redis]](can use sets)
+
+##### Operational CRDTS:
+You don't send in the vector array which will grow linearly the more database nodes you have, instead you will send an operation(inc(x)) which is just O(1).
+Downside: causal relationships will be messy. 
+
+So if you make a request to write sth to a set but then to remove that key from the set but from a different leader, the leader will throw an error. 
+So we need a causally consistent messaging broadcast system that does not duplicate messages and is not idempotent(idempotent is when you do the same operation and it will not change after the first time).
+
+##### State Based CRDTS:
+This is basically sending the entire counter vector and then merging them example. 
+
+
 
