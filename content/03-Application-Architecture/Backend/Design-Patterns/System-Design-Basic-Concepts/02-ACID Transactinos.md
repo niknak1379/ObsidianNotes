@@ -95,10 +95,14 @@ If the property we are locking is indexed it makes it a lot easier to lock the e
 ## Serializable Snapshot Isolation
 Is a type of optimistic concurrency control
 it assumes that multiple transactions can complete at the same time without competing with each other. 
-The locks are automatically off by default, transactions that are determiend to violate a rule are aborted
+
+there are no locks, each operation operates on a "snapshot" created at the start. the transaction only sees and operates on this snapshot.
+
+Basically each transaction when making a read or a write verifies that no other transaction is modifiying the data its reading or writing. If the check comes back false, the transaction is rolled back. 
+
+Usually the transaction that detects the serialization conflict is rolled back and retried later by the application. 
 
 Make a write to a value
 read the value -> see uncommited write
 Abort since u dont know what the value is supposed to be
 
-Basically each transaction when making a read or a write verifies that no other transaction is modifiying the data its reading or writing. If the check comes back false, the transaction is rolled back. 

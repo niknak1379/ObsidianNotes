@@ -127,6 +127,106 @@ So we need a causally consistent messaging broadcast system that does not duplic
 
 ##### State Based CRDTS:
 This is basically sending the entire counter vector and then merging them example. 
+It has to be 
+1. commutative(Order of the messages arriving at different leaders does not matter), 
+2. associative(no matter what the order of state messages is the end result is the same), 
+3. idempotent(if we receive the same state multiple times it will not have an effect)
 
 
+This means that this system can fire off many state updates and as long as all Nodes get them we will be eventually consistent no matter what
 
+This makes it work really well with the GOSSIP PROTOCOL
+
+**Gossip Protocol**:
+Each node will send its update to for example 2 more nodes and all the nodes will repeat that until all the nodes have gotten the state update
+It doesn't matter if a node gets the state update more than once since the DB is idempotent. And the order doesnt matter since it is also commutative. 
+
+
+##### Sequence CRDTs
+Build an eventually consistent list -> hard because it depends on the ordering of the elements. 
+
+A lot of real time collaborative text editors use these like google docs, vscode etc...
+
+
+## Leaderless Replication
+instead of writing to one node we will write to multiple nodes and also read from multiple nodes.
+
+What systems use this:
+Cassandra, Riak
+
+
+We add the values with their versions to the database the readers read from multiple DBs and check which DB has the higher version and also send the higher version to the DBs lagging. -> known as **Read Repair**
+
+**Anti-Entropy:**
+The Databases do this automatically
+You only send writes that you know are not present on the other nodes
+How do you know which writes that is?
+Either do O(n) linear scan of the entire tables or
+#### Merkle Tree
+1. make hash of each row
+2. sum up pairs of hashes and take a hash of those
+3. repeat until you hit a single value
+
+You Traverse and diff the merkle Trees to see what nodes are different and update the leaf node that its hash is different. 
+
+This will be O(logN)
+
+
+So how do you guarantee that a read is happening from a set of DBs that have been written to? (since none of the DBs selected have the write we cant perform a read repair)
+### Quorums
+Quorum Reads & writes: 
+W = number of DBs we write to
+R = number of DBs we read from
+N = total DB
+
+when W+R>N we have quorum reads and writes
+meaning that there exists at least one DB with the updated value in the Read DBs that we have picked thus we have achieved quorum. 
+
+Do Quorums have strong consistency(all reads will read the latest most updated value)?
+
+Even tho it seems that way, there are a few problems.
+
+Race Conditions:
+Different writes will propogate to the Replicas at different rates. 
+These could cause all the different DBs to have different values and making it so that quorum is never reached. 
+
+When Writes Fail:
+If were writing to multiple DBs and one of them fails that will change the quorum, possibly making the older value be a quorum for some reads. 
+
+
+Sloppy Quorums:
+People will have different DB clusters in different Geo locations.
+
+If a cluster goes down we will have to route the writes to a different Geo location. But when the old cluster will come back online it will be behind. 
+
+Hinted Handoff: the clusters in the other geolocation will hand off the data that the offline cluster is missing to it so that it can be up to date. 
+
+### Conclusion
+Quorum will almost resemble strong consistency but still have edge cases so it will not be one.
+
+Leader lass can be good for client side applications like social media apps where it is fine if some data is lost. 
+
+If everyone needs to agree on what the current value is leaderless replication should not be used. 
+
+## Replication Summary
+Single Leader Replication
++:
+1. no write conflicts
+-:
+2. Low Write throughput
+3. single point of failure
+
+Multi Leader Replications
++:
+1. High write throughput
+2. good for large geographic area
+-:
+3. write conflicts
+
+Leaderless Replications
++:
+1. relatively high write throughput
+2. quorum reads/writes
+-:
+3. high read latency -> have to read from multiple places
+4. write conflicts
