@@ -308,10 +308,3 @@ no need to sort at every step
 uses more memory than mapReduce and needs to fit dataset in memory
 
 
-# Stream Processing(real time event processing)
-??[[03-Application-Architecture/Backend/Design-Patterns/Microservices/Event Driven Architecture(EDA)|Event Driven Architecture(EDA)]] for more explanations?
-What if we want to react in real time to events -> pass in event in real time to react to.
-
-Producer generates events that are consumed by the consumer. 
-
-
