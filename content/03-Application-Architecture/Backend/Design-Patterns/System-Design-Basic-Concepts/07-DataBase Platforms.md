@@ -308,3 +308,58 @@ no need to sort at every step
 uses more memory than mapReduce and needs to fit dataset in memory
 
 
+## Time Series Databases
+Great for handling time series data: logs, metrics, sensor readings, etc...
+
+Popular Implementations: **TimeScale DB, InfluxDB, Druid**
+
+They use column oriented storage, better locality, caching etc... good for analytical workflow. 
+
+**Optimizing Reads using Chunk Tables**:
+Were usually paramitizing our data by time range and source, each 2D range will be a chunk. 
+
+Each chunk table will maintain its own index
+and use LSM + SStable to store the data. 
+
+Optimizing Deletes:
+in a normal [[03-Application-Architecture/Backend/Design-Patterns/System-Design-Basic-Concepts/01-Database Indexes#LSM Tree + SSTable Database Indexing|01-Database Indexes]] deleting is as inefficient as writing. In chunking tables, some data will be too old and we want to get rid of it. We just Drop the chunk table and write over whatever was in it, instead of going through the normal SStable delete propogation. 
+
+## Graph Databases
+
+Anything best represented by nodes and edges. 
+
+### Native vs Non-Native Graph DBs
+non-native takes an existing non graph database and writes a query language on top of it so u can perform graph traversals. 
+
+In a relation DB:
+This will take a lot of time, as the query has to binary search the DB to find the desired node and then binary search its edges to find the desired relationship in the query. O(logn + loge)
+
+in a Non-relational DB:
+Slightly better at Ologn since you have everything in one table and dont need to go to a different table to find the relationships. 
+
+Native/Neo4j implementaion
+
+we have a Nodes and Edges table with each row having an address(disk)
+
+The Nodes table will have the disk address field Name(value) field and then the Edge address field which points to the address the edge is stored in the edges table
+
+The edges table will have an addres field, a point to field(which node the edge points to) and then a next edge address field in case a node has multiple edges. 
+
+ACID transaction in Neo4j:
+WAL, locking, 2PC on distributed systems.
+## GeoSpatial Indexes
+
+Example: yelp, uber, tinder etc... use this.
+for DBs when youo need find all points within some distance. 
+
+### GeoHashes/Quadtrees
+
+Assign every 2d point a single value so that similar values are close to one another. 
+
+This allows us to just sort the points and getting other points close to our coordinates will basically be like a binary search to get the points close to the query. 
+
+And then you can run a distance calculation to see if the hashed points are acceptably close to each other or not
+
+### GeoSharding
+There is too much data for just one computer. 
+So Geo sharding we will shard geographically. 

@@ -90,3 +90,44 @@ Issue 2: memory -> consumer state is not fault tolerant -> having a write ahead 
 The solution: stream processing frameworks like flink
 
 ## Apache Flink
+If you wanna join 2 streams -> 
+cache all the events, put them in a hashmap and then do a hashjoin and put the results in a sinkqueue
+
+How do we make sure all our consumers are fault tolerant?
+
+Examples of frameworks: Flink(per event), spark streaming(microbatching), tex, storm
+
+Flink allows us to guarantee that each message only affects the state once
+
+These are not message brokers, they(flink, etc...) are consumers. 
+
+**Why is fault tolerance hard:**
+Example: if a consumer consumes the event puts it into the sink queue but goes down immediately without sending on ACK to the producer to delete the event. The next replacement consumer will consume this event again and we will have 2 replicas in the sink queue. 
+
+**How does Flink guarantee that an event is consumed at least once and only once?**
+
+It does it via Checkpointing:
+
+It does require replayable queues(kafka)
+Occasionally you checkpoint ur state into an S3 bucket
+
+
+Flink has a job manager under the hood as a node(probably attached to a zookeeper instance)
+The job manager has a barrier message for each producer node. 
+
+the message is a part of the event queue and everytime a consumer processes a barrier message it checkpoints its state into S3. 
+
+
+
+Barriers ensure causal consistency, node takes snapshot when it recieves barriers from all of its input queues and producers(not just one).
+This means that if an event is played it is played in all of our snapshots and if it is not played then it is in none of our snapshots. 
+Since the streams are run by kafka it saves the last message each consumer consumed. 
+
+Every checkpoint only includes messages before the barriers so we can just resume each consumer reading messages after the barrier. 
+
+Or restore everything from the S3 snapshot and read it from there. 
+
+### Conclusion
+Flink snapshots are super lightweight and run in the background
+This allows ensuring that all message affect state exactly once,
+Ensure that we dont have to replay every single message in the event of a crash
