@@ -161,3 +161,30 @@ Could have a cache miss tho which is still slow
 -:
 4. added complexity
 5. cache misses
+
+
+## Object Stores (s3)
+How does the CDN store its data 
+could use Hadoop.
+
+Unfortunately for storing generalized static content hadoop is very expensive and if you need more space you need to add more nodes(bigger cluster harder to manage)
+
+Since each node has both processing power and storage if youre trying to scale the storage you will have to add an entire node(cpu, gpu) meaning that the disk and computer hardware scale linearly together. You cant independtly scale the disk space without adding more gpus and stuff. 
+
+**This is why Object Stores:**
+1. handles scaling for you 
+2. handles replication for you
+3. cheaper to run than a hadoop cluster. 
+
+### Data Lake Paradigm 
+Schemaless storage of data to store multiple different types of files in the same store
+
+### batch jobs
+Ton of storage but not much compute. 
+Companies want to dump their data in a lake, and process it later. 
+Object stores lack the proccess power, so need to transport the data to a Hadoop cluster or sth else. 
+
+This will be slow since it is over the network. 
+
+As long as the batch job gets done before its deadline the network latency doesnt matter
+

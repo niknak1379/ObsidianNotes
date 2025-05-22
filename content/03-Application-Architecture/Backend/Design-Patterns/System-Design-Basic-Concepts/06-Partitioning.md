@@ -140,7 +140,7 @@ Each node has an Epoch number:
 the leader sends heartbeats(pings) periodically to the followers and if it goes down the followers know that. 
 
 If havent heard from the leader, you start an election
-the first node that proposes the election becomes the candidate and increments the previous Epocn number of the leader. 
+the first node that proposes the election becomes the candidate and increments the previous Epocn number of the leader. (each node waits an arbitrary amount of time after no heartbeat so that not all nodes call for an election at once) 
 
 During the Election:
 1. either the leader is back online and gets the message for the new election

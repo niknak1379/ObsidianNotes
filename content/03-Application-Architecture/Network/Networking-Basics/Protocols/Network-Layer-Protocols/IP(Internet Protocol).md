@@ -45,7 +45,7 @@ Classes D and E are not accessible and the 127.0.0.0(which is a class A IP addre
 basically an agreed upon standard that sets aside a number of IP addresses as private IP addresses. Meaning that they don't connect you to the internet and are only accessible by local network. These addresses include:
 ![[Pasted image 20250310122910.png]]
 
-[[NAT(Network Access Translator)]] is what translates this local addr ess into the global public address at the [[03-Network Layer]] and [[02-Router|routers]].
+[[NAT(Network Access Translator)]] is what translates this local address into the global public address at the [[03-Network Layer]] and [[02-Router|routers]].
 
 **We still ran out of IP addresses tho so here comes:**
 #### IPv6:
