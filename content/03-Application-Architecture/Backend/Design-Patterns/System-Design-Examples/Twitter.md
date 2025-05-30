@@ -87,3 +87,4 @@ main concerns:
 3. Backup and Recovery
 	1. regular backups are non-negotiable, recovery is a must
 ![[Obsidian/Excalidraw/Pasted image 20250425125736.png]]
+![[Obsidian/Excalidraw/Pasted image 20250522144732.png]]
