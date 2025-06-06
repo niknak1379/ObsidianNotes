@@ -30,3 +30,12 @@ Do have to use geo hashing and geo sharding(have to monitor it and twinker it a 
 
 
 
+Have to deal with race conditions when approaching drivers to accept a ride request. 
+
+You can just do a predicate lock for a rides info table. this will be slow since the predicate it self is a query that has to search the table for a given ride ID, so to make it optimal you have to index it using the ride ID. 
+
+You can also just create the ride id with an empty driver row in the table and lock it when contacting a driver. 
+
+Route Recreation:
+
+
