@@ -36,6 +36,8 @@ You can just do a predicate lock for a rides info table. this will be slow since
 
 You can also just create the ride id with an empty driver row in the table and lock it when contacting a driver. 
 
-Route Recreation:
+![[Obsidian/Excalidraw/Pasted image 20250606155659.png]]![[Obsidian/Excalidraw/Pasted image 20250606155730.png]]
+
+
 
 
