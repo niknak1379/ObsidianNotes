@@ -10,7 +10,7 @@ creation date: 2025-06-09 16:39
 # Untitled
 
 << ---------------------------------------------------------------- >>
-
+https://www.youtube.com/watch?v=YCjVIDv0zQY&list=PLjTveVh7FakJOoY6GPZGWHHl4shhDT8iV&index=14
 Reqs:
 Billions of users, billions of docs
 a doc can have thousands of users attempting to edit at once
@@ -51,3 +51,4 @@ How can we ensure idempotence:
 2. version vector
 	1. if version vector of write is smaller than ours, we have seen it.
 
+![[Obsidian/Excalidraw/Pasted image 20250610141524.png]]
