@@ -38,4 +38,7 @@ this is fine in sth like twitch but not when a lot of people are on the call
 Only send clients the streams they actively care about, in the appropriate resolutions
 
 Use a websocket from client to server, server caches what each client wants. 
+
+
+![[Obsidian/Excalidraw/Pasted image 20250627142100.png]]
  
