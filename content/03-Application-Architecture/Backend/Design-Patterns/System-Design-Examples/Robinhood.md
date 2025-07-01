@@ -17,3 +17,4 @@ reqs
 3. minimize the number of servers listening to the exchange(this is expensive)
 4. estimate around 100 million users, 100 diff instruments in each portfolio 
 
+![[Obsidian/Excalidraw/Pasted image 20250630133640.png]]
