@@ -19,3 +19,5 @@ creation date: 2025-06-30 14:58
 
  https://www.youtube.com/watch?v=3aX-lC5_P1M&list=PLjTveVh7FakJOoY6GPZGWHHl4shhDT8iV&index=29
 
+
+![[Obsidian/Excalidraw/Pasted image 20250701142223.png]]
