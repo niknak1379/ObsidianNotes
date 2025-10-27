@@ -38,3 +38,9 @@ each project:
 
 **Pretty sure the whole thing has to run in a docker container**
 [[DB Setup]]
+
+
+Migrating to RDS was a bit of a pain bc of the triggers, had to change a bunch of settings and sql specific user defentions
+https://stackoverflow.com/questions/9446783/remove-definer-clause-from-mysql-dumps
+
+https://stackoverflow.com/questions/56389698/why-super-privileges-are-disabled-when-binary-logging-option-is-on

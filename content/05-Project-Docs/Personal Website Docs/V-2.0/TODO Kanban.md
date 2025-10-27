@@ -7,6 +7,12 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] fixed css for webkit safari
+- [x] update vercel to the new repository
+- [x] pictures to add: home lab
+	(take actual picture of the PIs)
+- [x] serve express files with https(manually instead of vercel?, nginx??)
+- [x] dockerize and deploy backend on E3
 - [x] add loaders to the project pictures
 - [x] new font broke the wiggly thing fix it
 - [x] setup prettier
@@ -42,19 +48,16 @@ kanban-plugin: board
 
 ## in-progress
 
+- [ ] broke authentication when moving to AWS fix that
 - [ ] update small stuff on v1.0 and v2.0 on the main page
 
 
 ## Not Started
 
-- [ ] dockerize and deploy backend on E3
-- [ ] serve express files with https(manually instead of vercel?, nginx??)
-- [ ] pictures to add: home lab
-	(take actual picture of the PIs)
 - [ ] caching backend(redis?)
 - [ ] Projects to add: samans django bs
-- [ ] update vercel to the new repository
 - [ ] write testing for backend?
+- [ ] forgot the freaking insert elastiserach fix, so have to update it after inserting manually for now
 
 
 ## Archive

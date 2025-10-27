@@ -46,3 +46,7 @@ this command will overwrite the content of the `destination_db` database.
 
 ## How to schedule regular backups on a [[Docker|dockerized]] sql server with cron
 https://medium.com/@hafizzeeshan619/automating-mysql-database-backups-in-docker-00cbe6ce8948
+
+Nikanmatin1.
+78M56Soo!
+78M56Soo!

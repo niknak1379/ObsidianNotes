@@ -31,7 +31,7 @@ texts, numbers, coordinates, etc...
 
 Uses an LSM tree variant to support fast document ingestion ... writes first go to memory
 
-it can also store the entire document for faster acce ss and fewer network trips instead of just the document ID.
+it can also store the entire document for faster access and fewer network trips instead of just the document ID.
 ## ElasticSearch
 Convenience wrapper around Apache Lucene to allow for fast searching in a distributed system. 
 

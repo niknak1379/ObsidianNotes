@@ -19,3 +19,5 @@ basically you have a bunch of jobs that you need to run asyncly and some have di
 	3. dequeuing the item of highest priority
 	4. at least once deliver of all enqueued items
 2. scalable and fault tolerant, even for billions of messages. 
+
+![[Obsidian/Excalidraw/Pasted image 20250703145319.png]]

@@ -23,6 +23,9 @@ encryption for the user password part somehow.[[Auth0]]
 [[03-Application-Architecture/Backend/Security/Web Authentication Methods|JWTs]] for the login page and the page that edits, deletes and adds new projects to the database.
 Have access tokens, refresh tokens, and all the other stuff.
 
+## Elasticsearch
+Using [[03-Application-Architecture/Network/AWS-Basics/AWS Setup||AWS]], and elastic search to index all the blog posts and make searching much easier
+
 
 ### sql for updating the db(this is just for me incase i have to reset my warp)
 mysql -u root -ppassword -e "DROP DATABASE Projects"
