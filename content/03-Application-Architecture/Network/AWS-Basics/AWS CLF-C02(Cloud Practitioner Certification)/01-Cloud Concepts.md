@@ -71,3 +71,17 @@ IaaS(infrastructure as service) -> dont worry about IT staff datacenters adn har
 	1. using multiple cloud providers. 
 
 ### use cases for the different models:
+1. Cloud: Companies starting out today or are small enough to make the leap from a VPS to a CSP
+	1. Startups
+	2. SaaS offerings
+	3. New Projects and Companies
+2. Hybrid: started with its own datacenters, cant fully move to the cloud due to effort of full migration or security compliance
+	1. banks
+	2. fintech
+	3. legacy on-premise
+3. on-premise: cannot run on cloud due to strict regulatory compliance or sheer size of the org
+	1. public sector
+	2. Hospitals or sensitive data
+	3. heavy regulated industries
+
+
