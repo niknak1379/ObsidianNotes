@@ -63,4 +63,72 @@ Three levels:
 2. Dedicated Instance: your servers always lives at a specific spot on a specific server rack
 3. Default: your instance is in the same spot until reboot, then it can change.
 
+### AMI(Amazon Machine Image) and Launch Template
+You can either create an image or a template(they are different) and spin on the instances from those. The image is the state of the machine
+the launch template adds all the EC2 configs, like chip, storage networking etc...
+
+
+
+### ASG(Auto Scaling Group)
+
+Always ensure that an instance is running or are scaled.
+
+Have to attach it to a load balancer. 
+
+### Pricing Models
+On-Demand, Spot, Reserved, Dedicated
+
+1. On-Demand:
+	1. pay as you go. Charged by the second or the hour. 
+	2. on-demand is good for workloads that are short-term, spiky, unpredictable. When you have a new app for dev or running an experiment. 
+2. Reserved Instances(RI):
+	1. For apps with a Steady-state, predictable usage or require reserved capacity. 
+	2. A guaranteed commitment to use AWS resources for a period of time -> about 70% saving in price but in a contract. 
+	3. Term: contract length could be from 1 to 3 years
+	4. Class
+		1. Standard: up to 75% saving, can modify Reserved Instance attributes.
+		2. Convertible: up to 54% reduced pricing compared to on demand. You can exchange RI based on RI attributes if greater or equal in value. 
+	5. Payment option:
+		1. all upfront
+		2. partial upfront
+		3. no upfront
+	6. RI Attributes (instance attributes)
+		1. are limited based on calss offering and can affect final price
+		2. Instance type: m4.large
+		3. region
+			1. Regional and Zonal RI
+			2. Regional: purchase for a zone
+				1. does not reserve capacity
+				2. usage in any AZ in the region
+				3. you can queue purchases for regional RI
+				4. instance size flexibility: it applies to instances within the family regardless of size
+			3. Zonal: purchase for availability zone
+				1. reserves capcity in the specified availability zone
+				2. discount only for the availability zone
+				3. no instance size flexibility
+				4. you can queue purchases
+		4. tenancy
+		5. platform(windows, linux)
+		6. Limits:
+			1. per month
+				1. you can only do 20 regional per region and 20 zonal per AZ
+		7. you can reserve EC2 spots but you will be billed for it even if the machine is not running
+		8. You can sell them on the RI marketplace if you are not using the entirety of your commitment. 
+3. Spot Instances:
+	1. AWS has unused compute capacity that they want to maximize the utility of their idle servers. 
+	2. Designed for apps with flexible start andn end times.
+	3. AWS batch is an easy and convenient way to use spot pricing. 
+4. Dedicated:
+	1. Designed to help meet regulatory requirements. When you have strict server-bound licensing that wont support multi-tenancy or cloud deployments you use dedicated hosts.
+
+### Savings Plan
+similar discounts to reserved instances but simplifies the purchasing process.
+
+3 types:
+1. Compute savings Plan:
+	1.automatically apply to EC2 usage 
+2. EC2 Instance Savings Plan:
+	1. reduces costs on selected isntance family in the region, gives flexibility to change instance within a family in the region
+3. SageMaker Savings Plan:
+	1. same thing but for SageMaker(ML stuff that uses EC2 under the hood)
 
