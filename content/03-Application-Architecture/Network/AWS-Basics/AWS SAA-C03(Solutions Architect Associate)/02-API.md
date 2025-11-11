@@ -27,3 +27,10 @@ Used for AssumeRole, AssumeRoleWithWebIdentity, GetSessionToken, etc...
 
 11:00:00 for https://www.youtube.com/watch?v=c3Cn4xYfxJY
 
+### Service Endpoints
+AWS uses 4 types
+1. global - for global services
+2. regional endpoints - for regional services 
+3. FIPS endpoints - for enterprise use
+4. Dualstack endpoints
+
