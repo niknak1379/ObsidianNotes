@@ -28,7 +28,10 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf4ed",
+          light: "#797593",
+          //light: "#faf4ed",
+          lighter: " #c4a7e7",
+          lightest: " #faf4ed",
           lightgray: "#e5e5e5",
           gray: "#907aa9",
           darkgray: "#575279",
@@ -39,6 +42,8 @@ const config: QuartzConfig = {
         },
         darkMode: {
           light: "#232136", // background color
+          lighter: "#393552",
+          lightest: " #797593",
           lightgray: "#286983", // searchbar and highlights
           gray: "#c4a7e7", // Date time
           darkgray: "#faf4ed", // body font color
