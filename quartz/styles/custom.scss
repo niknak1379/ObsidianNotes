@@ -33,16 +33,18 @@ div.right.sidebar {
   padding: 4px;
   background-color: var(--lighter);
 }
-div.left.sidebar > *,
+
 div.center > *,
 div.right.sidebar > * {
   margin: 8px !important;
   border: 4px var(--darkgray) groove;
-  //border-right: 4px ridge !important;
-  //border-bottom: 4px ridge !important;
   background-color: var(--lightest);
-
-  //filter: drop-shadow(0 0 4px var(--tertiary));
+}
+div.left.sidebar > * {
+  margin: 4px;
+  border: 4px var(--darkgray) groove;
+  background-color: var(--lightest);
+  flex-grow: 1;
 }
 div.center > *,
 div.right.sidebar > * {
@@ -52,9 +54,13 @@ div.right.sidebar > * {
 div.left.sidebar {
   padding: 4px 8px 4px 8px !important;
   box-shadow: inset 0 0 20px var(--light);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 div.spacer.mobile-only {
   border: none !important;
+  display: none;
 }
 #search-icon {
   border-radius: 0 !important;
@@ -62,12 +68,17 @@ div.spacer.mobile-only {
 div.left.sidebar > h1 {
   padding: 0 4px 0 16px;
   border-left-width: 8px;
+  //margin-left: 8px;
   //border-bottom-width: 8px;
 }
 div.darkmode {
   border-right-width: 8px !important;
   border-bottom-width: 8px !important;
   padding: 2px !important;
+  height: 20px;
+  min-width: 20px;
+  //margin-right: 8px !important;
+  flex-grow: 0 !important;
 }
 
 #search-space > * {
