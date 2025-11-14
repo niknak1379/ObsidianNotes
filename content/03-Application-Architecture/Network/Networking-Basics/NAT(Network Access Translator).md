@@ -15,3 +15,4 @@ It maps the [[IP(Internet Protocol)|IP Address]] into another by modifying the n
 Basically it changes the IP address from the local Device IP address to the global Router IP address.
 It was made to slow down the consumption of IP addresses, and you can send messages over a NAT.
 Apparently its used in [[Load Balancer|load balancing]] #todo 
+

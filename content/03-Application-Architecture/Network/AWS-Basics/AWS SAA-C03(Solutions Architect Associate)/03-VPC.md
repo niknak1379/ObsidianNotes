@@ -61,6 +61,10 @@ allows private instances (eg. virtual machines) to connect to services outside t
 
 Gateways are usually a networking service which sit between two different networks.
 
+#### IPv6
+DNS64 and NAT64: NAT gateway supports network address translation from IPv6 to IPv4, known as NAT64
+
+DNS64 - IPv6-only workloads running in VPCs can only send and receive IPv6 network packets. Without DNS64, a DNS query for an IPv4-only service will yield an IPv4 destination address in response and ur IPv6-only service cannot commjnicate with it. To bridge this communication gap, you can enable DNS64 for a subnet and it applies to all the AWS resources within the subnet. 
 ### NACLs
 Stateless virtual firewall at subnet level
 
@@ -123,10 +127,11 @@ provides reliable connectivity to Amazon S3 and DynamoDB without requiring an in
 ![[Obsidian/Excalidraw/Pasted image 20251114112347.png]]
 
 ### VPC Peering
+allows you to connect one VPC with another over a direct network route as if they are one VPC, using private IP addresses.
 ### VPC Flow Logs
 just logging network traffic coming into the different parts of the VPC, subnets, ENIs etc.
 
-### AWS Virtual Private Network
+### AWS Virtual Private Network - VPN
 lets you establish a secure and private tunnel from your network to the AWS Global network.
 
 #### AWS Site-to-Site VPN: 
@@ -140,9 +145,27 @@ It has the following components:
 5. target gateway - generic term for the VPN endpoit on the amazon side of Site to Site
 6. Virtual Private Gateway - VGW - VPN endpoint on the amazon side that can be attached to a single VPC
 7. Transit Gateway - transit hub that can be used to interconnect multiple VPCs and on-premises networks, and as a VPN endpoint for the amazon side of the site-to-site VPN connection. 
+	1. ![[Obsidian/Excalidraw/Pasted image 20251114144020.png]]
 #### AWS Client VPN: 
 securely connect users to AWS or on-premises network.
 
+1. certificate based authentication (mutual authentication)
+2. active directory authentication(AWS directory service)
+3. federation authentication (single-sign-on SAML)
+4. uses a single tunnel
+5. use security groups for granular control
+6. USE Active Directory groups for granular control
+7. self service portal to download aws vpn client
+8. has 2 roles
+	1. administrator - responsible for setting up and configuring service
+	2. clients - the person who connects to the client VPN endpoint. 
+#### Bastion / Jumpbox
+Jumpboxes are security hardened virtual machine that provide secure access to private subnets.
+Similar to client VPN. the security is different.
+* sits in the public subnet and then allows you to access ssh or RCP into a EC2 instance in your private subnet. 
+* also known as bastions since its something that gives protection against attacks. 
+* NATs should not be used as Bastions.
+	* since they are only intended for EC2 to gain outbound access to internet and security updates. 
 ## AWS Resource Access Manager - RAM
 allows you to share resources across your AWS accounts
 
@@ -193,3 +216,20 @@ service for connecting on-premise to AWS
 	3. Data transfer within the same region will not result in a cost
 
 
+### VPC Lattice
+VPC lattice is a fully managed application networking service, you use to connect, secure and monitor services for your application Especially in a [[03-Application-Architecture/Backend/Design-Patterns/Microservices/Microservice|Microservice]] architecture. 
+
+Has
+1. service network - logical container for all services which can communicate with each other in the associated VPCs
+2. Listener - the protocol and port the service listens to. containes routing rules 
+3. target group
+4. service directory - a central registry of all VPC lattice services that you own or are shared with your account 
+
+### AWS Network Firewall
+a stateful managed, network fiewall and IDS/IPS for VPCs
+
+Filter outbound and inbound traffic at the perimeter of you VPC
+1. filter IGW trafic
+2. filter NAT gateway traffic
+3. Fiter VPN traffic
+4. Filter Amazon Direct Connect traffic 
