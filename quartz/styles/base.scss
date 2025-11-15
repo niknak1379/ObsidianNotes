@@ -595,10 +595,11 @@ ol.overflow {
     height: 0.5rem;
     margin: 0;
   }
-
+  /*
   &.gradient-active {
     mask-image: linear-gradient(to bottom, black calc(100% - 50px), transparent 100%);
   }
+    */
 }
 
 .transclude {
