@@ -2,7 +2,7 @@ https://www.youtube.com/watch?v=kUs-fH1k-aM
 
 Basically in an [[SPA]] model theres a lot of back and forth between the client and server
 Loading Stages: 
-1. You first request the HTML from the CDN(in the case of a [[React]] app basically a blank page)
+1. You first request the HTML from the CDN(in the case of a [[03-Application-Architecture/FrontEnd/01-Frameworks/React/React]] app basically a blank page)
 2. then the loaded blank html requests the main.js from the CDN
 3. once the main.js is loaded the react app starts sending requests to the APIs that it uses, while this is going on basically everything is on spinners
 4. once the APIs return then everything will be loaded and displayed correctly and be interactable

@@ -44,7 +44,7 @@ mysql -u root -pYOUR_PASSWORD destination_db < db_backup.sql
 this command will overwrite the content of the `destination_db` database.
 
 
-## How to schedule regular backups on a [[Docker|dockerized]] sql server with cron
+## How to schedule regular backups on a [[03-Application-Architecture/Backend/DevOps/Docker/Docker|dockerized]] sql server with cron
 https://medium.com/@hafizzeeshan619/automating-mysql-database-backups-in-docker-00cbe6ce8948
 
 Nikanmatin1.

@@ -11,7 +11,7 @@ creation date: <% tp.file.creation_date() %>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# <% tp.file.title %>
+# <%* tp.file.title %>
 
 << ---------------------------------------------------------------- >>
 

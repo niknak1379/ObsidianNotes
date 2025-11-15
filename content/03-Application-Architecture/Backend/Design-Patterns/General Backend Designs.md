@@ -55,7 +55,7 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 		1. Development Experience:
 			1. `7:26` for the graph chart
 			2. the [[monolith]] turns into an [[API Gateway]] that just redirects the requests to their [[Microservice]] using an HTTP or a GRPC call. 
-			3. you handle the separations using [[Docker]] (Kubernetes and [[Docker]]).
+			3. you handle the separations using [[03-Application-Architecture/Backend/DevOps/Docker/Docker]] (Kubernetes and [[03-Application-Architecture/Backend/DevOps/Docker/Docker]]).
 			4. integration tests are hard
 			5. Code will be nice and clean, but the infrastructure will be complicated
 		2. Scalability:

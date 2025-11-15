@@ -12,12 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Github](./Github.md)**
-	- [Github-Sync](./Github-Sync.md)
-	- [Github](./Github.md)
-	- [Repo SSH](./Repo%20SSH.md)
+- **[MacOS Rice](./MacOS%20Rice.md)**
+	- [MacOS Rice](./MacOS%20Rice.md)
+	- [Services Running](./Services%20Running.md)
 
 %% End Waypoint %%
-
-
-

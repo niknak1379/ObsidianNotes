@@ -1,13 +1,18 @@
 ---
-creation date: 2025-11-14 17:46
+creation date: 2025-11-14 18:56
 ---
-#04-Tools #Github
+
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# _Index_of_Github
+# Map Of Content
 
 << ---------------------------------------------------------------- >>
 
+%% Begin Waypoint %%
+- **[Assets](./Assets.md)**
+	- [Assets](./Assets.md)
+
+%% End Waypoint %%

@@ -1,13 +1,18 @@
 ---
-creation date: 2025-11-14 17:47
+creation date: 2025-11-14 18:56
 ---
-#04-Tools #Linux
+
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# _Index_of_Linux
+# Map Of Content
 
 << ---------------------------------------------------------------- >>
 
+%% Begin Waypoint %%
+- **[Untitled](./Untitled.md)**
+	- [Untitled](./Untitled.md)
+
+%% End Waypoint %%

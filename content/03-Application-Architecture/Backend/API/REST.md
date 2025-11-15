@@ -43,7 +43,7 @@ You can also use **HATEOAS** for the naming of the URL paths.
 
 ### Filtering
 just use the normal API but pass in url parameters for things that we want to filter.
-you should also only return a reasonable amount of objects from the [[Database]] like 50, so that you don't overwhelm the DB. u can use start and limit parameters for this and pass them in the GET url.
+you should also only return a reasonable amount of objects from the [[03-Application-Architecture/Backend/Database/Database]] like 50, so that you don't overwhelm the DB. u can use start and limit parameters for this and pass them in the GET url.
 
 ### Async Operations
 sometimes a POST request might take a while to process on the backend, so it should be done async, you **return 202 'Accepted' status code**. and then you expose an endpoint for the client so that it is able to pull the status code(completion of the original request). you include the url of the status endpoint in the location header of the 202 response. 
@@ -59,6 +59,6 @@ You should also implement http **HEAD** requests (returns type and length in the
 ### Error Handling
 return proper error response codes, with messages so that people know whats going on, but the messages should not have anything about the internal mechanisms. 
 
-### [[Security]]
+### [[03-Application-Architecture/Backend/Security/Security]]
 
 should be secure and stuff? SSL/TLS/ACLs, rate limiting, throtling, ip blacklisting
