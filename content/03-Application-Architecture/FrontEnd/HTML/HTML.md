@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[HTML](./HTML.md)**
-	- **[Accessiblity](./Accessiblity/Accessiblity.md)**
-	- **[Elements](./Elements/Elements.md)**
-	- [HTML](./HTML.md)
-	- [Open Graph](./Open%20Graph.md)
+- **[[HTML]]**
+	- **[[Accessiblity]]**
+	- **[[Elements]]**
+	- [[HTML]]
+	- [[Open Graph]]
 
 %% End Waypoint %%

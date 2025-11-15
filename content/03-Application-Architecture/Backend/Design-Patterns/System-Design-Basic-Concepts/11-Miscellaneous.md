@@ -18,7 +18,7 @@ When scaling horizontally, we need a component to route requests to each applica
 ### Routing Policies
 1. (Weighted) Round Robin
 2. Lowest Response Time
-3. Hashing -> [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models/TCP,IP-Model&Layers/07-Application Layer|07-Application Layer]](message content, slower but more flexible) vs [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models/TCP,IP-Model&Layers/03-Network Layer|03-Network Layer]](IP, protocol,) this is most used usually
+3. Hashing -> [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/07-Application Layer|07-Application Layer]](message content, slower but more flexible) vs [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/03-Network Layer|03-Network Layer]](IP, protocol,) this is most used usually
 
 #### Consistent Hashing
 consistent hashing keeps most request routed to the same node even when cluster size changes, unlike hash(request)%
@@ -36,7 +36,7 @@ Both are in communication with zookeeper with it taking heartbeats and zookeeper
 
 
 
-## [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols/TCP(Transmission Control Protocol)|TCP]] vs [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols/UDP(User Datagram Protocol)|UDP]]
+## [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)|TCP]] vs [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/UDP(User Datagram Protocol)|UDP]]
 
 Both are protocols to communicate over an IP network.
 

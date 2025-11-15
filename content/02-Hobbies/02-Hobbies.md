@@ -12,9 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[02-Hobbies](./02-Hobbies.md)**
-	- [02-Hobbies](./02-Hobbies.md)
-	- **[Design](./Design/Design.md)**
-	- **[Photogrophy](./Photogrophy/Photogrophy.md)**
+- **[[02-Hobbies]]**
+	- [[02-Hobbies]]
+	- **[[Design]]**
+	- **[[Photogrophy]]**
 
 %% End Waypoint %%

@@ -12,12 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Protocols](./Protocols.md)**
-	- **[00-Protocol Models](./00-Protocol%20Models/00-Protocol%20Models.md)**
-	- **[Application-Layer-Protocol](./Application-Layer-Protocol/Application-Layer-Protocol.md)**
-	- [Network Protocols](./Network%20Protocols.md)
-	- **[Network-Layer-Protocols](./Network-Layer-Protocols/Network-Layer-Protocols.md)**
-	- [Protocols](./Protocols.md)
-	- **[Transport-Layer-Protocols](./Transport-Layer-Protocols/Transport-Layer-Protocols.md)**
+- **[[Protocols]]**
+	- **[[00-Protocol Models0]]**
+	- **[[Application-Layer-Protocol0]]**
+	- [[Network Protocols]]
+	- **[[Network-Layer-Protocols0]]**
+	- [[Protocols]]
+	- **[[Transport-Layer-Protocols0]]**
 
 %% End Waypoint %%

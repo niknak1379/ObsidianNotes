@@ -15,17 +15,17 @@ https://www.youtube.com/watch?v=IPvYjXCsTg8
 Internet is basically a collection of computer networks.
 
 ## How did the internet start?
-Basically they had multiple sites for development of satellites and needed them to communicate with each other. They were at MIT, UCLA, Stanford, Utah. the computers used [[TCP(Transmission Control Protocol)]] to communicate with each other. And eventually enough computers got added and it lead to the creation of **WWW(world wide web)**. 
+Basically they had multiple sites for development of satellites and needed them to communicate with each other. They were at MIT, UCLA, Stanford, Utah. the computers used [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)]] to communicate with each other. And eventually enough computers got added and it lead to the creation of **WWW(world wide web)**. 
 
 ## [[Network Protocols]]
-basically a set of rules (defined by the internet society) that dictate how data is sent over the internet. [[TCP(Transmission Control Protocol)]] is one. like for example for a certain protocol the network has to make sure that 100% of the data is delivered. for another, it might be fine to drop a few bits and pieces. 
+basically a set of rules (defined by the internet society) that dictate how data is sent over the internet. [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)]] is one. like for example for a certain protocol the network has to make sure that 100% of the data is delivered. for another, it might be fine to drop a few bits and pieces. 
 
 
 ## How is data transfer anyway
 Data is always transferred in **packets** to ensure that large data sets are able to be transferred. 
 
 
-## [[IP(Internet Protocol)]]
+## [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)]]
 All devices that are on the internet have an IP address. All IP addresses have a x.x.x.x format each x being from 0 to 255.
 
 ## How internet is organized locally
@@ -45,7 +45,7 @@ basically multiple LANs are connected to each other using MAN which are connecte
 ## Modems, Routers
 
 Modems: used to convert digital signals to analog signals and vice versa. 
-Router: Device that routes the data packets based on the [[IP(Internet Protocol)|IP Address]]es.
+Router: Device that routes the data packets based on the [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)|IP Address]]es.
 
 ## Topologies(how computers are connected)
 ![topology diagram](https://keepthetech.com/wp-content/uploads/2021/08/Types-of-Networking-Topology.png)
@@ -59,8 +59,8 @@ since all computers are connected to each other, it gets expensive, and will hav
 If the central device fails the network will go down. 
 
 ## Structure of Network
-[[OSI Model]]
-[[TCP,IP Model]]
+[[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/OSI Model]]
+[[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP Model]]
 
 ## Networking Devices
 ### Repeater
@@ -71,9 +71,9 @@ Types:
 	1. Active hub
 	2. Passive hub
 ### Bridge
-In the [[02-Data Link Layer]]. A type of repeater with more functionality: it can filter out content by reading MAC addresses from the source
+In the [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/02-Data Link Layer]]. A type of repeater with more functionality: it can filter out content by reading MAC addresses from the source
 ### Switch
-A multi-port bridge, also at the [[02-Data Link Layer]].
+A multi-port bridge, also at the [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/02-Data Link Layer]].
 ### Router
 ### Gateway
 A passage that connects 2 networks together. 
@@ -82,7 +82,7 @@ Bridge and a router combined.
 
 
 ## Cookies
-Basically remembers States from a session. [[HTTP]] is stateless, so we have to find a way to save the states. This happens using Cookies, its a unique **STRING** that is stored on the browser.
+Basically remembers States from a session. [[03-Application-Architecture/Network/Networking-Basics/Protocols/Application-Layer-Protocol0/HTTP]] is stateless, so we have to find a way to save the states. This happens using Cookies, its a unique **STRING** that is stored on the browser.
 	1. The first time the application is visited, it sets a cookie. 
 	2. After that every time a request is send, it also sends a cookie in the header of that request. 
 	3. The #Backend will have a #Database that stores the cookies and their States, and the server will be able to recognize which session it belonged to.

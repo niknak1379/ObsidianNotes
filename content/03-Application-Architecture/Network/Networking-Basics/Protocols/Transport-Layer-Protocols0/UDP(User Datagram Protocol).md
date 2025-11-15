@@ -11,7 +11,7 @@ creation date: 2024-07-20 15:55
 
 << ---------------------------------------------------------------- >>
 
-Data may or may not be delivered compared to [[TCP(Transmission Control Protocol)]], and might even change on the way or even be in order. 
+Data may or may not be delivered compared to [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)]], and might even change on the way or even be in order. 
 
 **Connectionless Protocol** 
 

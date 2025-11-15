@@ -23,9 +23,9 @@ Wireless access points behave like hubs, it doesn't matter if the access point i
 a table of mac addresses and ethernet ports on a switch which allows the switch the remember on what port each device is connected to it. 
 
 ## Networking Layers
-anything physical is layer 1[[01-Physical Layer]],
-Mac Addresses are layer 2([[02-Data Link Layer]])
-and IP addresses are layer 3 ([[03-Network Layer]])
+anything physical is layer 1[[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/01-Physical Layer]],
+Mac Addresses are layer 2([[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/02-Data Link Layer]])
+and IP addresses are layer 3 ([[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/03-Network Layer]])
 
 The switch itself is a layer 2 device
 

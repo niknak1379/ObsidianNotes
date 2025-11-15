@@ -12,10 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Elements]]**
-	- [[dialog element]]
-	- [[Elements]]
-	- [[img element]]
-	- [[Semantic-HTML]]
+- **[[Application-Layer-Protocol0]]**
+	- [[Application-Layer-Protocol0]]
+	- [[Email Protocols]]
+	- [[HTTP]]
 
 %% End Waypoint %%

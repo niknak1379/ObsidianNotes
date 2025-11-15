@@ -12,9 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Application-Layer-Protocol](./Application-Layer-Protocol.md)**
-	- [Application-Layer-Protocol](./Application-Layer-Protocol.md)
-	- [Email Protocols](./Email%20Protocols.md)
-	- [HTTP](./HTTP.md)
+- **[[TCP,IP-Model&Layers]]**
+	- [[01-Physical Layer]]
+	- [[02-Data Link Layer]]
+	- [[03-Network Layer]]
+	- [[04-Transport Layer]]
+	- [[07-Application Layer]]
+	- [[TCP,IP-Model&Layers]]
 
 %% End Waypoint %%

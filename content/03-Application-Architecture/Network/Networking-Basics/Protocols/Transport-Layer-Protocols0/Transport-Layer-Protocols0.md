@@ -12,9 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Transport-Layer-Protocols](./Transport-Layer-Protocols.md)**
-	- [TCP(Transmission Control Protocol)](./TCP(Transmission%20Control%20Protocol).md)
-	- [Transport-Layer-Protocols](./Transport-Layer-Protocols.md)
-	- [UDP(User Datagram Protocol)](./UDP(User%20Datagram%20Protocol).md)
+- **[[Transport-Layer-Protocols0]]**
+	- [[TCP(Transmission Control Protocol)]]
+	- [[Transport-Layer-Protocols0]]
+	- [[UDP(User Datagram Protocol)]]
 
 %% End Waypoint %%

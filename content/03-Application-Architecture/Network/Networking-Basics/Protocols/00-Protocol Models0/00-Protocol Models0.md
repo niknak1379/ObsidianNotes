@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Elements]]**
-	- [[dialog element]]
-	- [[Elements]]
-	- [[img element]]
-	- [[Semantic-HTML]]
+- **[[00-Protocol Models0]]**
+	- [[00-Protocol Models0]]
+	- [[OSI Model]]
+	- [[TCP,IP Model]]
+	- **[[TCP,IP-Model&Layers]]**
 
 %% End Waypoint %%

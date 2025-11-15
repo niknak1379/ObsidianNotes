@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Accessiblity](./Accessiblity.md)**
-	- [Accessibility](./Accessibility.md)
-	- [Accessiblity](./Accessiblity.md)
-	- [Aria](./Aria.md)
-	- **[Untitled](./Untitled/Untitled.md)**
+- **[[Accessiblity]]**
+	- [[Accessibility]]
+	- [[Accessiblity]]
+	- [[Aria]]
+	- **[[Untitled]]**
 
 %% End Waypoint %%

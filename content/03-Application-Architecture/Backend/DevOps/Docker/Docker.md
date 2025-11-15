@@ -39,7 +39,7 @@ basically an appstore for official and unofficial images of services like redis,
 
 u just pull the docker image from the hub and then run it
 
-## [[IP(Internet Protocol)|Port]] Binding
+## [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)|Port]] Binding
 **How do u access a container?**
 you need to know what port the application inside the image is running on so that u can bind it to a custom port that u have with the flag -p. so for example -p 3000:80 (80 being the port the app inside the image defaults to being binded on to 3000)
 

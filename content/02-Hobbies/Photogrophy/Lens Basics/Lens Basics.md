@@ -12,8 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Lens Basics](./Lens%20Basics.md)**
-	- [Lens Basics](./Lens%20Basics.md)
-	- [Lens](./Lens.md)
+- **[[Lens Basics]]**
+	- [[Lens Basics]]
+	- [[Lens]]
 
 %% End Waypoint %%

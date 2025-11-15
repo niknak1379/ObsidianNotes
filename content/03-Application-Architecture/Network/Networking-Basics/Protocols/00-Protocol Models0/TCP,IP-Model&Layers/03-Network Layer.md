@@ -11,7 +11,7 @@ creation date: 2024-07-20 16:25
 
 << ---------------------------------------------------------------- >>
 
-In [[04-Transport Layer]] the data is in segments, but in Network Layer it is in Packets, [[02-Data Link Layer]] will have frames.
+In [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/04-Transport Layer]] the data is in segments, but in Network Layer it is in Packets, [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/02-Data Link Layer]] will have frames.
 
 ## Routers
 **Routers** are at this level. 
@@ -31,7 +31,7 @@ Bellman fore, Dijkstra algorithm are used to find the routers.
 
 
 ## Middle Boxes
-usually in the Network layer but could also be in the [[04-Transport Layer]].
+usually in the Network layer but could also be in the [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/04-Transport Layer]].
 Could be a **Firewall** for example. 
 	which can be used to black out IP packets with certain qualities, such as containing certain flags, etc...
 

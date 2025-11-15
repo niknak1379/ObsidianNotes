@@ -12,9 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[DSA](./DSA.md)**
-	- **[Algorithms](./Algorithms/Algorithms.md)**
-	- **[Data-Structures](./Data-Structures/Data-Structures.md)**
-	- [DSA](./DSA.md)
+- **[[DSA]]**
+	- **[[Algorithms]]**
+	- **[[Data-Structures]]**
+	- [[DSA]]
 
 %% End Waypoint %%

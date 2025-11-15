@@ -11,7 +11,7 @@ modification date: Thursday 18th July 2024 13:45:54
 << ---------------------------------------------------------------- >>
 
 ## IP Address
-Your ISP(internet service provider) gives you a modem. That modem has a global [[IP(Internet Protocol)|IP Address]]. All the devices that are going to be connected to that modem will have the same IP address to the outside world.
+Your ISP(internet service provider) gives you a modem. That modem has a global [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)|IP Address]]. All the devices that are going to be connected to that modem will have the same IP address to the outside world.
 
 The modem will also give IP addresses to the devices connected to it(local IP addresses) using DHCP(dynamic host configuration protocol).
 
@@ -45,7 +45,7 @@ Classes D and E are not accessible and the 127.0.0.0(which is a class A IP addre
 basically an agreed upon standard that sets aside a number of IP addresses as private IP addresses. Meaning that they don't connect you to the internet and are only accessible by local network. These addresses include:
 ![[Pasted image 20250310122910.png]]
 
-[[NAT(Network Access Translator)]] is what translates this local address into the global public address at the [[03-Network Layer]] and [[02-Router|routers]].
+[[NAT(Network Access Translator)]] is what translates this local address into the global public address at the [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/03-Network Layer]] and [[02-Router|routers]].
 
 **We still ran out of IP addresses tho so here comes:**
 #### IPv6:
@@ -61,5 +61,5 @@ Ports 0-1023 are **reserved ports** so you cant put custom applications on them.
 
 ## Packets
 Header is 20 bytes.
-it includes IP version, length, identification, flags([[TCP(Transmission Control Protocol)|TCP]] flags), TTL(time to live).
+it includes IP version, length, identification, flags([[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)|TCP]] flags), TTL(time to live).
 TTL: basically if a packet after a certain period of time hasn't reached its destination, it will be dropped from the network.

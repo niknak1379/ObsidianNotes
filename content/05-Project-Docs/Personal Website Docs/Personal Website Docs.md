@@ -12,9 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Personal Website Docs](./Personal%20Website%20Docs.md)**
-	- [index.md](./index.md.md)
-	- [Personal Website Docs](./Personal%20Website%20Docs.md)
-	- **[V-2.0](./V-2.0/V-2.0.md)**
+- **[[Personal Website Docs]]**
+	- [[index.md]]
+	- [[Personal Website Docs]]
+	- **[[V-2.0]]**
 
 %% End Waypoint %%

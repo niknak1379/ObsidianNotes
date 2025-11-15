@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[PASA APP Research](./PASA%20APP%20Research.md)**
-	- [Challenges](./Challenges.md)
-	- [In View Diagram](./In%20View%20Diagram.md)
-	- [PASA APP Research](./PASA%20APP%20Research.md)
-	- [WEB APP](./WEB%20APP.md)
+- **[[PASA APP Research]]**
+	- [[Challenges]]
+	- [[In View Diagram]]
+	- [[PASA APP Research]]
+	- [[WEB APP]]
 
 %% End Waypoint %%

@@ -12,14 +12,14 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[01-Frameworks](./01-Frameworks.md)**
-	- [01-Frameworks](./01-Frameworks.md)
-	- **[React](./React/React.md)**
-		- [Data Fetching](./React/Data%20Fetching.md)
-		- **[Hooks](./React/Hooks/Hooks.md)**
-		- [React Rendering Behavior](./React/React%20Rendering%20Behavior.md)
-		- [React Router](./React/React%20Router.md)
-		- [React State Management](./React/React%20State%20Management.md)
-		- [React](./React/React.md)
+- **[[01-Frameworks]]**
+	- [[01-Frameworks]]
+	- **[[React]]**
+		- [[Data Fetching]]
+		- **[[Hooks]]**
+		- [[React Rendering Behavior]]
+		- [[React Router]]
+		- [[React State Management]]
+		- [[React]]
 
 %% End Waypoint %%

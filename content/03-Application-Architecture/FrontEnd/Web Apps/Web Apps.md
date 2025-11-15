@@ -12,12 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Web Apps](./Web%20Apps.md)**
-	- [Client Side Routing](./Client%20Side%20Routing.md)
-	- **[Rendering Patterns](./Rendering%20Patterns/Rendering%20Patterns.md)**
-		- [Rendering Patterns](./Rendering%20Patterns/Rendering%20Patterns.md)
-		- [SSR](./Rendering%20Patterns/SSR.md)
-	- [SPA](./SPA.md)
-	- [Web Apps](./Web%20Apps.md)
+- **[[Web Apps]]**
+	- [[Client Side Routing]]
+	- **[[Rendering Patterns]]**
+		- [[Rendering Patterns]]
+		- [[SSR]]
+	- [[SPA]]
+	- [[Web Apps]]
 
 %% End Waypoint %%

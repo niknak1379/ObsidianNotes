@@ -12,12 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Obsidian](./Obsidian.md)**
-	- **[Excalidraw](./Excalidraw/Excalidraw.md)**
-	- [Obsidian Tutorial](./Obsidian%20Tutorial.md)
-	- [Obsidian](./Obsidian.md)
+- **[[Obsidian]]**
+	- **[[Excalidraw]]**
+	- [[Obsidian Tutorial]]
+	- [[Obsidian]]
 	- **Templates**
-		- [Map Of Content](./Templates/Map%20Of%20Content.md)
-		- [template](./Templates/template.md)
+		- [[Map Of Content]]
+		- [[template]]
 
 %% End Waypoint %%

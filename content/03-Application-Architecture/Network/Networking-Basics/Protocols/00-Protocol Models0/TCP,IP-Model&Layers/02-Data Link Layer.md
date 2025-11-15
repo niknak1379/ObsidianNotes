@@ -15,7 +15,7 @@ So its not just based on the device but the physical components in the device(ur
 It works very closely with the Physical Layer.
 
 ## How it works
-Anytime theres a new request to the router it goes to the DHCP so that it assigns a new [[IP(Internet Protocol)|IP address]] to the device.
+Anytime theres a new request to the router it goes to the DHCP so that it assigns a new [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)|IP address]] to the device.
 
 Many devices are connected together. Using LAN
 Over LAN they connect to each other using the *data link layer address*.

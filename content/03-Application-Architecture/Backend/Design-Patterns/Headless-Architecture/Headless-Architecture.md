@@ -12,11 +12,11 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Headless-Architecture](./Headless-Architecture.md)**
-	- [Backend-For-Frontend(BFF)](./Backend-For-Frontend(BFF).md)
-	- [Headless Architecture](./Headless%20Architecture.md)
-	- [Headless-Architecture](./Headless-Architecture.md)
-	- [MACH-Architecture](./MACH-Architecture.md)
-	- [Webhook](./Webhook.md)
+- **[[Headless-Architecture]]**
+	- [[Backend-For-Frontend(BFF)]]
+	- [[Headless Architecture]]
+	- [[Headless-Architecture]]
+	- [[MACH-Architecture]]
+	- [[Webhook]]
 
 %% End Waypoint %%

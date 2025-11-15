@@ -12,8 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Data-Structures](./Data-Structures.md)**
-	- [Data-Structures](./Data-Structures.md)
-	- [HashMaps](./HashMaps.md)
+- **[[Data-Structures]]**
+	- [[Data-Structures]]
+	- [[HashMaps]]
 
 %% End Waypoint %%

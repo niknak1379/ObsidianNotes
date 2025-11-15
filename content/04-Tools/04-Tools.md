@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:52
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[04-Tools](./04-Tools.md)**
-	- [04-Tools](./04-Tools.md)
-	- **[Github](./Github/Github.md)**
-	- **[Leetcode](./Leetcode/Leetcode.md)**
-	- **[Linux](./Linux/Linux.md)**
+- **[[04-Tools]]**
+	- [[04-Tools]]
+	- **[[Github]]**
+	- **[[Leetcode]]**
+	- **[[Linux]]**
 
 %% End Waypoint %%

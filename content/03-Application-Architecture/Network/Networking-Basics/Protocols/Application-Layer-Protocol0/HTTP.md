@@ -10,7 +10,7 @@ modification date: NaN
 
 << ---------------------------------------------------------------- >>
 
-Application Layer protocol, but also uses [[04-Transport Layer]] protocols such as TCP. HTTP is a stateless protocol so it has to use TCP to make sure no data was lost. 
+Application Layer protocol, but also uses [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/04-Transport Layer]] protocols such as TCP. HTTP is a stateless protocol so it has to use TCP to make sure no data was lost. 
 
 All the GET, POST, PUT, DELETE methods and stuff. 
 

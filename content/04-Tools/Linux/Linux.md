@@ -12,9 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Linux](./Linux.md)**
-	- [Cron Jobs](./Cron%20Jobs.md)
-	- [index.md](./index.md.md)
-	- [Linux](./Linux.md)
+- **[[Linux]]**
+	- [[Cron Jobs]]
+	- [[index.md]]
+	- [[Linux]]
 
 %% End Waypoint %%

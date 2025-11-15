@@ -20,7 +20,7 @@ Distributes multiple network requests along different web servers to ensure that
 Uses different Algorithms
 	like round robin, Weighted RR, Least Connections, Least Response time, Least Bandwidth
 
-theres layer [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models/TCP,IP-Model&Layers/03-Network Layer|03-Network Layer]](TCP) load balancers and layer [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models/TCP,IP-Model&Layers/07-Application Layer|07-Application Layer]] load balancers
+theres layer [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/03-Network Layer|03-Network Layer]](TCP) load balancers and layer [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/07-Application Layer|07-Application Layer]] load balancers
 
 ## Features
 1. auto [[Scaling]].

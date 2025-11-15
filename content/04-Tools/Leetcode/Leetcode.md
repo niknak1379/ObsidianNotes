@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Leetcode](./Leetcode.md)**
-	- **[DSA](./DSA/DSA.md)**
-	- [Leetcode Strategies](./Leetcode%20Strategies.md)
-	- [Leetcode](./Leetcode.md)
-	- **[Questions](./Questions/Questions.md)**
+- **[[Leetcode]]**
+	- **[[DSA]]**
+	- [[Leetcode Strategies]]
+	- [[Leetcode]]
+	- **[[Questions]]**
 
 %% End Waypoint %%

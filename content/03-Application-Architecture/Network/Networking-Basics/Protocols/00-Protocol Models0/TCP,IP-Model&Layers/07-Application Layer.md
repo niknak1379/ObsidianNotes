@@ -31,7 +31,7 @@ Ports: So each process is going to be listening on its own port(like each instan
 
 
 ## DNS(Domain Name System)
-When u hit a url, DNS is used to find the [[IP(Internet Protocol)|IP Address]] of that server.
+When u hit a url, DNS is used to find the [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)|IP Address]] of that server.
 
 Basically a [[03-Application-Architecture/Backend/Database/Database]] of all the urls and IP Addresses you use to translate the URL.
 

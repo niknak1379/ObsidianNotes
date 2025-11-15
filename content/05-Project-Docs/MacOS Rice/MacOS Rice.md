@@ -12,8 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[MacOS Rice](./MacOS%20Rice.md)**
-	- [MacOS Rice](./MacOS%20Rice.md)
-	- [Services Running](./Services%20Running.md)
+- **[[MacOS Rice]]**
+	- [[MacOS Rice]]
+	- [[Services Running]]
 
 %% End Waypoint %%

@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-11-14 19:04
 ---
 
 
@@ -12,8 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Network-Layer-Protocols](./Network-Layer-Protocols.md)**
-	- [IP(Internet Protocol)](./IP(Internet%20Protocol).md)
-	- [Network-Layer-Protocols](./Network-Layer-Protocols.md)
+- **[[01-Life]]**
+	- [[01-Life]]
+	- **[[Procrastination Skillsets]]**
 
 %% End Waypoint %%

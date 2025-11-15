@@ -12,7 +12,7 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Linux Rice](./Linux%20Rice.md)**
-	- [Linux Rice](./Linux%20Rice.md)
+- **[[Linux Rice]]**
+	- [[Linux Rice]]
 
 %% End Waypoint %%

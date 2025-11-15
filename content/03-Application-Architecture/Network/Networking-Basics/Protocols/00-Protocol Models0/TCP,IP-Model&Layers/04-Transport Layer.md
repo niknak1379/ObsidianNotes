@@ -11,11 +11,11 @@ modification date: NaN
 
 << ---------------------------------------------------------------- >>
 
-Transportation of the data from the Network to the applications is done in the transport layer, the transportation from the network between multiple devices is done in the [[03-Network Layer]].
+Transportation of the data from the Network to the applications is done in the transport layer, the transportation from the network between multiple devices is done in the [[03-Application-Architecture/Network/Networking-Basics/Protocols/00-Protocol Models0/TCP,IP-Model&Layers/03-Network Layer]].
 Basically the layer that decides which application on the device to send the data to. 
 
 Located on the actual device
-[[TCP(Transmission Control Protocol)]], [[UDP(User Datagram Protocol)]] Protocols. 
+[[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)]], [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/UDP(User Datagram Protocol)]] Protocols. 
 
 ## Multiplexing
 Basically bundling up a lot of data intended for different sources and applications into one bundle. (different types of data like text for the browser, file for whatsApp etc... all bundled into one medium)
@@ -29,7 +29,7 @@ https://stackoverflow.com/questions/152457/what-is-the-difference-between-a-port
 Socket is basically the combination of an IP address and a port. 
 ## Features
 The transport layer will attach the socket port numbers and thats how it knows where to send the data. 
-Also takes care of congestion control. So theres congestion control algorithms built into [[TCP(Transmission Control Protocol)]]. 
+Also takes care of congestion control. So theres congestion control algorithms built into [[03-Application-Architecture/Network/Networking-Basics/Protocols/Transport-Layer-Protocols0/TCP(Transmission Control Protocol)]]. 
 
 
 

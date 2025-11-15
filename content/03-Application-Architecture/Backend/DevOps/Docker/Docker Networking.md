@@ -23,7 +23,7 @@ Different types of networking Docker provides:
 ## Default Bridge
 if you don't specify which type of network to use when u create a container, this is the network interface docker uses.
 Name of the bride is DOCKER0 and it connects the home network to docker?
-Creates a virtual ethernet switch for each container to the home network that the computer is connected to. Basically giving each one a separate IP address using [[IP(Internet Protocol)|DHTP]]
+Creates a virtual ethernet switch for each container to the home network that the computer is connected to. Basically giving each one a separate IP address using [[03-Application-Architecture/Network/Networking-Basics/Protocols/Network-Layer-Protocols0/IP(Internet Protocol)|DHTP]]
 
 ## USER Defined Bridge
 `docker network create name`

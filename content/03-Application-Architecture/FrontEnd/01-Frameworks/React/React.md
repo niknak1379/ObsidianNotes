@@ -7,7 +7,7 @@
 		2. diffs the vdom with prev version to see what is different
 		3. reconciles the dom
 
-[[Hooks]]:
+[[03-Application-Architecture/FrontEnd/01-Frameworks/React/Hooks/Hooks]]:
 	1. State Hooks: `useState(); useReducer()`
 	2. context Hooks: `useContext()`
 	3. ref Hooks: `useRef()`

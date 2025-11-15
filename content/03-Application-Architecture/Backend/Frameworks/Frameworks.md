@@ -12,10 +12,10 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Frameworks](./Frameworks.md)**
-	- **[ExpressJS](./ExpressJS/ExpressJS.md)**
-		- [ExpressJS](./ExpressJS/ExpressJS.md)
-		- [Routing](./ExpressJS/Routing.md)
-	- [Frameworks](./Frameworks.md)
+- **[[Frameworks]]**
+	- **[[ExpressJS]]**
+		- [[ExpressJS]]
+		- [[Routing]]
+	- [[Frameworks]]
 
 %% End Waypoint %%

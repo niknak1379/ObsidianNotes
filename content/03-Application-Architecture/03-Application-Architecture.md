@@ -12,10 +12,12 @@ creation date: 2025-11-14 18:28
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[03-Application-Architecture](./03-Application-Architecture.md)**
-	- [03-Application-Architecture](./03-Application-Architecture.md)
-	- **[Backend](./Backend/Backend.md)**
-	- **[FrontEnd](./FrontEnd/FrontEnd.md)**
-	- **[Network](./Network/Network.md)**
+- **[[03-Application-Architecture]]**
+	- [[03-Application-Architecture]]
+	- **[[Backend]]**
+	- **[[FrontEnd]]**
+	- **[[Network]]**
 
 %% End Waypoint %%
+
+

@@ -12,15 +12,15 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[DevOps](./DevOps.md)**
-	- [Containers](./Containers.md)
-	- [DevOps](./DevOps.md)
-	- **[Docker](./Docker/Docker.md)**
-		- [Docker Networking](./Docker/Docker%20Networking.md)
-		- [Docker](./Docker/Docker.md)
-	- [Kubernetes](./Kubernetes.md)
-	- [Load Balancer](./Load%20Balancer.md)
-	- [Reverse-Proxy](./Reverse-Proxy.md)
-	- [Scaling](./Scaling.md)
+- **[[DevOps]]**
+	- [[Containers]]
+	- [[DevOps]]
+	- **[[Docker]]**
+		- [[Docker Networking]]
+		- [[Docker]]
+	- [[Kubernetes]]
+	- [[Load Balancer]]
+	- [[Reverse-Proxy]]
+	- [[Scaling]]
 
 %% End Waypoint %%

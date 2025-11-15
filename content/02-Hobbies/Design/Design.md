@@ -12,8 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Design](./Design.md)**
-	- [Basic Design principles](./Basic%20Design%20principles.md)
-	- [Design](./Design.md)
+- **[[Design]]**
+	- [[Basic Design principles]]
+	- [[Design]]
 
 %% End Waypoint %%

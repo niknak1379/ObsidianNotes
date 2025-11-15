@@ -12,7 +12,7 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Assets](./Assets.md)**
-	- [Assets](./Assets.md)
+- **[[Assets]]**
+	- [[Assets]]
 
 %% End Waypoint %%

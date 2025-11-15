@@ -12,12 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Design-Patterns](./Design-Patterns.md)**
-	- [Design-Patterns](./Design-Patterns.md)
-	- [General Backend Designs](./General%20Backend%20Designs.md)
-	- **[Headless-Architecture](./Headless-Architecture/Headless-Architecture.md)**
-	- **[Microservices](./Microservices/Microservices.md)**
-	- **[System-Design-Basic-Concepts](./System-Design-Basic-Concepts/System-Design-Basic-Concepts.md)**
-	- **[System-Design-Examples](./System-Design-Examples/System-Design-Examples.md)**
+- **[[Design-Patterns]]**
+	- [[Design-Patterns]]
+	- [[General Backend Designs]]
+	- **[[Headless-Architecture]]**
+	- **[[Microservices]]**
+	- **[[System-Design-Basic-Concepts]]**
+	- **[[System-Design-Examples]]**
 
 %% End Waypoint %%

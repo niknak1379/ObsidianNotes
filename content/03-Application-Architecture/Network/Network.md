@@ -12,12 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[Network](./Network.md)**
-	- **[AWS-Basics](./AWS-Basics/AWS-Basics.md)**
-	- **[CCNA](./CCNA/CCNA.md)**
-	- [index.md](./index.md.md)
-	- [Network](./Network.md)
-	- **[Networking-Basics](./Networking-Basics/Networking-Basics.md)**
-	- [WebApp Network Protocols](./WebApp%20Network%20Protocols.md)
+- **[[Network]]**
+	- **[[AWS-Basics]]**
+	- **[[CCNA]]**
+	- [[index.md]]
+	- [[Network]]
+	- **[[Networking-Basics]]**
+	- [[WebApp Network Protocols]]
 
 %% End Waypoint %%
