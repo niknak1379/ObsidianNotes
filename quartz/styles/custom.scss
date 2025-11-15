@@ -44,7 +44,7 @@ div.left.sidebar > * {
   margin: 4px;
   border: 4px var(--darkgray) groove;
   background-color: var(--lightest);
-  flex-grow: 1;
+  //flex-grow: 1;
 }
 div.center > *,
 div.right.sidebar > * {
@@ -54,9 +54,9 @@ div.right.sidebar > * {
 div.left.sidebar {
   padding: 4px 8px 4px 8px !important;
   box-shadow: inset 0 0 20px var(--light);
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 1;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
+  //flex-grow: 1;
 }
 div.spacer.mobile-only {
   border: none !important;
@@ -78,7 +78,7 @@ div.darkmode {
   height: 20px;
   min-width: 20px;
   //margin-right: 8px !important;
-  flex-grow: 0 !important;
+  //flex-grow: 0 !important;
 }
 
 #search-space > * {
