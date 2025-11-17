@@ -17,6 +17,7 @@ creation date: 2025-11-14 18:56
 	- [[01-S3]]
 	- [[02-API]]
 	- [[03-VPC]]
+	- [[04-IAM]]
 	- [[AWS SAA-C03(Solutions Architect Associate)]]
 
 %% End Waypoint %%

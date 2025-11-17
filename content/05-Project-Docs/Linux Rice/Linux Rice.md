@@ -13,6 +13,7 @@ creation date: 2025-11-14 18:56
 
 %% Begin Waypoint %%
 - **[[Linux Rice]]**
+	- [[Arch and Linux Services and Commands]]
 	- [[Linux Rice]]
 
 %% End Waypoint %%

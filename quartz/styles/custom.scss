@@ -16,14 +16,14 @@
   border: var(--darkgray) 4px groove;
   //border-right: var(--secondary) 2px solid;
   background-color: var(--lighter);
-  margin-top: 8px;
-  margin-bottom: 8px;
-  gap: 8px;
-  //padding: 8px;
+  margin: 8px;
+  // gap: 8px;
+  padding: 0 !important;
 }
 div.left.sidebar,
 div.center,
-div.right.sidebar {
+div.right.sidebar,
+footer {
   margin: 8px !important;
   border: 4px var(--gray) groove;
   //border-right: ridge !important;
@@ -40,7 +40,15 @@ div.right.sidebar > * {
   border: 4px var(--darkgray) groove;
   background-color: var(--lightest);
 }
-div.left.sidebar > * {
+div.center hr,
+div.center div.page-footer {
+  margin: 0px !important;
+  border: none;
+  padding: 0 !important;
+}
+div.left.sidebar > *,
+button.darkmode,
+button.readermode {
   margin: 4px;
   border: 4px var(--darkgray) groove;
   background-color: var(--lightest);
@@ -71,12 +79,13 @@ div.left.sidebar > h1 {
   //margin-left: 8px;
   //border-bottom-width: 8px;
 }
-div.darkmode {
+button.darkmode,
+button.readermode {
   border-right-width: 8px !important;
   border-bottom-width: 8px !important;
   padding: 2px !important;
-  height: 20px;
-  min-width: 20px;
+  height: 35px;
+  min-width: 35px;
   //margin-right: 8px !important;
   //flex-grow: 0 !important;
 }
@@ -104,3 +113,7 @@ div.center {
     }
   }
 }
+/*
+div.explorer.mobile-only {
+  display: none;
+} */
