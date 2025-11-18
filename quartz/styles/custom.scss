@@ -66,6 +66,12 @@ div.left.sidebar {
   //justify-content: space-between;
   //flex-grow: 1;
 }
+div.right.sidebar{
+  flex-wrap: wrap;
+  & div.backlinks{
+    min-width: 100px;
+  }
+}
 div.spacer.mobile-only {
   border: none !important;
   display: none;
@@ -113,7 +119,7 @@ div.center {
     }
   }
 }
-/*
+
 div.explorer.mobile-only {
   display: none;
-} */
+}
