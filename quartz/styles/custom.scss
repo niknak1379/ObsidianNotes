@@ -123,15 +123,17 @@ div.center {
 div.explorer.mobile-only {
   display: none;
 }
-div.explorer:not(.collapsed){
-  & div.explorer-content{
-    height: 120vh !important; //cant really mess up w
-    //width: 100%;
-    max-height: 120vh !important;
-    left: -20px !important;
-    top: -30px;
-    padding-left: 8px;
-    padding-top: 6rem !important;
-    padding-bottom: 8rem !important;
+@media (max-width: 900px) { 
+  div.explorer:not(.collapsed){
+    & div.explorer-content{
+      height: 120vh !important; //cant really mess up w
+      //width: 100%;
+      max-height: 120vh !important;
+      left: -20px !important;
+      top: -30px;
+      padding-left: 8px;
+      padding-top: 6rem !important;
+      padding-bottom: 8rem !important;
+    }
   }
 }
