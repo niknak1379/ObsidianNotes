@@ -72,6 +72,9 @@ div.right.sidebar{
     min-width: 100px;
   }
 }
+div.right.sidebar:empty{
+  border: none;
+}
 div.spacer.mobile-only {
   border: none !important;
   display: none;
