@@ -13,9 +13,9 @@ creation date: 2025-11-14 18:56
 
 %% Begin Waypoint %%
 - **[[Networking-Basics]]**
+	- [[Basics]]
 	- [[CDNs]]
 	- [[NAT(Network Access Translator)]]
-	- [[Networking Basics]]
 	- [[Networking-Basics]]
 	- **[[Protocols]]**
 	- [[Video Streaming]]

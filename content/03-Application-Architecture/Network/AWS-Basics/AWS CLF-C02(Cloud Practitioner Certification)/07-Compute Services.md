@@ -10,6 +10,7 @@ creation date: 2025-10-28 20:55
 # Computing
 
 << ---------------------------------------------------------------- >>
+## Main Services
 Ec2:
 Backbone of AWS, basically most AWS services also use EC2 underneath. 
 
