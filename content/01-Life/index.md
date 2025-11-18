@@ -1,19 +1,14 @@
 ---
-creation date: 2025-11-14 19:04
+creation date: 2025-11-17 20:54
+title: 01-Life
 ---
-
+#01-Life
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Map Of Content
+# 
 
 << ---------------------------------------------------------------- >>
 
-%% Begin Waypoint %%
-- **[[01-Life]]**
-	- [[01-Life]]
-	- **[[Procrastination Skillsets]]**
-
-%% End Waypoint %%

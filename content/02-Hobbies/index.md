@@ -1,21 +1,14 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-11-17 20:56
+title: 02-Hobbies
 ---
-
+#02-Hobbies
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Map Of Content
+# uu jdjd
 
 << ---------------------------------------------------------------- >>
 
-%% Begin Waypoint %%
-- **[[02-Hobbies]]**
-	- [[02-Hobbies]]
-	- **[[Design]]**
-	- [[index]]
-	- **[[Photogrophy]]**
-
-%% End Waypoint %%
