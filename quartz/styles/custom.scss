@@ -130,8 +130,9 @@ div.explorer.mobile-only {
   div.explorer:not(.collapsed){
     & div.explorer-content{
       height: 120vh !important; //cant really mess up w
-      //width: 100%;
+      width: 120vw !important;
       max-height: 120vh !important;
+      max-width: 120vw !important;
       left: -20px !important;
       top: -30px;
       padding-left: 8px;
