@@ -5,3 +5,9 @@ Hi!! This is my Obsidian Vault that is being hosted on Github Pages, and is buil
 See the [documentation](https://quartz.jzhao.xyz) for how to set up ur own Quartz website!
 
 PS. havent set up the excalidraw plug in so the drawings are not visible on the notes.nikanostovan.dev website.
+
+%% Waypoint %%
+
+
+
+
