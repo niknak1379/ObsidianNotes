@@ -8,8 +8,6 @@ kanban-plugin: board
 
 **Complete**
 - [x] fixed css for webkit safari
-- [x] update small stuff on v1.0 and v2.0 on the main page
-- [x] Projects to add: samans django bs
 - [x] update vercel to the new repository
 - [x] pictures to add: home lab
 	(take actual picture of the PIs)
@@ -51,22 +49,19 @@ kanban-plugin: board
 ## in-progress
 
 - [ ] broke authentication when moving to AWS fix that
+- [ ] update small stuff on v1.0 and v2.0 on the main page
 
 
 ## Not Started
 
+- [ ] caching backend(redis?)
+- [ ] Projects to add: samans django bs
 - [ ] write testing for backend?
 - [ ] forgot the freaking insert elastiserach fix, so have to update it after inserting manually for now
-- [ ] added CDN client side, but its janky, have to do change it server side, make the fix when fixing the elastisearch update as well
-- [ ] resolution on S3 images is wayyyy too high, maybe also add a backend service that converts the photos to avif from default png
-	https://stackoverflow.com/questions/69566052/how-to-convert-jpg-images-to-avif-with-python
-	https://stackoverflow.com/questions/10607468/how-to-reduce-the-image-file-size-using-pil
-- [ ] also add sorting, the project view is weird
 
 
 ## Archive
 
-- [ ] caching backend(redis?)
 - [ ] caching for fetch requests??
 
 

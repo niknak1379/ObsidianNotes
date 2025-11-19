@@ -1,24 +1,13 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-11-14 14:47
 ---
-
+#Untitled.md
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Map Of Content
+# Untitled
 
 << ---------------------------------------------------------------- >>
-
-%% Begin Waypoint %%
-- **[[Github]]**
-	- [[Github-Sync]]
-	- [[Github]]
-	- [[Repo SSH-omarchy-safeBackup-0001]]
-	- [[Repo SSH]]
-
-%% End Waypoint %%
-
-
 

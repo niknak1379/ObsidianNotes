@@ -21,7 +21,7 @@ Basically, APIs, ur [[Microservice|micro-services]], etc...
 
 ### Communication Layer
 optimizing and translation
-It Orchestrates APIs, API orchestration frameworks, [[graphQL]], [[Event Driven Architecture(EDA)]] providers, ADNs, [[Backend-For-Frontend(BFF)]]s
+It Orchestrates APIs, API orchestration frameworks, [[03-Application-Architecture/Network/graphQL]], [[Event Driven Architecture(EDA)]] providers, ADNs, [[Backend-For-Frontend(BFF)]]s
 
 ### Business Administration Layer
 

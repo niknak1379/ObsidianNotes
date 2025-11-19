@@ -1,24 +1,17 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-11-18 19:53
 ---
-
+#04-Tools #Linux
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Map Of Content
+# Startup command basically
 
 << ---------------------------------------------------------------- >>
+creates sysmlinks between startup services?, basically runs the scripts one after another?? is my understanding so far
 
-%% Begin Waypoint %%
-- **[[Github]]**
-	- [[Github-Sync]]
-	- [[Github]]
-	- [[Repo SSH-omarchy-safeBackup-0001]]
-	- [[Repo SSH]]
-
-%% End Waypoint %%
 
 
 

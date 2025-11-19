@@ -29,3 +29,7 @@ Havent done the config part that lets you join two windows in a tree like in aer
 ## Limine bootloader to show windows
 I already did this, but on a upgrade it installed another config, might have to change it again to show windows. 
 
+## Bluetooth
+`bt-device -c 40:EF:4C:C9:BA:5C`
+
+

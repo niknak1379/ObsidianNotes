@@ -11,7 +11,7 @@
 		Basically server is able to broadcast the message out to the caller whenever it receives it without the user having to make a GET request.
 		This is called [[Full Duplex/Bidirectional Communication]]: server can initiate setting requests
 
-[[graphQL]]:
+[[03-Application-Architecture/Network/graphQL]]:
 	parts:
 		1. Schema: blueprint for all the data that the client can query for
 		2. query: request for data that follows the schema structure

@@ -42,13 +42,12 @@ Data is delivered to S3
 
 ## AWS Backup
 fully managed back serivce for EC2, EBS, RDS, DynamoDB, EFS, Storage Gateway, you create the backup plans
-![[Obsidian/Excalidraw/Pasted image 20251118142504.png]]
 
 ## CloudEndure Disaster Recovery
 Continously replicates youre machines into a low-cost staging area for fast and reliable recovery in case of IT data center failure
 
 ## Amazon FSx
-a feature rich and highly performant file system. That can be used for windows (SMB) or linux(Lustre)
+a feature reach and highly performant file system. That can be used for windows (SMB) or linux(Lustre)
 FSx for window file server: uses SMB and allows you to mount FSx to Windows servers
 FSx for Lustre: uses linux's Lustre file system and allows you to mount FSx to linux servers…
 

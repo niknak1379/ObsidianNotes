@@ -6,7 +6,7 @@ See the [documentation](https://quartz.jzhao.xyz) for how to set up ur own Quart
 
 PS. havent set up the excalidraw plug in so the drawings are not visible on the notes.nikanostovan.dev website.
 
-%% Waypoint %%
+%% Error: Cannot create a waypoint in a note that's not the folder note. For more information, check the instructions [here](https://github.com/IdreesInc/Waypoint) %%
 
 
 

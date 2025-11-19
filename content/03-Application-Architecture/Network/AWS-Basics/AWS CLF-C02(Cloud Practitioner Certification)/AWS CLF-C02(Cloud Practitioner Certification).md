@@ -21,6 +21,7 @@ creation date: 2025-11-14 18:56
 	- [[05-Management and Development Tools]]
 	- [[06-Shared Responsibility Model]]
 	- [[07-Compute Services]]
+	- [[08-Storage Services-omarchy-safeBackup-0001]]
 	- [[08-Storage Services]]
 	- [[09-Database Services]]
 	- [[10-Networking Services]]

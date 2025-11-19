@@ -16,5 +16,7 @@ creation date: 2025-11-14 18:56
 	- [[Cron Jobs]]
 	- [[index.md]]
 	- [[Linux]]
+	- [[Systemctl-Nikan’s MacBook Air]]
+	- [[Systemctl]]
 
 %% End Waypoint %%

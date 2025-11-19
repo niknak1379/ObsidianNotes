@@ -15,6 +15,7 @@ creation date: 2025-11-14 18:56
 - **[[Network]]**
 	- **[[AWS-Basics]]**
 	- **[[CCNA]]**
+	- [[graphQL]]
 	- [[index.md]]
 	- [[Network]]
 	- **[[Networking-Basics]]**

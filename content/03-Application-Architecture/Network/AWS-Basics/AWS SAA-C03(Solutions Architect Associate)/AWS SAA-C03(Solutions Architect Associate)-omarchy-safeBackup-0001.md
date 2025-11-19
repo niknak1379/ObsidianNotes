@@ -12,13 +12,13 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Github]]**
-	- [[Github-Sync]]
-	- [[Github]]
-	- [[Repo SSH-omarchy-safeBackup-0001]]
-	- [[Repo SSH]]
+- **[[AWS SAA-C03(Solutions Architect Associate)]]**
+	- [[00-Intro&#x3f;]]
+	- [[01-S3]]
+	- [[02-API]]
+	- [[03-VPC]]
+	- [[04-IAM]]
+	- [[05-EC2]]
+	- [[AWS SAA-C03(Solutions Architect Associate)]]
 
 %% End Waypoint %%
-
-
-

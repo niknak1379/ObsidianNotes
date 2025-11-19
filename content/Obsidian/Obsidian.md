@@ -14,6 +14,7 @@ creation date: 2025-11-14 18:56
 %% Begin Waypoint %%
 - **[[Obsidian]]**
 	- **[[Excalidraw]]**
+	- [[Obsidian Tutorial-omarchy-safeBackup-0001]]
 	- [[Obsidian Tutorial]]
 	- [[Obsidian]]
 	- **Templates**

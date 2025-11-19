@@ -13,7 +13,7 @@ creation date: 2025-11-14 18:56
 
 %% Begin Waypoint %%
 - **[[System-Design-Basic-Concepts]]**
-	- [[00-Intro]]
+	- [[03-Application-Architecture/Backend/Design-Patterns/System-Design-Basic-Concepts/00-Intro]]
 	- [[01-Database Indexes]]
 	- [[02-ACID Transactinos]]
 	- [[03-Column Oriented Storage]]
