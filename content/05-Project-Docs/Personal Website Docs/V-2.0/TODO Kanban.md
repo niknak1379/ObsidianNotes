@@ -62,6 +62,7 @@ kanban-plugin: board
 	https://stackoverflow.com/questions/69566052/how-to-convert-jpg-images-to-avif-with-python
 	https://stackoverflow.com/questions/10607468/how-to-reduce-the-image-file-size-using-pil
 - [ ] also add sorting, the project view is weird
+- [ ] crashed when edited title
 
 
 ## Archive
