@@ -7,7 +7,7 @@ creation date: 2025-11-19 14:26
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# 
+# Miscellaneous
 
 << ---------------------------------------------------------------- >>
 
@@ -34,4 +34,17 @@ Modern version of this service is called **AWS MeidaConvert** this is a legacy s
 same thing, converts videos from one format to another for video on demand, or stream video in addition to applying lots of additional processing options. 
 
 can do video correction (color, sample range, timecode, rotation), input filtering(sharpening, adding texture), cropping, video overlay, signaling, black barring etc...
+
+
+## AWS Service Catalog
+enables organizations to create and manage catalogs of products that are approved for use on AWS to achieve consistent governance and meet compliance requirements. 
+
+The AWS service catalog is an alternative to granting direct access to AWS resources via the AWS console. 
+
+Its pretty much all CloudFormation Stacks underneath
+
+The product is just CFN template that defines the resources that will be launched. 
+
+
+
 

@@ -1,10 +1,10 @@
 [[REST]]: 
 	message app model:
 		one user sends a POST message to the server with the user-id and the message in the body, and the server stores it in its database
-	[[Short Pulling]]: make an initial GET message at the initialization to the server asking, for new messages, and then set a timer that periodically sends that message to update.
+	[[Short Polling]]: make an initial GET message at the initialization to the server asking, for new messages, and then set a timer that periodically sends that message to update.
 	**Problems**: if you have too many users and/or set the timer too low to update frequently causes lots of stress on the server and the database since u have to query it every time.
-	[[Long Pulling]]: instead of calling repeatedly, the server will hold on to the request, it will delay responding and only respond when a new message is received.
-	It is different than [[03-Application-Architecture/Network/Networking-Basics/Protocols/Application-Layer-Protocol0/HTTP]], HTTP is an actual protocol while REST is a conceptual way to organize [[03-Application-Architecture/Backend/API/API]]s.
+	[[Long Polling]]: instead of calling repeatedly, the server will hold on to the request, it will delay responding and only respond when a new message is received.
+	It is different than [[03-Application-Architecture/Network/Networking-Basics/Protocols/Application-Layer-Protocol0/HTTP|HTTP]], HTTP is an actual protocol while REST is a conceptual way to organize [[03-Application-Architecture/Backend/API/API|API]]s.
 
 [[Web-sockets]]: 
 	on load all users establish a connection to the server, saying they are ready to receive data. 

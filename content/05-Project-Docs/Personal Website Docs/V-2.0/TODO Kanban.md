@@ -50,25 +50,29 @@ kanban-plugin: board
 
 ## in-progress
 
+- [ ] resolution on S3 images is wayyyy too high, maybe also add a backend service that converts the photos to avif from default png
+	https://stackoverflow.com/questions/69566052/how-to-convert-jpg-images-to-avif-with-python
+	https://stackoverflow.com/questions/10607468/how-to-reduce-the-image-file-size-using-pil
 - [ ] broke authentication when moving to AWS fix that
 
 
 ## Not Started
 
-- [ ] write testing for backend?
+- [ ] yeah i dont think i have to send and recieve the binary
 - [ ] forgot the freaking insert elastiserach fix, so have to update it after inserting manually for now
+- [ ] also add sorting, pagination the project view is weird,
+- [ ] cicd for automatic docker deployment and restart on the EC2, and logs
 - [ ] added CDN client side, but its janky, have to do change it server side, make the fix when fixing the elastisearch update as well
-- [ ] resolution on S3 images is wayyyy too high, maybe also add a backend service that converts the photos to avif from default png
-	https://stackoverflow.com/questions/69566052/how-to-convert-jpg-images-to-avif-with-python
-	https://stackoverflow.com/questions/10607468/how-to-reduce-the-image-file-size-using-pil
-- [ ] also add sorting, the project view is weird
-- [ ] crashed when edited title
+- [ ] change the client side urls from hard coded into sth that can be loaded in one file
+- [ ] write testing for backend?
+- [ ] also the tokens always remain currently, maybe change that and fix the google signin, no idea how to fix the google one tho
 
 
 ## Archive
 
 - [ ] caching backend(redis?)
 - [ ] caching for fetch requests??
+- [ ] take the manual resync out and maybe add it as a dashboard function behind the auth page
 
 
 ***

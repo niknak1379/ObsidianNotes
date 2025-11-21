@@ -28,6 +28,8 @@ creation date: 2025-11-14 18:56
 	- [[11-AWS Batch]]
 	- [[12-Open Search]]
 	- [[13-Notification Services]]
+	- [[14-CloudWatch & EventBridge]]
+	- [[15-Lambda]]
 	- [[AWS SAA-C03(Solutions Architect Associate)-omarchy-safeBackup-0001]]
 	- [[AWS SAA-C03(Solutions Architect Associate)]]
 
