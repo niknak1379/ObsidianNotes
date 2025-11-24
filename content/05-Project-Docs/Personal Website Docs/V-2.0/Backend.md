@@ -24,10 +24,22 @@ encryption for the user password part somehow.[[Auth0]]
 Have access tokens, refresh tokens, and all the other stuff.
 
 ## Elasticsearch
-Using [[03-Application-Architecture/Network/AWS-Basics/AWS Setup||AWS]], and elastic search to index all the blog posts and make searching much easier
+Using [[03-Application-Architecture/Network/AWS-Basics/AWS Setup||AWS]], and elastic search to index all the blog posts and make searching much easier, and also using it as a right through cache so no need to take make needless search queries to the DB. 
 
 
 ### sql for updating the db(this is just for me incase i have to reset my warp)
 mysql -u root -ppassword -e "DROP DATABASE Projects"
 mysql -u root -ppassword -e "CREATE DATABASE Projects"
 mysql -u root -ppassword Projects < Schema.sql
+
+
+## URL Processing
+Right now i change it from the s3 bucket to the CDN in the frontend which im assuming exposing ur bucket url is not a good idea, so have to put it behind the CDN in the backend. 
+
+Each URI structure:
+https:::s3:bucketaddress/projectName/pictureNe
+
+It is fully stored in the DB
+Should I convert it to the CDN URI when im storing in Open Search and keep the original in the RDS or should i do both CDN
+
+Nope ill just fix it runtime when im returning image URLs

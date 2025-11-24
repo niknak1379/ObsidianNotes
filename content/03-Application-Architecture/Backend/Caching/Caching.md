@@ -19,19 +19,19 @@ multiple cache nodes
 
 
 ## Caching Strategies and Invalidation
-### Write-around cache(cache-aside, lazy-loading)
+### Write around cache(cache-aside, lazy-loading)
 [[Reactive]] approach to caching
 Client makes a request to the cache, if it is there, it returns, if not client makes another request to the database and receives the data, then makes another request to the cache and populates it.
-### Write-through cache
+### Write through cache
 
-cache stands in between the [[03-Application-Architecture/Backend/Database/Database]] and the client, so as soon as you make a write request to the cache, the cache is updated and then the DB is updated
+cache stands in between the [[03-Application-Architecture/Backend/Database/Database|database]] and the client, so as soon as you make a write request to the cache, the cache is updated and then the DB is updated
 This is called a **PROACTIVE** approach
 Pros:
 	since well synced with the DB, results in fewer reads to the DB
 Cons:
-	infrequently requested data is also written to the cache, resulting in a larger cache.(since they are usually stored in the RAM this isnt a good thing)
+	infrequently requested data is also written to the cache, resulting in a larger cache.(since they are usually stored in the RAM this isn't a good thing)
 
-### Write-back cache
+### Write back cache
 Gives Asynchronicity. same thing as write-through cache, but the write request to the database is done asynchronously.
 Cons:
 	could cause the DB and cache to be out of sync. 

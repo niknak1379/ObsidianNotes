@@ -7,6 +7,19 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] Test elasticSearch Insert, Update, dont sync frontend as new backend is not up yet: testcases
+	1. [ ] insert
+	2. [x] update change name
+		1. [x] name change still makes it crash for some reason, the setRefresh() changes the state, and it calles the useEffect, since the page is rendered using data from parent props, it tries to call the wrong API
+	3. [x] update no change name
+- [x] added CDN client side, but its janky, have to do change it server side,
+- [x] move s3 upload to lambda
+- [x] change the client side urls from hard coded into sth that can be loaded in one file
+- [x] forgot the freaking insert elastiserach fix, so have to update it after inserting manually for now
+- [x] resolution on S3 images is wayyyy too high, maybe also add a backend service that converts the photos to avif from default png
+	https://stackoverflow.com/questions/69566052/how-to-convert-jpg-images-to-avif-with-python
+	https://stackoverflow.com/questions/10607468/how-to-reduce-the-image-file-size-using-pil
+- [x] yeah i dont think i have to send and recieve the binary
 - [x] fixed css for webkit safari
 - [x] update small stuff on v1.0 and v2.0 on the main page
 - [x] Projects to add: samans django bs
@@ -50,22 +63,27 @@ kanban-plugin: board
 
 ## in-progress
 
-- [ ] resolution on S3 images is wayyyy too high, maybe also add a backend service that converts the photos to avif from default png
-	https://stackoverflow.com/questions/69566052/how-to-convert-jpg-images-to-avif-with-python
-	https://stackoverflow.com/questions/10607468/how-to-reduce-the-image-file-size-using-pil
-- [ ] broke authentication when moving to AWS fix that
+- [ ] cicd for automatic docker deployment and restart on the EC2 of the Backend + docker-hub for restart
+	1. [ ] docker compose
+	2. [ ] github action
+	3. [ ] change lambda env to point to lambda deployment
 
 
 ## Not Started
 
-- [ ] yeah i dont think i have to send and recieve the binary
-- [ ] forgot the freaking insert elastiserach fix, so have to update it after inserting manually for now
-- [ ] also add sorting, pagination the project view is weird,
-- [ ] cicd for automatic docker deployment and restart on the EC2, and logs
-- [ ] added CDN client side, but its janky, have to do change it server side, make the fix when fixing the elastisearch update as well
-- [ ] change the client side urls from hard coded into sth that can be loaded in one file
-- [ ] write testing for backend?
+- [ ] CICD for lambda
+- [ ] integrate lambda + add option to reprocess all project images through it for initial
+- [ ] broke authentication when moving to AWS fix that
 - [ ] also the tokens always remain currently, maybe change that and fix the google signin, no idea how to fix the google one tho
+- [ ] also add sorting, time field?, pagination the project view is weird,
+	https://docs.opensearch.org/latest/search-plugins/searching-data/paginate/
+- [ ] at some point make the lambda make 2 images, one for thumbnail and one for fullframe-ish
+- [ ] convert all s3 images?
+- [ ] write testing for backend?
+- [ ] manim library animations for hero project images
+	https://www.reddit.com/r/manim/comments/s5n4up/getting_svg_data_into_manim/
+	cant really make svgs out of it, if i want to do that with text, im gonna have to use another library, maybe use this for the main logo/picture and then use the writeSVG plugin for the header animation?
+	if i do this im gonna have to actually fix the project page picture showing css
 
 
 ## Archive

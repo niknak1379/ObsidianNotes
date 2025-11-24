@@ -36,3 +36,7 @@ Supports both ARM64 and X86
 ### Deployment Package
 Supports both ZIP and Docker Images. 
 
+### AWS SAM
+basically a CFN generator specifically for serverless functions that AWS has
+
+You can do it as Inline Code, Zip file, and a docker image 

@@ -30,7 +30,7 @@ creation date: 2025-11-14 18:56
 	- [[13-Notification Services]]
 	- [[14-CloudWatch & EventBridge]]
 	- [[15-Lambda]]
-	- [[AWS SAA-C03(Solutions Architect Associate)-omarchy-safeBackup-0001]]
+	- [[16-Step Functions]]
 	- [[AWS SAA-C03(Solutions Architect Associate)]]
 
 %% End Waypoint %%
