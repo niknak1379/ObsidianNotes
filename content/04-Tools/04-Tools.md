@@ -17,5 +17,6 @@ creation date: 2025-11-14 18:52
 	- **[[Github]]**
 	- **[[Leetcode]]**
 	- **[[Linux]]**
+	- **[[Secrets Manager]]**
 
 %% End Waypoint %%

@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-11-23 14:30
 ---
 
 
@@ -12,9 +12,9 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Linux Rice]]**
-	- [[Arch and Linux Services and Commands-omarchy-safeBackup-0001]]
-	- [[Arch and Linux Services and Commands]]
-	- [[Linux Rice]]
+- **[[Notion Task Manager Integration]]**
+	- [[Intro]]
+	- [[Notion Integration Kanban]]
+	- [[Notion Task Manager Integration]]
 
 %% End Waypoint %%

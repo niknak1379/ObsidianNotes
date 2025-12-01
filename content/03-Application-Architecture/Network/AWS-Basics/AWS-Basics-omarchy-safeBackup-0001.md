@@ -12,9 +12,11 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Linux Rice]]**
-	- [[Arch and Linux Services and Commands-omarchy-safeBackup-0001]]
-	- [[Arch and Linux Services and Commands]]
-	- [[Linux Rice]]
+- **[[AWS-Basics]]**
+	- **[[AWS CLF-C02(Cloud Practitioner Certification)]]**
+	- **[[AWS SAA-C03(Solutions Architect Associate)]]**
+	- [[AWS Setup]]
+	- [[AWS-Basics]]
+	- [[VPC(Virtual Private ClouD)]]
 
 %% End Waypoint %%

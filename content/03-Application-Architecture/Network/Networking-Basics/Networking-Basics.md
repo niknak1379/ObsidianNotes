@@ -13,7 +13,7 @@ creation date: 2025-11-14 18:56
 
 %% Begin Waypoint %%
 - **[[Networking-Basics]]**
-	- [[Basics]]
+	- [[03-Application-Architecture/Network/Networking-Basics/Basics]]
 	- [[CDNs]]
 	- [[NAT(Network Access Translator)]]
 	- [[Networking-Basics]]

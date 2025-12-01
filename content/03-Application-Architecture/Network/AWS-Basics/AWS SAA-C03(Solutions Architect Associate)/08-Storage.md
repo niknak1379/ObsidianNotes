@@ -140,3 +140,11 @@ is a stand alone desktop app that converts your database schema to another datab
 only on linux and windows. 
 
 
+## Amazon Redshift
+fully managed Petabyte-size data warehouse. You can run SQL queries on massive amounts of data in columnar store databases.
+
+Its good for analytics and generating reports. 
+
+
+
+

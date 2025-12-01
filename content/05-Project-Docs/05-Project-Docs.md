@@ -17,7 +17,9 @@ creation date: 2025-11-14 18:56
 	- **[[Distributed Crawler]]**
 	- **[[Linux Rice]]**
 	- **[[MacOS Rice]]**
+	- **[[Notion Task Manager Integration]]**
 	- **[[PASA APP Research]]**
 	- **[[Personal Website Docs]]**
+	- **[[TRMNL Docs]]**
 
 %% End Waypoint %%

@@ -1,7 +1,7 @@
 ---
 creation date: 2025-11-24 12:36
 ---
-#03-Application-Architecture #FrontEnd #HTML #Accessiblity #Untitled
+
 
 << ---------------------------------------------------------------- >>
 
@@ -29,7 +29,7 @@ Coordinate multiple AWS services into serverless workflows.
 	3. as each item is processed remove the item from the table
 	4. where thre are no more records report successfully complete
 3. transcoding media files:
-	1. trigger lambda to thumbnail, gather metadata etc...
+	1. s3 -> eventbridge event -> trigger lambda to thumbnail, gather metadata etc...
 4. send messages/approval requests from automated workflows
 5. sequence steps of machine learning workflows 
 

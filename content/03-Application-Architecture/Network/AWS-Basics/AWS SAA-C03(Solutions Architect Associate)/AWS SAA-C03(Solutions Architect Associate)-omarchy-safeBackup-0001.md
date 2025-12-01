@@ -31,10 +31,6 @@ creation date: 2025-11-14 18:56
 	- [[14-CloudWatch & EventBridge]]
 	- [[15-Lambda]]
 	- [[16-Step Functions]]
-	- [[17-Elastic Beanstalk]]
-	- [[18-Kinesis]]
-	- [[19-Elasticache]]
-	- [[AWS SAA-C03(Solutions Architect Associate)-omarchy-safeBackup-0001]]
 	- [[AWS SAA-C03(Solutions Architect Associate)]]
 
 %% End Waypoint %%

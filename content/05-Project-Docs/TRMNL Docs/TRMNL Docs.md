@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-11-29 13:44
 ---
 
 
@@ -12,9 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Linux Rice]]**
-	- [[Arch and Linux Services and Commands-omarchy-safeBackup-0001]]
-	- [[Arch and Linux Services and Commands]]
-	- [[Linux Rice]]
+- **[[TRMNL Docs]]**
+	- [[TRMNL Docs]]
+	- [[TRMNL Kanban]]
 
 %% End Waypoint %%
