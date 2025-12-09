@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-12-09 11:34
 ---
 
 
@@ -12,12 +12,11 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Obsidian]]**
-	- **[[Excalidraw]]**
-	- [[Obsidian Tutorial]]
-	- [[Obsidian]]
-	- **Templates**
-		- [[Map Of Content]]
-		- [[template]]
+- **[[03-Networking]]**
+	- [[03-Networking]]
+	- [[API Gateway]]
+	- [[ELB]]
+	- [[Route 53]]
+	- [[VPC]]
 
 %% End Waypoint %%

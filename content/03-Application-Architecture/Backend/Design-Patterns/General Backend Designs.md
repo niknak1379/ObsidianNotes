@@ -23,7 +23,7 @@ How you do computing for a program:
 			2. AWS basically refers the request to whatever server instance their [[Load Balancer]] algorithm determines
 			3. you lose a lot of features, sometimes you wont even have access to node
 		2. it is slower than serverful, because serverful is always there but this has to run the algorithm 
-	3. [[Monolith]] (non-managed server)([[VPC(Virtual Private ClouD)|EC2]]):
+	3. [[Monolith]] (non-managed server)([[03-Application-Architecture/Network/AWS-Basics/VPC(Virtual Private Cloud)|EC2]]):
 		1. has an IP address 
 			1. always points to the same machine
 		2. you have linux access to the server so you can do anything you want
@@ -48,13 +48,13 @@ https://www.youtube.com/watch?v=1A9tPOfp6NA
 			1. single point of failure
 				1. if process crashes all of it crashes, even if horizontally scaled since all instances are the same they will eventually crash.
 		5. Cost:
-			1. rent a virtual server([[VPC(Virtual Private ClouD)|EC2]])
+			1. rent a virtual server([[03-Application-Architecture/Network/AWS-Basics/VPC(Virtual Private Cloud)|EC2]])
 			2. fixed pricing
 			3. unutilized processing power if not that many users or scaled badly 
 	[[Microservice]]: multiple different services
 		1. Development Experience:
 			1. `7:26` for the graph chart
-			2. the [[monolith]] turns into an [[API Gateway]] that just redirects the requests to their [[Microservice]] using an HTTP or a GRPC call. 
+			2. the [[monolith]] turns into an [[03-Application-Architecture/Backend/API/API Gateway]] that just redirects the requests to their [[Microservice]] using an HTTP or a GRPC call. 
 			3. you handle the separations using [[03-Application-Architecture/Backend/DevOps/Docker/Docker]] (Kubernetes and [[03-Application-Architecture/Backend/DevOps/Docker/Docker]]).
 			4. integration tests are hard
 			5. Code will be nice and clean, but the infrastructure will be complicated

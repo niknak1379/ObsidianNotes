@@ -45,6 +45,12 @@ Its pretty much all CloudFormation Stacks underneath
 
 The product is just CFN template that defines the resources that will be launched. 
 
+## AWS Data Exchange
+
+is a catalogue of third party datasets. you can download fro free or purchase. 
+
+Data sets like covid-19 foot traffic data, IMDB tv data, hostorical weather data.
+
 
 
 

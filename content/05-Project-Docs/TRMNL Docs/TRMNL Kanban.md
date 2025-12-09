@@ -4,36 +4,34 @@ kanban-plugin: board
 
 ---
 
-## Archive
-
-
-
 ## Done
 
+- [ ] tailscale vpn for deploying on actions
+- [ ] add notion tasks integration
+- [ ] cant run it on the homeassistant container, have to move it to the standalone raspberry pie
 - [ ] fix date bug
 - [ ] change json icons
-- [ ] add retry for the weather api since it fails a lot for some readon
-- [ ] figure out doppler for deployment on raspberry pie
-- [ ] plan styling for the weather widget
-- [ ] Add Scheduler Utility that makes dynamic api calls to update the screen, probably gonna have to keep the endpoint situation
-- [ ] Add Auth Utility + doppler?
+- [ ] add retry for weather api
+- [ ] doppler for secrets
+- [ ] styling for weather widget
+- [ ] scheduler utility and dynamic screen updates
+- [ ] auth utility
 
 
 ## In Progress
 
-- [ ] design enclosure
+- [ ] did not have to make a pageretrive api call, it already sent everything back in the normal query, take out the unnneeded API calls
 
 
 ## Planned
 
-- [ ] add notion integration for the second screen
-- [ ] tailscale vpn for deploying on actinos?
+- [ ] design enclosure
 
 
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false]}
 ```
 %%

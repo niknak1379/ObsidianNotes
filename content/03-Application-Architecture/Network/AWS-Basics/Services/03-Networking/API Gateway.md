@@ -1,21 +1,13 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-12-09 12:13
 ---
-
+#04-Tools #Secrets-Manager
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Map Of Content
+# 
 
 << ---------------------------------------------------------------- >>
 
-%% Begin Waypoint %%
-- **[[Linux]]**
-	- [[Cron Jobs]]
-	- [[index.md]]
-	- [[Linux]]
-	- [[Systemctl]]
-
-%% End Waypoint %%

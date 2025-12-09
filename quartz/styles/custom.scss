@@ -20,6 +20,9 @@
   // gap: 8px;
   padding: 0 !important;
 }
+div.popover-hint {
+  margin-inline: 16px;
+}
 div.left.sidebar,
 div.center,
 div.right.sidebar,
@@ -66,13 +69,13 @@ div.left.sidebar {
   //justify-content: space-between;
   //flex-grow: 1;
 }
-div.right.sidebar{
+div.right.sidebar {
   flex-wrap: wrap;
-  & div.backlinks{
+  & div.backlinks {
     min-width: 100px;
   }
 }
-div.right.sidebar:empty{
+div.right.sidebar:empty {
   border: none;
 }
 div.spacer.mobile-only {
@@ -126,9 +129,9 @@ div.center {
 div.explorer.mobile-only {
   display: none;
 }
-@media (max-width: 900px) { 
-  div.explorer:not(.collapsed){
-    & div.explorer-content{
+@media (max-width: 900px) {
+  div.explorer:not(.collapsed) {
+    & div.explorer-content {
       height: 120vh !important; //cant really mess up w
       width: 120vw !important;
       max-height: 120vh !important;

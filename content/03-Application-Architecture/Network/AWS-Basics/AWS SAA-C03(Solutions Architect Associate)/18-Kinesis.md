@@ -111,4 +111,21 @@ allows you to run queries against data that is flowing through your real-time st
 
 It lets you run custom SQL
 
+## Amazon MSK - Managed Streaming for Apache Kafka
+fully managed service that enables you to build a streaming pipeline
+
+Utilizes Zookeeper servers
+Two types of Nodes 
+- Broker Nodes - manage the broker isntances
+- zookeeper nodes - managed overall structure of the cluster
+
+Has both Provisioned and Serverless
+
+Direct integrations with s3 and eventBridge
+
+Has to be in the Same VPC or with public access.
+
+uses kafka connect opensource framework for connecting apache kafka clusters with external systems such as databases, search indexes and file systems.
+
+
 

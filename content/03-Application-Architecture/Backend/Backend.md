@@ -14,7 +14,7 @@ creation date: 2025-11-14 18:56
 %% Begin Waypoint %%
 - **[[Backend]]**
 	- **[[API]]**
-		- [[API Gateway]]
+		- [[03-Application-Architecture/Backend/API/API Gateway]]
 		- [[API vs SDK]]
 		- [[API]]
 		- [[REST]]

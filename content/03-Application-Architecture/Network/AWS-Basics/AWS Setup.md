@@ -20,5 +20,5 @@ important if you're gonna set sth to run and then forget about it like i do lol.
 ## CLI
 make an access key
 
-## [[VPC(Virtual Private ClouD)]]
+## [[03-Application-Architecture/Network/AWS-Basics/VPC(Virtual Private Cloud)]]
 u can just make one now yay!!1

@@ -122,15 +122,20 @@ kanban-plugin: board
 	cant really make svgs out of it, if i want to do that with text, im gonna have to use another library, maybe use this for the main logo/picture and then use the writeSVG plugin for the header animation?
 	if i do this im gonna have to actually fix the project page picture showing css
 - [ ] migrate email to lambda/sns?
+- [ ] add logging and analytics? would be good to implement the whole sparks jobs, stream processing, kafka workflow, and then display in a dashboard?
+- [ ] OpenAPI 3 documentation?
+- [ ] manage everything using kubernetes?
+- [ ] also open search is slow af, should def have an actual cache
+- [ ] OpenTelemtry for loggin and traces as a part of kubernetes?
 
 
 ## Archive
 
 - [ ] caching backend(redis?)
 - [ ] caching for fetch requests??
-- [ ] at some point make the lambda make 2 images, one for thumbnail and one for fullframe-ish
 - [ ] convert all s3 images?
 - [ ] take the manual resync out and maybe add it as a dashboard function behind the auth page
+- [ ] at some point make the lambda make 2 images, one for thumbnail and one for fullframe-ish
 
 
 ***

@@ -18,5 +18,6 @@ creation date: 2025-11-14 18:52
 	- **[[Leetcode]]**
 	- **[[Linux]]**
 	- **[[Secrets Manager]]**
+	- [[Yabai Shortcuts]]
 
 %% End Waypoint %%

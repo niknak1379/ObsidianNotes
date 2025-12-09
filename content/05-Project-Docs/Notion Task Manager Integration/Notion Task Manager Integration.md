@@ -13,6 +13,7 @@ creation date: 2025-11-23 14:30
 
 %% Begin Waypoint %%
 - **[[Notion Task Manager Integration]]**
+	- [[Application Logic Flowchart]]
 	- [[Intro]]
 	- [[Notion Integration Kanban]]
 	- [[Notion Task Manager Integration]]
