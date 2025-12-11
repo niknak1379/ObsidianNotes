@@ -1,11 +1,15 @@
 ---
-creation date: 2025-11-17 11:24
+creation date: 2025-12-10 20:33
 ---
-#03-Application-Architecture #FrontEnd #HTML #Accessiblity #Untitled
+#04-Tools #Secrets-Manager
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
+
+# 
+
+<< ---------------------------------------------------------------- >>
 
 # Identity and Access manager
 

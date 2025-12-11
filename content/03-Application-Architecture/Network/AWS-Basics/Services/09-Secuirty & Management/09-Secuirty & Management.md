@@ -1,11 +1,27 @@
 ---
-creation date: 2025-10-29 14:31
+creation date: 2025-12-10 20:33
 ---
-#AWS-Basics 
+
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
+
+# Map Of Content
+
+<< ---------------------------------------------------------------- >>
+
+%% Begin Waypoint %%
+- **[[09-Secuirty & Management]]**
+	- [[09-Secuirty & Management]]
+	- [[IAM]]
+
+%% End Waypoint %%
+
+
+#AWS-Basics 
+
+<< ---------------------------------------------------------------- >>
 
 # Identity
 
@@ -72,3 +88,14 @@ JEA Just enought access
 JIT Just in time(permitting the smallest length of duration with permission)
 
 
+## 7 Layers of Security
+1. Data
+2. Application
+3. Compute
+4. Network
+5. Perimeter(DDoS)
+6. Identity and acess
+7. Physical
+
+## CIA Triad
+Confidentiality, integrity availability

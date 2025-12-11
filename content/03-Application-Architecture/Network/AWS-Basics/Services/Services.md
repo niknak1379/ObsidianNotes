@@ -16,8 +16,14 @@ creation date: 2025-12-05 09:04
 	- **[[01-Storage]]**
 	- **[[02-Compute]]**
 	- **[[03-Networking]]**
-	- **[[04-DataBases]]**
+	- **[[04-Databases]]**
+	- **[[05-Frameworks]]**
+	- **[[06-Event and Stream Processing]]**
+	- **[[07-Logging]]**
+	- **[[09-Secuirty & Management]]**
 	- [[Migration Services]]
+	- [[Miscellaneous Services]]
+	- [[ML Services]]
 	- [[Services]]
 
 %% End Waypoint %%

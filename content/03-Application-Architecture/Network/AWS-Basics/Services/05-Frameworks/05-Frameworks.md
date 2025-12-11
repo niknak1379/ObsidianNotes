@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-12-09 16:02
 ---
 
 
@@ -12,10 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Leetcode]]**
-	- **[[DSA]]**
-	- [[Leetcode Strategies]]
-	- [[Leetcode]]
-	- **[[04-Tools/Leetcode/Questions/Questions]]**
+- **[[05-Frameworks]]**
+	- [[05-Frameworks]]
+	- [[Amplify]]
 
 %% End Waypoint %%

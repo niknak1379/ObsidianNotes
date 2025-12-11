@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2025-12-09 16:03
 ---
 
 
@@ -12,10 +12,12 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Leetcode]]**
-	- **[[DSA]]**
-	- [[Leetcode Strategies]]
-	- [[Leetcode]]
-	- **[[04-Tools/Leetcode/Questions/Questions]]**
+- **[[06-Event and Stream Processing]]**
+	- [[06-Event and Stream Processing]]
+	- [[Amazon MQ]]
+	- [[Kinesis]]
+	- [[SNS]]
+	- [[SQS]]
+	- [[Step Functions]]
 
 %% End Waypoint %%

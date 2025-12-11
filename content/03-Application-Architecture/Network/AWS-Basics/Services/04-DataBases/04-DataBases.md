@@ -12,9 +12,10 @@ creation date: 2025-12-09 14:36
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[04-DataBases]]**
-	- [[04-DataBases]]
+- **[[04-Databases]]**
+	- [[04-Databases]]
 	- [[Aurora]]
+	- [[ElastiCache]]
 	- [[NoSQL-Graph DBs]]
 	- [[OpenSearch]]
 	- [[RDS]]

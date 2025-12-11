@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-25 11:26
+creation date: 2025-12-09 16:04
 ---
 
 
@@ -27,7 +27,7 @@ Examples: stock prices, game data, social network data, geospatial data, click s
 
 Producers:
 1. Amazon Kinesis Agent
-	1. stand alone java app that will moitor files based on a pattern and send the data to kinesis
+	1. stand alone java app that will monitor files based on a pattern and send the data to kinesis
 	2. in java only
 2. AWS SDK
 	1. PutRecord

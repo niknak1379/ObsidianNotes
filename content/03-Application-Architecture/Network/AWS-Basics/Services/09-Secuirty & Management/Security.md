@@ -7,7 +7,7 @@ creation date: 2025-12-03 15:16
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# 
+# Security
 
 << ---------------------------------------------------------------- >>
 
@@ -59,34 +59,7 @@ analyzes investigates and quickly identifies the root cause of secuirty findings
 
 See on a map where API calls are being made, launch investigations on IAM princiiples etc...
 
-## AWS Directory service
 
-provides multiple ways to use microsoft AD
-
-
-offerings:
-1. Simple AD
-	1. microsoft AD compatiple directory powered by samba 4. 
-2. AD Connector
-	1. proxy service to connect on-premise with AD
-3. AWS Managed Microsoft AD
-4. Also integrates with Amazon Cognito
-
-
-### Directory Service
-
-directory service maps the names of network resources to their network addresses.
-Shared information infra for locating manageing and organizing volumes folders files printers users etc...
-
-### Active Directory
-Organizations shared directory that can be managed?
-
-### LDAP
-open vendor-neutral industry standard application protocol for accessing and maintaining distributed directory information services over an IP network.
-
-LDAP enables Same-sign on. allows users to single ID and pass but have to enter it everytime they login. 
-
-LDAP was not desined natively to work with web apps and SSO uses LDAP underneath. 
 
 ## AWS Firewall Manager
 to centrally configure and manage firewall rules across accounts and applications
@@ -101,7 +74,7 @@ Can manage:
 
 ## AWS Inspector
 
-Runs a secuirty benchmark agaisnt specific EC2 instances. You can run a variety of security benchmarks. Can perform both Netweork and Host assessments.
+Runs a security benchmark against specific EC2 instances. You can run a variety of security benchmarks. Can perform both Netweork and Host assessments.
 
 ## Amazon Macie
 Fully managed service for monitoring data access in S3, and generates detailed alerts when detecting risk of unauthorized access or inadvertent data leaks. 

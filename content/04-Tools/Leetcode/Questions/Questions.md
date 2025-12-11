@@ -12,7 +12,7 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Questions]]**
+- **[[04-Tools/Leetcode/Questions/Questions]]**
 	- [[Arrays]]
 	- [[Backtracking]]
 	- [[Binary Search]]
@@ -22,7 +22,7 @@ creation date: 2025-11-14 18:56
 	- [[Heap-PriorityQueue]]
 	- [[index.md]]
 	- [[Linked List]]
-	- [[Questions]]
+	- [[04-Tools/Leetcode/Questions/Questions]]
 	- [[Sliding Window]]
 	- [[Stack]]
 	- [[Trees-Tries]]

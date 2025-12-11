@@ -1,5 +1,5 @@
 ---
-creation date: 2025-12-01 12:28
+creation date: 2025-12-10 19:40
 ---
 ;#04-Tools #Secrets-Manager
 

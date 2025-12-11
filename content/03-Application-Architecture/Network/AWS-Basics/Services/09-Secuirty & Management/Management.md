@@ -1,7 +1,7 @@
 ---
-creation date: 2025-10-29 16:39
+creation date: 2025-12-10 20:54
 ---
-#Untitled.md
+
 
 << ---------------------------------------------------------------- >>
 
@@ -49,7 +49,7 @@ comes with:
 just tag different resources, can be used in conjunction with IAM policies
 
 ## Resource Groups:
-A collec tion of resources that share one or more tags, helps organize and consolidate information, can display details about a group like metrics, alarms, configuration settings.
+A collection of resources that share one or more tags, helps organize and consolidate information, can display details about a group like metrics, alarms, configuration settings.
 
 
 ## Business Centric Services

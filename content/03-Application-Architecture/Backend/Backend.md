@@ -29,11 +29,11 @@ creation date: 2025-11-14 18:56
 	- **[[Design-Patterns]]**
 	- **[[DevOps]]**
 	- **[[Frameworks]]**
-	- **[[Security]]**
+	- **[[03-Application-Architecture/Backend/Security/Security]]**
 		- [[Auth0]]
 		- [[Authentication & Authorization]]
 		- [[JWT]]
-		- [[Security]]
+		- [[03-Application-Architecture/Backend/Security/Security]]
 		- [[Web Authentication Methods]]
 
 %% End Waypoint %%
