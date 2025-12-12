@@ -21,7 +21,7 @@ Examples: stock prices, game data, social network data, geospatial data, click s
 	1. real time streaming data service
 	2. custom producers and conusmers
 2. Kinesis Data Firehose
-	1. serverless and a simpler version of data sreams. Direct integration with specific aws services
+	1. serverless and a simpler version of data streams. Direct integration with specific aws services
 3. Managed Service for Apache Flink
 	1. allows you to run queries against data that is flowing through your real-time stream so you can create reports and analysis on emerging data
 

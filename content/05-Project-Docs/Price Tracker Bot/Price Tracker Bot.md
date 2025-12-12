@@ -1,15 +1,19 @@
 ---
-creation date: 2025-11-14 14:47
+creation date: 2025-12-11 19:45
 ---
-#Untitled.md
+
 
 << ---------------------------------------------------------------- >>
 
  --- Last Modified: `$= dv.current().file.mtime`
 
-# Untitled
+# Map Of Content
 
 << ---------------------------------------------------------------- >>
 
-nohup autoraise -delay 0 &
-borders active_color=0xffF9BEC6 inactive_color=0x00ffffff width=8.0
+%% Begin Waypoint %%
+- **[[Price Tracker Bot]]**
+	- [[Price Tracker Bot]]
+	- [[Untitled Kanban]]
+
+%% End Waypoint %%

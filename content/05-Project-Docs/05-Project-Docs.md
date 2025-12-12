@@ -20,6 +20,7 @@ creation date: 2025-11-14 18:56
 	- **[[Notion Task Manager Integration]]**
 	- **[[PASA APP Research]]**
 	- **[[Personal Website Docs]]**
+	- **[[Price Tracker Bot]]**
 	- **[[TRMNL Docs]]**
 
 %% End Waypoint %%
