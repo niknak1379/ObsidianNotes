@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:52
+creation date: 2025-12-12 14:40
 ---
 
 
@@ -12,13 +12,8 @@ creation date: 2025-11-14 18:52
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[04-Tools]]**
-	- [[04-Tools]]
-	- **[[CSE Concepts]]**
-	- **[[Github]]**
-	- **[[Leetcode]]**
-	- **[[Linux]]**
-	- **[[Secrets Manager]]**
-	- [[Yabai Shortcuts]]
+- **[[Probability]]**
+	- [[Probability]]
+	- [[Random Variables]]
 
 %% End Waypoint %%

@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-27 16:41
+creation date: 2025-12-12 14:39
 ---
 
 
@@ -12,7 +12,8 @@ creation date: 2025-11-27 16:41
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[04-Tools/Secrets Manager/Untitled]]**
-	- [[04-Tools/Secrets Manager/Untitled]]
+- **[[06-Quant]]**
+	- [[06-Quant]]
+	- **[[Probability]]**
 
 %% End Waypoint %%
