@@ -56,6 +56,7 @@ kanban-plugin: board
 - [ ] maybe also have a custom pushed back deadline for long running tasks, but i would need to put in long running tasks in first before i do this, right now 2 day default should be fine
 - [ ] deleted pages, update DB and delete them from sql
 - [ ] Bug: if the task is done, it still puts it in the deadline extension bucket
+- [ ] Bug: weekly archive is not triggering
 
 
 

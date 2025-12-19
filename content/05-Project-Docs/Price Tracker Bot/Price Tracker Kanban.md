@@ -15,6 +15,9 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] DB:
+	1. [x] get full price history for the last n months
+- [x] put the context in main and let all the subroutitines inherit it from there
 - [x] Test everything lmfao
 - [x] write logs for all functions
 - [x] Crawler:
@@ -48,12 +51,20 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] put the context in main and let all the subroutitines inherit it from there
+- [ ] Price Chart
+- [ ] Bot:
+	1. [ ] get price graph for the last n months
+	2. [ ] acknowledgement of request
+	3. [ ] send the generated chart after its done
+- [ ] graphing module
+	1. [ ] gracefull shutdown
+	2. [ ] figure out the axis if it needs an array or objects is fine?
+- [ ] update lowest price might not be working
 
 
 ## Planned
 
-- [ ] over time graphing of the data, by accessing the database, only generated on demand, probably shouldnt be dont throught the command thing since that one takes a while
+- [ ] add table view for what is being tracked??? editing is still a pain
 
 
 
