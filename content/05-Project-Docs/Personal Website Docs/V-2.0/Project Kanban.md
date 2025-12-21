@@ -4,6 +4,15 @@ kanban-plugin: board
 
 ---
 
+## Archive
+
+- [ ] caching backend(redis?)
+- [ ] caching for fetch requests??
+- [ ] convert all s3 images?
+- [ ] take the manual resync out and maybe add it as a dashboard function behind the auth page
+- [ ] at some point make the lambda make 2 images, one for thumbnail and one for fullframe-ish
+
+
 ## Complete
 
 **Complete**
@@ -109,6 +118,7 @@ kanban-plugin: board
 
 ## Not Started
 
+- [ ] CICD: use sts dont ssh into the instance
 - [ ] add option to reprocess all project images through it for initial
 	Lambda
 	1. [ ] Keep the original Image(maybe move s3 presigned URLs?)
@@ -127,15 +137,6 @@ kanban-plugin: board
 - [ ] manage everything using kubernetes?
 - [ ] also open search is slow af, should def have an actual cache
 - [ ] OpenTelemtry for loggin and traces as a part of kubernetes?
-
-
-## Archive
-
-- [ ] caching backend(redis?)
-- [ ] caching for fetch requests??
-- [ ] convert all s3 images?
-- [ ] take the manual resync out and maybe add it as a dashboard function behind the auth page
-- [ ] at some point make the lambda make 2 images, one for thumbnail and one for fullframe-ish
 
 
 ***

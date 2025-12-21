@@ -57,6 +57,7 @@ kanban-plugin: board
 - [ ] deleted pages, update DB and delete them from sql
 - [ ] Bug: if the task is done, it still puts it in the deadline extension bucket
 - [ ] Bug: weekly archive is not triggering
+- [ ] CICD: use STS instead of manually SSH ing into the instance
 
 
 
