@@ -26,6 +26,10 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] if it thinks its zero, change it or skip update price?
+- [x] bug: its logging each crawl like 5 times
+- [x] maybe have it have more frequency of gathering the prices (twice daily) but also schedule a weekly price compression that also runs everytime i redeploy
+- [x] maybe for name matching add fuzy or lower case stuff?
 - [x] remove the hiiii price tracker command somehow
 - [x] add other cases i wanna keep track of
 - [x] amazon links behave weird they arent fully rendered on send
@@ -101,12 +105,14 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] maybe for name matching add fuzy or lower case stuff?
-- [ ] maybe have it have more frequency of gathering the prices (twice daily) but also schedule a weekly price compression that also runs everytime i redeploy
+- [ ] or maybe change the item architecture to support variants
 
 
 ## Planned
 
+- [ ] i dont have that many items but there is a 30 embed limit i think? so will have to send it in multiple messages once i hit that limt
+- [ ] if it gets unmanagable and unreadable maybe do 2 get alls, one detailed with everything, and one only with current price, no sources etc
+- [ ] will have to add newegg specific third party seller support? meshify 3 for example doesnt load bc they dont sell it directly
 - [ ] add get logs? would have to learn about actual logging services and how theyre done in prod apps
 - [ ] should very much do test branch if the stock thing takes off track, waiting a badjiollion years for it to deploy is unacceptable just to test a command in a test chennel with a test integration that only runs locally
 
