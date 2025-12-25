@@ -105,7 +105,10 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] or maybe change the item architecture to support variants
+- [ ] or maybe change the item architecture to support variants, item categories?
+	current price tree?
+- [ ] commands are too long, shorten names?
+- [ ] move cancel context channel logic to main
 
 
 ## Planned

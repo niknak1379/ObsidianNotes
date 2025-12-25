@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] design enclosure
 - [ ] tailscale vpn for deploying on actions
 - [ ] add notion tasks integration
 - [ ] cant run it on the homeassistant container, have to move it to the standalone raspberry pie
@@ -21,11 +22,11 @@ kanban-plugin: board
 ## In Progress
 
 - [ ] did not have to make a pageretrive api call, it already sent everything back in the normal query, take out the unnneeded API calls
+- [ ] weather api for rain turn into 2 decimal units instead of a full float point
 
 
 ## Planned
 
-- [ ] design enclosure
 
 
 
