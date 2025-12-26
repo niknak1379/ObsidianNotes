@@ -48,6 +48,7 @@ kanban-plugin: board
 - [ ] 1. [ ] bump up priority everytime the deadline is extended
 	2. [ ] add font sizing to the different priorities and the priority changes as the deadline gets pushed back [[05-Project-Docs/TRMNL Docs/TRMNL Kanban|TRMNL Kanban]]
 - [ ] Refractor everthing to a OOP model
+- [ ] project is pretty small move to typescript?
 
 
 ## to Start

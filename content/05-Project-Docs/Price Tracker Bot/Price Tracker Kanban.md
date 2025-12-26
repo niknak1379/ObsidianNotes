@@ -26,6 +26,9 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] bug: scheulded crawling isnt happening for some reason
+- [x] commands are too long, shorten names?
+- [x] move cancel context channel logic to main
 - [x] if it thinks its zero, change it or skip update price?
 - [x] bug: its logging each crawl like 5 times
 - [x] maybe have it have more frequency of gathering the prices (twice daily) but also schedule a weekly price compression that also runs everytime i redeploy
@@ -105,15 +108,16 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] or maybe change the item architecture to support variants, item categories?
-	current price tree?
-- [ ] commands are too long, shorten names?
-- [ ] move cancel context channel logic to main
+- [ ] add auto complete
+	1. [ ] auto complete command pallete
+	2. [ ] mongodb text search index plus fuzzy finder
 
 
 ## Planned
 
 - [ ] i dont have that many items but there is a 30 embed limit i think? so will have to send it in multiple messages once i hit that limt
+- [ ] or maybe change the item architecture to support variants, item categories?
+	current price tree?
 - [ ] if it gets unmanagable and unreadable maybe do 2 get alls, one detailed with everything, and one only with current price, no sources etc
 - [ ] will have to add newegg specific third party seller support? meshify 3 for example doesnt load bc they dont sell it directly
 - [ ] add get logs? would have to learn about actual logging services and how theyre done in prod apps
