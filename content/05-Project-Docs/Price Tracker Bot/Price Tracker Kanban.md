@@ -26,6 +26,19 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add autocomplete for all name fields
+- [x] mongodb access is based on ip
+- [x] doesnt support empty fuzzy search, handle it and return all instead?
+- [x] add auto complete
+	1. [x] auto complete command pallete
+	2. [x] mongodb text search index plus fuzzy finder
+- [x] Chart: make background white, legends is unreadable in discord, plus legend padding and break new line, when url too long it pushes legend icons out of bounds
+	1. [x] title too big
+	2. [x] title not centered
+	3. [x] legend padding overflowing
+	4. [ ] overlapping series look if any options to make it readable?
+- [x] bug: graph error handling: if it cant find it it will send the previous graph generated
+- [x] regex for graph query
 - [x] bug: scheulded crawling isnt happening for some reason
 - [x] commands are too long, shorten names?
 - [x] move cancel context channel logic to main
@@ -108,13 +121,17 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add auto complete
-	1. [ ] auto complete command pallete
-	2. [ ] mongodb text search index plus fuzzy finder
+- [ ] add auto complete for uri filed
+	1. [ ] will have to unrwap the whole thing, and will have make a new aggreagation pipeline for it
+- [ ] database logic too big, split autocomplete stuff into its own file
+- [ ] if DB unexpectedly exits, ping the discord, with the err msg before going down
+- [ ] add one for query selector too? this one can honestly just be a hardcoded json? but that wont persist maybe ill have to add a new field in the db for it without any indexes or anyting
 
 
 ## Planned
 
+- [ ] add picture embed for all items?
+- [ ] add support for ebay used items
 - [ ] i dont have that many items but there is a 30 embed limit i think? so will have to send it in multiple messages once i hit that limt
 - [ ] or maybe change the item architecture to support variants, item categories?
 	current price tree?

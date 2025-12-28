@@ -1,7 +1,7 @@
 ---
 creation date: 2025-11-14 18:56
 ---
-
+r
 
 << ---------------------------------------------------------------- >>
 
@@ -13,9 +13,8 @@ creation date: 2025-11-14 18:56
 
 %% Begin Waypoint %%
 - **[[Linux]]**
+	- **[[Boot Process]]**
 	- [[Cron Jobs]]
-	- [[index.md]]
 	- [[Linux]]
-	- [[Systemctl]]
 
 %% End Waypoint %%
