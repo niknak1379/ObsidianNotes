@@ -7,6 +7,11 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] remove message test on deployed pi, it returns a 64 bit
+- [x] if DB unexpectedly exits, ping the discord, with the err msg before going down
+- [x] add auto complete for uri filed
+	1. [x] will have to unrwap the whole thing, and will have make a new aggreagation pipeline for it
+	2. [ ] deprecated, you cant search unwound documents, have to just do a normal search and return the results of that
 - [x] highkey the update functions are very messy, i shouldve probably made a chart
 - [x] next comes stocks and all that but have to watch the quant stuff first ahahhahha me likey or just make a separate bot so i dont have to redeploy this thank you very much
 - [x] maybe add price changes in general? or have a toggle that enables it? for sensetive items that i want
@@ -26,6 +31,20 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] test amazon image
+- [x] handle amazon link for automatic embeds?
+- [x] change remove message?
+- [x] test message embed and query selector
+- [x] add picture embed for all items
+	1. [x] get open graph(og) img url of the first link inserted
+	2. [x] save in DB
+	3. [x] return as a field for embed
+- [x] database logic too big, split autocomplete stuff into its own file
+- [x] make the edit function more readable
+- [x] take channel id out of hard code
+- [x] nvm autocomplete for remove cant even be done, it doesnt support urls more than 100 chars
+- [x] delete the autocomplete index for the uri
+- [x] add one for query selector too? this one can honestly just be a hardcoded json? add a map for autocomplete with amazon, newegg, microcenter name, value pairs
 - [x] add autocomplete for all name fields
 - [x] mongodb access is based on ip
 - [x] doesnt support empty fuzzy search, handle it and return all instead?
@@ -121,17 +140,18 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add auto complete for uri filed
-	1. [ ] will have to unrwap the whole thing, and will have make a new aggreagation pipeline for it
-- [ ] database logic too big, split autocomplete stuff into its own file
-- [ ] if DB unexpectedly exits, ping the discord, with the err msg before going down
-- [ ] add one for query selector too? this one can honestly just be a hardcoded json? but that wont persist maybe ill have to add a new field in the db for it without any indexes or anyting
+- [ ] add support for ebay used items
+- [ ] Ebay Requirements:
+	1. [ ] returns used, openbox listings with price + shipping lower than the current price
+		1. [ ] has to verify the listing isnt for parts or have bad defects, for parts can be done through regex, 
+		2. [ ] defects maybe has to be done through an LLM, with sizing and specs verified
+	2. [ ] saves the prices in the db ping
+		1. [ ] Ping DB when new listings are found or price has changed
+		2. [ ] if they are not available on the next crawl, delete them and ping
 
 
 ## Planned
 
-- [ ] add picture embed for all items?
-- [ ] add support for ebay used items
 - [ ] i dont have that many items but there is a 30 embed limit i think? so will have to send it in multiple messages once i hit that limt
 - [ ] or maybe change the item architecture to support variants, item categories?
 	current price tree?
