@@ -7,6 +7,10 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] if it gets unmanagable and unreadable maybe do 2 get alls, one detailed with everything, and one only with current price, no sources etc
+- [x] im gonna kill myself ebay has an API and I didnt need to scrape it?
+- [x] or maybe change the item architecture to support variants, item categories?
+	current price tree?
 - [x] remove message test on deployed pi, it returns a 64 bit
 - [x] if DB unexpectedly exits, ping the discord, with the err msg before going down
 - [x] add auto complete for uri filed
@@ -31,6 +35,35 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add edit name
+- [x] ebay read err propogate
+- [x] lol i crawled it so many times back to back it got throttled, lets hope i dont have to run it through aws lmfao
+- [x] refractor discord module into hooks, messages, formatting
+- [x] add support for ebay used items
+- [x] url way too long, maybe look crawl individual pages and see if they havea og:link or sth like that
+- [x] regex a bit messy, discord messages with the urls are too long?
+- [x] the names cant be shit now since there is regex based on them - one word denominators like 3 and x are very important with spaces around them, this kind of just rawdoggs them
+- [x] Ebay Reqs:
+	Discord:
+	1. [x] discord new listing alert
+	2. [x] discord listing price update
+	3. [x] Add embed for ebay listings
+- [x] Ebay Reqs:
+	Scheduler:
+	1. [x] get old and new listings
+	2. [x] compare listings
+	3. [x] if listing gone do nothing since whole array is updated
+	4. [x] if new listing found not in the previous crawl ping db
+- [x] Ebay Reqs:
+	DB:
+	1. [x] Get EbayListings Method
+	2. [x] Save EbayListingsMethod
+	3. [x] Get listings on add
+- [x] Ebay Requirements:
+	crawler
+	1. [x] returns listings
+		1. [x] regex verification, 
+		2. [x] llm verification
 - [x] test amazon image
 - [x] handle amazon link for automatic embeds?
 - [x] change remove message?
@@ -140,23 +173,23 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add support for ebay used items
-- [ ] Ebay Requirements:
-	1. [ ] returns used, openbox listings with price + shipping lower than the current price
-		1. [ ] has to verify the listing isnt for parts or have bad defects, for parts can be done through regex, 
-		2. [ ] defects maybe has to be done through an LLM, with sizing and specs verified
-	2. [ ] saves the prices in the db ping
-		1. [ ] Ping DB when new listings are found or price has changed
-		2. [ ] if they are not available on the next crawl, delete them and ping
+- [ ] i think were done for now
+- [ ] face book market Place:
+	1. [ ] url generator
+	2. [ ] price extractor
+	3. [ ] URL extractor? depends wether it has the listing url by default
+- [ ] https://www.geoapify.com/route-matrix-api/
 
 
 ## Planned
 
-- [ ] i dont have that many items but there is a 30 embed limit i think? so will have to send it in multiple messages once i hit that limt
-- [ ] or maybe change the item architecture to support variants, item categories?
-	current price tree?
-- [ ] if it gets unmanagable and unreadable maybe do 2 get alls, one detailed with everything, and one only with current price, no sources etc
-- [ ] will have to add newegg specific third party seller support? meshify 3 for example doesnt load bc they dont sell it directly
+- [ ] Maybe also add automated amazon crawling?
+- [ ] 30 item list, once list too big
+	1. [ ] add pagination
+	2. [ ] add concise list method
+- [ ] some ebay items have a *READ* at the end, if a problem add regex
+- [ ] add support for picking what type of item from ebay? used only, open box etc...
+- [ ] figure out meshify 3 new egg and chromedp thing
 - [ ] add get logs? would have to learn about actual logging services and how theyre done in prod apps
 - [ ] should very much do test branch if the stock thing takes off track, waiting a badjiollion years for it to deploy is unacceptable just to test a command in a test chennel with a test integration that only runs locally
 

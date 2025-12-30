@@ -22,3 +22,13 @@ Used: &LH_ItemCondition=3000
 Price: `&_udhi=120&rt=nc`
 Search Url: 
 https://www.ebay.com/sch/i.html?_nkw=URLNAME
+# Facebook market place urls
+Torrance, 20 milse
+https://www.facebook.com/marketplace/106240506072879/?radius_in_km=32
+PV:
+https://www.facebook.com/marketplace/107711145919004/?radius_in_km=32
+fractal query:
+https://www.facebook.com/marketplace/107711145919004/search?query=fractal%20north
+Distance calculator?
+Market places distance algo is dog shit
+
