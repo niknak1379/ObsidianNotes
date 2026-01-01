@@ -17,6 +17,9 @@ Price under 120
 https://www.ebay.com/sch/i.html?_nkw=fractal%20torrent&_sop=12&LH_ItemCondition=3000&rt=nc&_udhi=120
 0nly Price under 120
 https://www.ebay.com/sch/i.html?_nkw=fractal+torrent&_sop=12&_udhi=120&rt=nc
+https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000&_udhi=630&rt=nc&LH_BIN=1
+https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&_from=R40&LH_ItemCondition=4&_udhi=630&rt=nc&LH_All=1
+https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000&_udhi=630&rt=nc&LH_Auction=1
 ## Paterns
 Used: &LH_ItemCondition=3000
 Price: `&_udhi=120&rt=nc`
@@ -29,6 +32,8 @@ PV:
 https://www.facebook.com/marketplace/107711145919004/?radius_in_km=32
 fractal query:
 https://www.facebook.com/marketplace/107711145919004/search?query=fractal%20north
+https://www.facebook.com/marketplace/107711145919004/search?maxPrice=120&query=fractal%20north&exact=false
 Distance calculator?
 Market places distance algo is dog shit
 
+error handlin

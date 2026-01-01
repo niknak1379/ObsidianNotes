@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] maybe remove shutdown?
+- [x] bug: cant manually shut down rn bc docker compose restarts it
 - [x] if it gets unmanagable and unreadable maybe do 2 get alls, one detailed with everything, and one only with current price, no sources etc
 - [x] im gonna kill myself ebay has an API and I didnt need to scrape it?
 - [x] or maybe change the item architecture to support variants, item categories?
@@ -35,6 +37,41 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] it shouldve filtered the bid on asrock check if its not gone will have to look at the logs or sth
+- [x] bug: check the pricing it turns to zero somewhere somehow, yup still taking everything as a price change for some reasn
+- [x] add date to current lowest in embed
+- [x] style price update and new price found using the embed thing?
+- [x] 1. [x] calculate size as building embed
+	2. [x] if number of fields or max size
+	3. [x] split into multiple embeds
+	4. [x] return list of embeds
+- [x] 30 item list, once list too big
+	1. [x] add pagination
+	2. [ ] add concise list method
+- [x] messed up autocomplete
+- [x] add multi channel support for separation of concerns? -> might wanna add cars, other types of tech, people etc
+- [x] would also need to add the indexes in the make channel collection section
+- [x] theres a 3 index limit per cluster for free atlas, either will have to self host it
+- [x] not pushing new channel ids
+- [x] Multi Channel Support:
+	1. [x] new DB table to keep track of ID and table name
+	2. [x] on init load tables into memory
+	3. [x] make func for if a channel is new -> create new table in DB
+	4. [x] change database functions to take in the name of the channel
+		1. [x] load it from the memory bit
+	5. [x] Change Scheduler for running the schedule on a table basis -> get all channels first and then then do a schedule for each
+- [x] ok channel id is interaction based....
+- [x] maybe make it so that it sends the screen shot of the failover to the discord
+- [x] check if err propogates properly/ notify discord
+- [x] change content for facebook marketplace, to also include formatted time and distance
+- [x] add geo api to doppler
+- [x] for now just make it work, later on, i will add the distance api stuff
+	
+	https://www.geoapify.com/route-matrix-api/
+- [x] face book market Place:
+	1. [x] url generator
+	2. [x] price extractor
+	3. [x] URL extractor? depends wether it has the listing url by default
 - [x] add edit name
 - [x] ebay read err propogate
 - [x] lol i crawled it so many times back to back it got throttled, lets hope i dont have to run it through aws lmfao
@@ -173,23 +210,16 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] i think were done for now
-- [ ] face book market Place:
-	1. [ ] url generator
-	2. [ ] price extractor
-	3. [ ] URL extractor? depends wether it has the listing url by default
-- [ ] https://www.geoapify.com/route-matrix-api/
+- [ ] figure out meshify 3 new egg and chromedp thing
 
 
 ## Planned
 
+- [ ] i think were done for now
 - [ ] Maybe also add automated amazon crawling?
-- [ ] 30 item list, once list too big
-	1. [ ] add pagination
-	2. [ ] add concise list method
 - [ ] some ebay items have a *READ* at the end, if a problem add regex
+- [ ] depending on how brittle this is, i might have to get it by $ and work my way back up
 - [ ] add support for picking what type of item from ebay? used only, open box etc...
-- [ ] figure out meshify 3 new egg and chromedp thing
 - [ ] add get logs? would have to learn about actual logging services and how theyre done in prod apps
 - [ ] should very much do test branch if the stock thing takes off track, waiting a badjiollion years for it to deploy is unacceptable just to test a command in a test chennel with a test integration that only runs locally
 
