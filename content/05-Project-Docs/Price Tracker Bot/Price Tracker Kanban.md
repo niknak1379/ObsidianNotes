@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] add support for picking what type of item from ebay? used only, open box etc...
+- [x] Maybe also add automated amazon crawling?
 - [x] maybe remove shutdown?
 - [x] bug: cant manually shut down rn bc docker compose restarts it
 - [x] if it gets unmanagable and unreadable maybe do 2 get alls, one detailed with everything, and one only with current price, no sources etc
@@ -37,6 +39,23 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] refractor ebayHandler
+- [x] Bot Management:
+	1. [x] setup:
+		1. [x] take location and market place miles as input
+		2. [x] update DB
+		3. [x] load miles and location from DB on init
+	2. [x] Channel Delete:
+		1. [x] delete channel table on delete from DB
+- [x] list empty
+- [x] sort alphabetically in autocorrect return
+- [x] maybe also add a message length calculator and the field thing to make the spread more reliable
+- [x] add price sort when putting the stuff in
+- [x] pass in the last days title to not needlessly get the link of already existing items
+	
+	IE move dedup logic into the ebay submodule
+- [x] i dont need a dedupe crawl its already there ahahahah
+- [x] figure out meshify 3 new egg and chromedp thing, it has an add into cart to see price which is very stupid
 - [x] it shouldve filtered the bid on asrock check if its not gone will have to look at the logs or sth
 - [x] bug: check the pricing it turns to zero somewhere somehow, yup still taking everything as a price change for some reasn
 - [x] add date to current lowest in embed
@@ -210,18 +229,19 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] figure out meshify 3 new egg and chromedp thing
+- [ ] Add item types -> depop support
+- [ ] depop support
 
 
 ## Planned
 
+- [ ] OLAP for used items
+- [ ] logs with graphana and loki
 - [ ] i think were done for now
-- [ ] Maybe also add automated amazon crawling?
-- [ ] some ebay items have a *READ* at the end, if a problem add regex
-- [ ] depending on how brittle this is, i might have to get it by $ and work my way back up
-- [ ] add support for picking what type of item from ebay? used only, open box etc...
-- [ ] add get logs? would have to learn about actual logging services and how theyre done in prod apps
-- [ ] should very much do test branch if the stock thing takes off track, waiting a badjiollion years for it to deploy is unacceptable just to test a command in a test chennel with a test integration that only runs locally
+- [ ] add read to ebay regex
+- [ ] handler to reverse engineer market place tags if brittle
+- [ ] test branch
+- [ ] Added to new Channel -> send init message
 
 
 
