@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] maybe will have to add a normalized price bc some shit apparently has a lot of scammers
+- [x] figure out how to add size, eh just putting it in the name is fine
 - [x] add support for picking what type of item from ebay? used only, open box etc...
 - [x] Maybe also add automated amazon crawling?
 - [x] maybe remove shutdown?
@@ -39,6 +41,12 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] test
+- [x] depop support
+- [x] Add item types
+	1. [x] on add
+	2. [x] have a check in second hand, if its clothes add depop crawler to the mix
+	3. [x] depop crawler
 - [x] refractor ebayHandler
 - [x] Bot Management:
 	1. [x] setup:
@@ -229,19 +237,40 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] Add item types -> depop support
-- [ ] depop support
+- [ ] OLAP for used items
+- [ ] Add aggregate used data to graphs price history
+	1. might have to redo the scheduler get price logic but it would def be worth it
+- [ ] alright i need there to be data so that i can do a pipeline on them
+- [ ] for the get if everything returns but webhook errs out, return a normal message afterwards
+- [ ] maybe add kids and junior as exclude words
 
 
 ## Planned
 
-- [ ] OLAP for used items
+- [ ] Used Item Stats:
+	1. [x] Do current Listings, all historical listings
+	2. [ ] Information I want to extract in the pipeline:
+		1. [ ] how long historical listings lasted
+		2. [ ] their price at time they sell
+		3. [ ] lowest price for each unique listing
+		4. [ ] What the average price for each item categor has been 
+		5. [ ] Whats the SD
+		6. [ ] filter abnormal ones
+	3. Add aggregate used data to graphs price history
+		1. might have to redo the scheduler get price logic but it would def be worth it
+	4. Info I want to add to the Item view
+		1. [ ] current live listing used average
+		2. [ ] current SD
+		3. [ ] Price Trend for:
+			1. [ ] week
+			2. [ ] month
+	5. The stuff for graph i need to calculate in graph, the list stuff I can do it each crawl and store it
 - [ ] logs with graphana and loki
 - [ ] i think were done for now
 - [ ] add read to ebay regex
 - [ ] handler to reverse engineer market place tags if brittle
 - [ ] test branch
-- [ ] Added to new Channel -> send init message
+- [ ] Added to new Server -> send init message
 
 
 

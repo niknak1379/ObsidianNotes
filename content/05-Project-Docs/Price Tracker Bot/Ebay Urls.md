@@ -36,4 +36,7 @@ https://www.facebook.com/marketplace/107711145919004/search?maxPrice=120&query=f
 Distance calculator?
 Market places distance algo is dog shit
 
-error handlin
+
+# Depop URLS
+https://www.depop.com/search/?q=dr+martens+1460+11&_suggestion-type=recent
+https://www.depop.com/search/?q=dr+martens+1460+11&_suggestion-type=recent&priceMax=120
