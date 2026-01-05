@@ -41,6 +41,26 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add compare method? render chart and send picture like graph function -> compare aggregates
+- [x] compare graphs has a weird bug that some dates are at the start even though they are chronologically at the end
+- [x] fixed color code error
+- [x] error messages get mixed up, and it sends chart? for somer eadon
+- [x] OLAP for used items
+- [x] testing
+- [x] refractor database into aggregate file
+- [x] can write a compare time frames aggregate function
+- [x] 1. Info I want to add to the Item view
+		1. [ ] 7 day aggregate
+- [x] Used Item Stats:
+	1. [ ] Information I want to extract in the pipeline:
+		1. [ ] how long historical listings lasted
+		2. [ ] their price at time they sell
+		3. [ ] filter abnormal ones
+		4. [ ] stdev
+- [x] for the get if everything returns but webhook errs out, return a normal message afterwards
+- [x] Add aggregate used data to graphs price history
+	1. might have to redo the scheduler get price logic but it would def be worth it
+- [x] maybe add kids and junior as exclude words
 - [x] test
 - [x] depop support
 - [x] Add item types
@@ -221,6 +241,7 @@ kanban-plugin: board
 	3. [x] if the lowest Price Notify via bot function
 - [x] main:
 	1. call init crawler
+- [x] alright i need there to be data so that i can do a pipeline on them
 - [ ] it has field called projection for specifying what to return, dont return the date and price for the get stuff
 	1. [x] change query for discord bot get queries to not return price history
 	2. [x] only return pricer tracking html list for crawler get method
@@ -237,35 +258,14 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] OLAP for used items
-- [ ] Add aggregate used data to graphs price history
-	1. might have to redo the scheduler get price logic but it would def be worth it
-- [ ] alright i need there to be data so that i can do a pipeline on them
-- [ ] for the get if everything returns but webhook errs out, return a normal message afterwards
-- [ ] maybe add kids and junior as exclude words
+- [ ] add stdev filtering into the second aggregate pipeline and add **Read**
 
 
 ## Planned
 
-- [ ] Used Item Stats:
-	1. [x] Do current Listings, all historical listings
-	2. [ ] Information I want to extract in the pipeline:
-		1. [ ] how long historical listings lasted
-		2. [ ] their price at time they sell
-		3. [ ] lowest price for each unique listing
-		4. [ ] What the average price for each item categor has been 
-		5. [ ] Whats the SD
-		6. [ ] filter abnormal ones
-	3. Add aggregate used data to graphs price history
-		1. might have to redo the scheduler get price logic but it would def be worth it
-	4. Info I want to add to the Item view
-		1. [ ] current live listing used average
-		2. [ ] current SD
-		3. [ ] Price Trend for:
-			1. [ ] week
-			2. [ ] month
-	5. The stuff for graph i need to calculate in graph, the list stuff I can do it each crawl and store it
 - [ ] logs with graphana and loki
+- [ ] fix facebook market place location
+- [ ] move database inhouse?
 - [ ] i think were done for now
 - [ ] add read to ebay regex
 - [ ] handler to reverse engineer market place tags if brittle
