@@ -41,6 +41,11 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] marketplace price logic bug?
+- [x] add suppress noti flag?
+- [x] fix facebook market place location
+- [x] add read to ebay regex
+- [x] add stdev filtering into the second aggregate pipeline and add **Read**
 - [x] add compare method? render chart and send picture like graph function -> compare aggregates
 - [x] compare graphs has a weird bug that some dates are at the start even though they are chronologically at the end
 - [x] fixed color code error
@@ -258,19 +263,27 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add stdev filtering into the second aggregate pipeline and add **Read**
+- [ ] logs with graphana and loki
+- [ ] Setup Pomtrail
+- [ ] Setup loki
+- [ ] Setup grafana prometheus
+- [ ] setup query logs command
 
 
 ## Planned
 
-- [ ] logs with graphana and loki
-- [ ] fix facebook market place location
-- [ ] move database inhouse?
+- [ ] 1. [ ] buy second pi, 4gb 60$ new
+		1. [ ] wait for used
+	2. [x] buy switch with POE
+	3. [x] POE Cables
+	4. [ ] SSD? Not rn
+	5. [ ] move database inhouse?
+- [ ] make a good deal algo?
 - [ ] i think were done for now
-- [ ] add read to ebay regex
 - [ ] handler to reverse engineer market place tags if brittle
 - [ ] test branch
 - [ ] Added to new Server -> send init message
+- [ ] add aggregate tables into chart tables and return as a picture instead of just an embed for compare
 
 
 
