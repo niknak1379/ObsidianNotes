@@ -1,7 +1,22 @@
 ---
-creation date: 2024-07-16 14:23
-modification date: Tuesday 16th July 2024 14:23:51
+creation date: 2026-01-09 14:23
 ---
+
+
+<< ---------------------------------------------------------------- >>
+
+ --- Last Modified: `$= dv.current().file.mtime`
+
+# Map Of Content
+
+<< ---------------------------------------------------------------- >>
+
+%% Begin Waypoint %%
+- **[[Kubernetes]]**
+	- [[Kubernetes]]
+
+%% End Waypoint %%
+
 #Backend #DevOps
 
 << ---------------------------------------------------------------- >>
@@ -11,6 +26,8 @@ modification date: Tuesday 16th July 2024 14:23:51
 << ---------------------------------------------------------------- >>
 
 https://www.youtube.com/watch?v=r2zuL9MW6wc
+
+used for [[03-Application-Architecture/Backend/Design-Patterns/Microservices/Microservice|Microservice]] structuring and orchestration
 
 A tool for [[Containers|containerization]] that packages the software and all its dependancies so that it runs reliably in all environments. 
 

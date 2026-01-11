@@ -14,7 +14,7 @@ creation date: 2025-11-14 18:56
 %% Begin Waypoint %%
 - **[[Backend]]**
 	- **[[API]]**
-		- [[03-Application-Architecture/Backend/API/API Gateway]]
+		- [[API Gateway]]
 		- [[API vs SDK]]
 		- [[API]]
 		- [[REST]]
@@ -29,11 +29,11 @@ creation date: 2025-11-14 18:56
 	- **[[Design-Patterns]]**
 	- **[[DevOps]]**
 	- **[[Frameworks]]**
-	- **[[03-Application-Architecture/Backend/Security/Security]]**
+	- **[[Security]]**
 		- [[Auth0]]
 		- [[Authentication & Authorization]]
 		- [[JWT]]
-		- [[03-Application-Architecture/Backend/Security/Security]]
+		- [[Security]]
 		- [[Web Authentication Methods]]
 
 %% End Waypoint %%

@@ -18,7 +18,7 @@ creation date: 2025-11-14 18:56
 	- **[[Docker]]**
 		- [[Docker Networking]]
 		- [[Docker]]
-	- [[Kubernetes]]
+	- **[[Kubernetes]]**
 	- [[Load Balancer]]
 	- [[Reverse-Proxy]]
 	- [[Scaling]]

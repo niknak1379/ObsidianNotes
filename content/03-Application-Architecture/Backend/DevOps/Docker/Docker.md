@@ -57,3 +57,12 @@ basically a text file with instructions on how to build a docker image from norm
 
 
 ## Docker Compose
+i already figured out how to use this
+
+## Data Persistance
+
+Volumes:
+you will by default lose any data that the application creates, if you want the data to persist, it has to be made in a volume
+
+A volume maps an external folder to a folder in the container
+

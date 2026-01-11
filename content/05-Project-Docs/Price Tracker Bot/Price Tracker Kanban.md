@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] setup query logs command
 - [x] maybe will have to add a normalized price bc some shit apparently has a lot of scammers
 - [x] figure out how to add size, eh just putting it in the name is fine
 - [x] add support for picking what type of item from ebay? used only, open box etc...
@@ -41,6 +42,10 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] logs with graphana and loki
+- [x] Setup grafana prometheus
+- [x] Setup loki
+- [x] Setup alloy
 - [x] marketplace price logic bug?
 - [x] add suppress noti flag?
 - [x] fix facebook market place location
@@ -263,21 +268,20 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] logs with graphana and loki
-- [ ] Setup Pomtrail
-- [ ] Setup loki
-- [ ] Setup grafana prometheus
-- [ ] setup query logs command
+- [ ] 1. [x] buy second pi, 4gb 60$ new
+		1. [x] wait for used
+	2. [x] buy switch with POE
+	3. [x] POE Cables
+	4. [ ] SSD? Not rn
+	5. [ ] SD card
+	6. [ ] move database inhouse?
+- [ ] converet logs to slog
+	1. [ ] add logging module
 
 
 ## Planned
 
-- [ ] 1. [ ] buy second pi, 4gb 60$ new
-		1. [ ] wait for used
-	2. [x] buy switch with POE
-	3. [x] POE Cables
-	4. [ ] SSD? Not rn
-	5. [ ] move database inhouse?
+- [ ] K8 for centralization of logs deployment
 - [ ] make a good deal algo?
 - [ ] i think were done for now
 - [ ] handler to reverse engineer market place tags if brittle

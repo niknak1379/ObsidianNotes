@@ -9,8 +9,8 @@ the requests go through a [[Load Balancer]] which then decides which instance to
 		2. to mitigate could use, session stickiness in combination with a [[03-Application-Architecture/Backend/Caching/Caching|distributed cache]].
 2. Loose coupling and Identifying bottlenecks: 
 	1. basically know which part of the server needs scaling( is it only the microservices inside of it, the DB that gets callbacked to or the entire instance)
-3. Aggressive Auto Scaling, [[Kubernetes]], managed infrastructure.
-	1. automatically detect that you need scaling, and [[Kubernetes]] is good for that, managed infrastructure
+3. Aggressive Auto Scaling, [[03-Application-Architecture/Backend/DevOps/Kubernetes]], managed infrastructure.
+	1. automatically detect that you need scaling, and [[03-Application-Architecture/Backend/DevOps/Kubernetes]] is good for that, managed infrastructure
 4. Scaling Down:
 	1. listen for shut down events
 ## Vertical
