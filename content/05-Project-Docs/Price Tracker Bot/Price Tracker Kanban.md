@@ -42,6 +42,11 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add custom timer intervals
+- [x] Refractor scheduler to update scheduling functions everyhour and delete or add go routines that are out of date
+- [x] add best buy support to the image grabber
+- [x] converet logs to slog
+	1. [ ] add logging module
 - [x] logs with graphana and loki
 - [x] Setup grafana prometheus
 - [x] Setup loki
@@ -275,19 +280,20 @@ kanban-plugin: board
 	4. [ ] SSD? Not rn
 	5. [ ] SD card
 	6. [ ] move database inhouse?
-- [ ] converet logs to slog
-	1. [ ] add logging module
+	7. [ ] set error for max 25 items?
 
 
 ## Planned
 
 - [ ] K8 for centralization of logs deployment
+- [ ] it is approaching a MB now which isnt much at all
 - [ ] make a good deal algo?
 - [ ] i think were done for now
 - [ ] handler to reverse engineer market place tags if brittle
 - [ ] test branch
 - [ ] Added to new Server -> send init message
 - [ ] add aggregate tables into chart tables and return as a picture instead of just an embed for compare
+- [ ] some items go in and out of stock fast, might have to do sth with that so that ebay prices dont get wacky
 
 
 
