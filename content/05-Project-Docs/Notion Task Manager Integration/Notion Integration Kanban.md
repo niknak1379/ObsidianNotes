@@ -45,14 +45,15 @@ kanban-plugin: board
 
 ## Working on it
 
-- [ ] 1. [ ] bump up priority everytime the deadline is extended
-	2. [ ] add font sizing to the different priorities and the priority changes as the deadline gets pushed back [[05-Project-Docs/TRMNL Docs/TRMNL Kanban|TRMNL Kanban]]
 - [ ] Refractor everthing to a OOP model
 - [ ] project is pretty small move to typescript?
+- [ ] add winston for easy logging
 
 
 ## to Start
 
+- [ ] 1. [ ] bump up priority everytime the deadline is extended
+	2. [ ] add font sizing to the different priorities and the priority changes as the deadline gets pushed back [[05-Project-Docs/TRMNL Docs/TRMNL Kanban|TRMNL Kanban]]
 - [ ] maybe also resync the database once every week??
 - [ ] maybe also have a custom pushed back deadline for long running tasks, but i would need to put in long running tasks in first before i do this, right now 2 day default should be fine
 - [ ] deleted pages, update DB and delete them from sql

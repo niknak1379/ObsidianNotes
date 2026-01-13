@@ -281,6 +281,7 @@ kanban-plugin: board
 	5. [ ] SD card
 	6. [ ] move database inhouse?
 	7. [ ] set error for max 25 items?
+- [ ] maybe also add tax to the prices?
 
 
 ## Planned
@@ -292,8 +293,8 @@ kanban-plugin: board
 - [ ] handler to reverse engineer market place tags if brittle
 - [ ] test branch
 - [ ] Added to new Server -> send init message
-- [ ] add aggregate tables into chart tables and return as a picture instead of just an embed for compare
-- [ ] some items go in and out of stock fast, might have to do sth with that so that ebay prices dont get wacky
+- [ ] Formatted aggregat tables for comparison instead of returning separately?
+- [ ] change the avg price and aggregate price of when sold one, maybe its fine actually idk
 
 
 
