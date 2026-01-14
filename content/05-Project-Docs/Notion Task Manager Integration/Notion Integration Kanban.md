@@ -12,6 +12,11 @@ kanban-plugin: board
 
 ## Complete
 
+- [ ] Refractor everthing to a OOP model
+- [ ] project is pretty small move to typescript?
+	1. [x] helper functions
+	2. [x] DB functions
+	3. [x] server functions
 - [ ] maybe add a recurring propertie and a recurringByDays property so that I dont have to sync it manualy
 	1. [x] set up is recurring on notion as a property
 	2. [x] add change recurring to the DB functions
@@ -45,9 +50,8 @@ kanban-plugin: board
 
 ## Working on it
 
-- [ ] Refractor everthing to a OOP model
-- [ ] project is pretty small move to typescript?
 - [ ] add winston for easy logging
+- [ ] weekly archive list change
 
 
 ## to Start
