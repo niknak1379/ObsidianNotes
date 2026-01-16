@@ -6,12 +6,26 @@ kanban-plugin: board
 
 ## Archive
 
+- [ ] maybe also resync the database once every week??
 - [ ] ok locally developing this would be hard since i cant get the api integrations to local host, or i could but i dont want to setup the networking since i already have the EC2 running.
 - [ ] setDate does not wrap around the month right now, if i wanna do it for archiving ill have to fix it probably -- nvm this apparently automatically is handled by the date objects in js
 
 
 ## Complete
 
+- [ ] bump up priority everytime the deadline is extended
+	1. [ ] get priority function
+	2. [ ] update priority
+- [ ] testing
+- [ ] bug data for recursion was weird
+- [ ] BUG: event cases are not working sth weird is happening
+- [ ] Bug: if the task is done, it still puts it in the deadline extension bucket
+- [ ] maybe also have a custom pushed back deadline for long running tasks, but i would need to put in long running tasks in first before i do this, right now 2 day default should be fine
+- [ ] integrate long term lists
+- [ ] change function names to be more intuitive
+- [ ] Bug: weekly archive is not triggering
+- [ ] add winston for easy logging
+- [ ] weekly archive list change
 - [ ] Refractor everthing to a OOP model
 - [ ] project is pretty small move to typescript?
 	1. [x] helper functions
@@ -50,20 +64,14 @@ kanban-plugin: board
 
 ## Working on it
 
-- [ ] add winston for easy logging
-- [ ] weekly archive list change
+- [ ] 1. [ ] add font sizing to the different priorities and the priority changes as the deadline gets pushed back [[05-Project-Docs/TRMNL Docs/TRMNL Kanban|TRMNL Kanban]]
+- [ ] Bug: changing deadlines makes it crash
 
 
 ## to Start
 
-- [ ] 1. [ ] bump up priority everytime the deadline is extended
-	2. [ ] add font sizing to the different priorities and the priority changes as the deadline gets pushed back [[05-Project-Docs/TRMNL Docs/TRMNL Kanban|TRMNL Kanban]]
-- [ ] maybe also resync the database once every week??
-- [ ] maybe also have a custom pushed back deadline for long running tasks, but i would need to put in long running tasks in first before i do this, right now 2 day default should be fine
-- [ ] deleted pages, update DB and delete them from sql
-- [ ] Bug: if the task is done, it still puts it in the deadline extension bucket
-- [ ] Bug: weekly archive is not triggering
-- [ ] CICD: use STS instead of manually SSH ing into the instance
+- [ ] deleted pages, update DB and delete them from sql, sometimes i create shit accidentally, if the eventtype is page deleted delete from DB
+- [ ] CICD: use STS instead of manually SSH ing into the instance, or tailscale, but i wanna use sts to learn
 
 
 

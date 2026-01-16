@@ -42,19 +42,6 @@ kanban-plugin: board
 ## Done
 
 **Complete**
-- [x] add number of price reductions and price increases to second hand listing information? pretty useful for leverage determination to make offers
-- [x] Maybe have a dummy message that just sends the acknowledged message as an embed?
-- [x] updated listing logic testing, add 25 limit to add, per channel
-	update for add
-	update for remove
-- [x] Bug: scheduler logic doesnt update when suppress changes
-- [x] change logic for ebay listings?
-	1. [x] all listings for the item in the same date
-	2. [x] put them in a map
-	3. [x] for loop, if the url is in the map, delete from the slice
-	4. [x] update
-- [x] ebay failover
-- [x] maybe also add tax to the prices?
 - [x] add custom timer intervals
 - [x] Refractor scheduler to update scheduling functions everyhour and delete or add go routines that are out of date
 - [x] add best buy support to the image grabber
@@ -292,10 +279,10 @@ kanban-plugin: board
 	3. [x] POE Cables
 	4. [ ] SSD? Not rn
 	5. [ ] SD card
-	6. [ ] move pis into POE
-	7. [ ] print enclosure for new PI + locks
-	8. [ ] move database inhouse?
-- [ ] Best buy query is faulty
+	6. [ ] move database inhouse?
+	7. [ ] set error for max 25 items?
+- [ ] maybe also add tax to the prices?
+- [ ] add support for empty tracking list and just setting a desired price as the html query?
 
 
 ## Planned
