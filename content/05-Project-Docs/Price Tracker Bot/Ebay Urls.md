@@ -17,10 +17,13 @@ Price under 120
 https://www.ebay.com/sch/i.html?_nkw=fractal%20torrent&_sop=12&LH_ItemCondition=3000&rt=nc&_udhi=120
 0nly Price under 120
 https://www.ebay.com/sch/i.html?_nkw=fractal+torrent&_sop=12&_udhi=120&rt=nc
-https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000&_udhi=630&rt=nc&LH_BIN=1
+https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000&_udhi=630&rt=nc&LH_BIN=1&_stpos=07001
 https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&_from=R40&LH_ItemCondition=4&_udhi=630&rt=nc&LH_All=1
 https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000&_udhi=630&rt=nc&LH_Auction=1
+https://www.ebay.com/sch/i.html?rt=nc&LH_ItemCondition=3000|2020|2010|1500&_udhi=603&_nkw=rtx+5070&LH_BIN=1&_stpos=07001&_fcid=1
+https://www.ebay.com/sch/i.html?_nkw=rtx%205070&LH_ItemCondition=3000|2020|2010|1500&_udhi=603&rt=nc&LH_BIN=1&_stpos=07001&_fcid=1
 ## Paterns
+
 Used: &LH_ItemCondition=3000
 Price: `&_udhi=120&rt=nc`
 Search Url: 

@@ -7,6 +7,9 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] you have to make hte custom ack to interaction respond not this ------ still says not respond, investigete later
+- [x] raspberrypi os is pissing me off, switch it into an arch fork or sth
+- [x] i changed the ebay price to the lowest every recorded price, so theres gonna be a lot less ebay listings now
 - [x] setup query logs command
 - [x] maybe will have to add a normalized price bc some shit apparently has a lot of scammers
 - [x] figure out how to add size, eh just putting it in the name is fine
@@ -42,6 +45,36 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] bug: edit_tracker crashed last time, check if its still not working, not working because of values, will have to switch to indexes?
+- [x] add tracking list change support
+- [x] change handle ebay listing name
+- [x] found best buy change all the trackers
+- [x] might have to change facebook error
+- [x] bug: amazon it used to work but now it doesnt
+- [x] on next deployment, update channel map when updating setup
+- [x] change the name of the setup function to be both update and create? or make into two function
+- [x] add html return to chromedp
+- [x] add proxy to chromedp
+- [x] Screeshot for errors is still not reliable
+- [x] change the avg price and aggregate price of when sold one, maybe its fine actually idk
+- [x] recheck duration logic
+- [x] add does accept offers?
+	1. [x] normal ebay crawl
+	2. [x] chromedp crawl
+	3. [x] response
+	4. [x] types.ebaylisting
+- [x] new listing old format
+- [x] ebay proxy failover options
+- [x] make it so that price change only fires if the difference is more than 5 bucks?
+- [x] invalid timer check
+- [x] avg price when sold, change it so that it doesnt include items that are still available
+- [x] add proton vpn for IP rotation
+	https://hub.docker.com/r/genericmale/protonvpn
+	https://hub.docker.com/r/qmcgaw/gluetun
+- [x] Total price change field
+- [x] fix autocomplete for timer in add
+- [x] formatter for second hand, make sure it doesnt give duplicate
+- [x] Best buy query is faulty
 - [x] add number of price reductions and price increases to second hand listing information? pretty useful for leverage determination to make offers
 - [x] Maybe have a dummy message that just sends the acknowledged message as an embed?
 - [x] updated listing logic testing, add 25 limit to add, per channel
@@ -290,25 +323,26 @@ kanban-plugin: board
 		1. [x] wait for used
 	2. [x] buy switch with POE
 	3. [x] POE Cables
-	4. [ ] SSD? Not rn
-	5. [ ] SD card
-	6. [ ] move pis into POE
-	7. [ ] print enclosure for new PI + locks
-	8. [ ] move database inhouse?
-- [ ] Best buy query is faulty
+	4. [x] SSD? Not rn
+	5. [x] SD card
+	6. [x] move pis into POE
+	7. [x] print enclosure for new PI + locks
+	8. [ ] mongoDump to rp1
+	9. [ ] mongoDump to rp2
+	10. [ ] change driver to use replication
+- [ ] bug: best buy also sometimes behaves very weird
 
 
 ## Planned
 
 - [ ] K8 for centralization of logs deployment
+- [ ] i think were done for now
 - [ ] it is approaching a MB now which isnt much at all
 - [ ] make a good deal algo?
-- [ ] i think were done for now
 - [ ] handler to reverse engineer market place tags if brittle
 - [ ] test branch
 - [ ] Added to new Server -> send init message
 - [ ] Formatted aggregat tables for comparison instead of returning separately?
-- [ ] change the avg price and aggregate price of when sold one, maybe its fine actually idk
 
 
 
