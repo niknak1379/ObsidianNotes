@@ -45,6 +45,8 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add html to facebook and ebay failovers
+- [x] also add proxy pictures for default and facebook and ebay?
 - [x] bug: edit_tracker crashed last time, check if its still not working, not working because of values, will have to switch to indexes?
 - [x] add tracking list change support
 - [x] change handle ebay listing name
@@ -330,11 +332,11 @@ kanban-plugin: board
 	8. [ ] mongoDump to rp1
 	9. [ ] mongoDump to rp2
 	10. [ ] change driver to use replication
-- [ ] bug: best buy also sometimes behaves very weird
 
 
 ## Planned
 
+- [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
 - [ ] it is approaching a MB now which isnt much at all
