@@ -16,6 +16,9 @@ kanban-plugin: board
 ## Complete
 
 **Complete**
+- [x] havent added to frontend new paginated query thats why its failing
+- [x] patch up frontend pagination
+- [x] add winston structured logs
 - [x] Migrate Secrets to Doppler
 	1. [x] Backend
 	2. [x] FrontEnd
@@ -105,6 +108,15 @@ kanban-plugin: board
 
 ## in-progress
 
+- [ ] test deployment for
+	1. [ ] frontend
+	2. [ ] backend
+	3. [ ] lambda
+
+
+## Not Started
+
+- [ ] add rate limiting algo
 - [ ] Projects Page Redesign
 - [ ] write testing for backend, plus rollback through github actions
 	1. [ ] add a hidden or testing tag for projects that doesnt show up on the regular queries
@@ -114,10 +126,6 @@ kanban-plugin: board
 	5. [ ] get
 	6. [ ] run tests on github actions cd
 	7. [ ] rollback if tests fail
-
-
-## Not Started
-
 - [ ] CICD: use sts dont ssh into the instance
 - [ ] add option to reprocess all project images through it for initial
 	Lambda

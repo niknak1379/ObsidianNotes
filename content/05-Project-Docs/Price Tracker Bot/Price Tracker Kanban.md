@@ -45,6 +45,11 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] bug: listing history when array is null for aggregation pipeline, also recheck the update price history logic
+- [x] also add price increase notifications for normal trackers
+- [x] hero picture fall back for amazon?
+- [x] refractor stealth actions to be more readable
+- [x] add get channel info
 - [x] add html to facebook and ebay failovers
 - [x] also add proxy pictures for default and facebook and ebay?
 - [x] bug: edit_tracker crashed last time, check if its still not working, not working because of values, will have to switch to indexes?
@@ -321,6 +326,11 @@ kanban-plugin: board
 
 ## IP
 
+- [ ] channel length is out of sync, check for negative length in update channel length
+
+
+## Planned
+
 - [ ] 1. [x] buy second pi, 4gb 60$ new
 		1. [x] wait for used
 	2. [x] buy switch with POE
@@ -332,10 +342,8 @@ kanban-plugin: board
 	8. [ ] mongoDump to rp1
 	9. [ ] mongoDump to rp2
 	10. [ ] change driver to use replication
-
-
-## Planned
-
+	11. [ ] nvm cant move mongo to rp4 it doesnt support the architecture, have to get a minipc or a 2 rp5s
+	12. [ ] once this migration is done also add selfhosted runners, compile times are ridiculous on github actions
 - [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
@@ -347,7 +355,11 @@ kanban-plugin: board
 - [ ] Formatted aggregat tables for comparison instead of returning separately?
 
 
+***
 
+## Archive
+
+- [ ] bug: autocorrect for html for editadd tracker
 
 %% kanban:settings
 ```
