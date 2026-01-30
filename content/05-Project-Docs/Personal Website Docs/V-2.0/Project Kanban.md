@@ -109,13 +109,18 @@ kanban-plugin: board
 ## in-progress
 
 - [ ] test deployment for
-	1. [ ] frontend
+	1. [x] frontend
 	2. [ ] backend
+		1. [ ] git hub actions for push on test, different port/docker file
+		2. [ ] figureout endpoint routing on aws rn it reroutes directly to the port
 	3. [ ] lambda
+- [ ] doppler has only two syncs per project, will have to take the lambda out into its own project, nvm it only gives you 5 syncs in total, thats veryyyyyy annoying
+- [ ] nope also have to change the workflow bc i have to checkout on different branches, just make two different josb
 
 
 ## Not Started
 
+- [ ] email is still on the other vercel server, move it into the main server
 - [ ] add rate limiting algo
 - [ ] Projects Page Redesign
 - [ ] write testing for backend, plus rollback through github actions

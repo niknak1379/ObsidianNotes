@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] turn first chromedp falover into warn
 - [x] you have to make hte custom ack to interaction respond not this ------ still says not respond, investigete later
 - [x] raspberrypi os is pissing me off, switch it into an arch fork or sth
 - [x] i changed the ebay price to the lowest every recorded price, so theres gonna be a lot less ebay listings now
@@ -45,6 +46,17 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] will have to add support for channel property change, just override the object and change its properties?
+- [x] channel will be werid, i think it might double up or sth check tmrw
+- [x] bug too pointers weird with update price alert
+- [x] get details function, triggers the errorcrawl alert and sends the requested files?
+	3 options, general, ebay, facebook
+- [x] the requests are kind of close to each other, set it to like randome 10 min or sth
+- [x] add lowest price change to the slog of scheduler
+- [x] add err to chromedp
+- [x] edit timer still messy
+- [x] the second hand price wont take effect unless i also add it as a condition for the status change
+- [x] put a manual set price -> removes all trackers, setsup the last available price with the new requested price
 - [x] bug: listing history when array is null for aggregation pipeline, also recheck the update price history logic
 - [x] also add price increase notifications for normal trackers
 - [x] hero picture fall back for amazon?
@@ -327,10 +339,20 @@ kanban-plugin: board
 ## IP
 
 - [ ] channel length is out of sync, check for negative length in update channel length
+- [ ] add and setup cadvisor
 
 
 ## Planned
 
+- [ ] 1. get logs is useless since it doesnt record the data unless it fails
+	2. it would be waay too many reads and writes to the DB, so that wouldnt be really anygood
+	3. maybe add it to an S3 bucket or sth but thats just waay too overly complicated
+		1. if i do do this i can send in the error images and html files as S3 urls
+	4. maybe ill do this once i get a mac mini that has an actual ssd in it
+- [ ] round robin multiple proxies?
+	https://brightdata.com/pricing/proxy-network/residential-proxies
+	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
+	1. add container statistics to collect how much network I/O the container uses
 - [ ] 1. [x] buy second pi, 4gb 60$ new
 		1. [x] wait for used
 	2. [x] buy switch with POE
