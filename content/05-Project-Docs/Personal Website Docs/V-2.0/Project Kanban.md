@@ -116,6 +116,7 @@ kanban-plugin: board
 	3. [ ] lambda
 - [ ] doppler has only two syncs per project, will have to take the lambda out into its own project, nvm it only gives you 5 syncs in total, thats veryyyyyy annoying
 - [ ] nope also have to change the workflow bc i have to checkout on different branches, just make two different josb
+- [ ] change back cors
 
 
 ## Not Started

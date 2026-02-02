@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] test branch
+- [x] special syntax for either or ?
 - [x] turn first chromedp falover into warn
 - [x] you have to make hte custom ack to interaction respond not this ------ still says not respond, investigete later
 - [x] raspberrypi os is pissing me off, switch it into an arch fork or sth
@@ -46,6 +48,15 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] channel length is out of sync, check for negative length in update channel length
+- [x] add multi search word functioonality to items
+	1. [ ] discord command for add
+	2. [ ] discord command for remove
+	3. [ ] DB command for Add
+	4. [ ] DB command for Remove
+	5. [ ] pass in to secondhand handler
+	6. [ ] Pass in to titleCorrectness Check
+- [x] change amazon html tag
 - [x] will have to add support for channel property change, just override the object and change its properties?
 - [x] channel will be werid, i think it might double up or sth check tmrw
 - [x] bug too pointers weird with update price alert
@@ -338,8 +349,11 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] channel length is out of sync, check for negative length in update channel length
 - [ ] add and setup cadvisor
+- [ ] add verbose per item per item for sending pictures of failovers
+- [ ] add firsttime database setup?
+- [ ] make a good deal Algo?
+		Color Code new listings based on their price relative to the aggregate reports
 
 
 ## Planned
@@ -370,9 +384,7 @@ kanban-plugin: board
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
 - [ ] it is approaching a MB now which isnt much at all
-- [ ] make a good deal algo?
 - [ ] handler to reverse engineer market place tags if brittle
-- [ ] test branch
 - [ ] Added to new Server -> send init message
 - [ ] Formatted aggregat tables for comparison instead of returning separately?
 

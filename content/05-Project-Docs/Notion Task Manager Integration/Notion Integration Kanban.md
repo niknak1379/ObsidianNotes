@@ -66,6 +66,8 @@ kanban-plugin: board
 
 - [ ] 1. [ ] add font sizing to the different priorities and the priority changes as the deadline gets pushed back [[05-Project-Docs/TRMNL Docs/TRMNL Kanban|TRMNL Kanban]]
 - [ ] Bug: changing deadlines makes it crash
+- [ ] it still crashes
+- [ ] i did delete a health check rule, if sth goes wrong its that
 
 
 ## to Start
