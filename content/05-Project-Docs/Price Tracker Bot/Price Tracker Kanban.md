@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] maybe also move normal aggregate to code blocks and see how it looks?
+- [x] aggregate report changes too much send an alert
 - [x] test branch
 - [x] special syntax for either or ?
 - [x] turn first chromedp falover into warn
@@ -48,8 +50,13 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add additional name info to get query
+- [x] make it so that it does the ebay stuff for the queries separately?
+- [x] refractor all the random maps into an item
+- [x] make a good deal Algo?
+		1. [ ] Color Code new listings based on their price relative to the aggregate reports
 - [x] channel length is out of sync, check for negative length in update channel length
-- [x] add multi search word functioonality to items
+- [x] add multi search word functioonality to items - basically the sub item thing i wanted to do
 	1. [ ] discord command for add
 	2. [ ] discord command for remove
 	3. [ ] DB command for Add
@@ -352,8 +359,7 @@ kanban-plugin: board
 - [ ] add and setup cadvisor
 - [ ] add verbose per item per item for sending pictures of failovers
 - [ ] add firsttime database setup?
-- [ ] make a good deal Algo?
-		Color Code new listings based on their price relative to the aggregate reports
+- [ ] make aggregate tables for all items in the channel https://github.com/jedib0t/go-pretty/tree/v6.7.8/table
 
 
 ## Planned
