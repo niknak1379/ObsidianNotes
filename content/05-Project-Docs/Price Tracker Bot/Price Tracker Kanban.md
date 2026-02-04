@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] add firsttime database setup?
 - [x] maybe also move normal aggregate to code blocks and see how it looks?
 - [x] aggregate report changes too much send an alert
 - [x] test branch
@@ -50,6 +51,13 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] have a setprojection function for optimizing what fields to return for each specific function?
+- [x] channel summary for custom lengths
+- [x] maybe i should add a min price for ebay 3/4 of the new price?
+- [x] if theres too much noise in adding the new option to the ebay query remove it
+- [x] add bracket and waterblock to the regex list tmrw
+- [x] bug newlly added stuff is gonna have duplicates
+- [x] make aggregate tables for all items in the channel https://github.com/jedib0t/go-pretty/tree/v6.7.8/table
 - [x] add additional name info to get query
 - [x] make it so that it does the ebay stuff for the queries separately?
 - [x] refractor all the random maps into an item
@@ -356,36 +364,29 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add and setup cadvisor
-- [ ] add verbose per item per item for sending pictures of failovers
-- [ ] add firsttime database setup?
-- [ ] make aggregate tables for all items in the channel https://github.com/jedib0t/go-pretty/tree/v6.7.8/table
+- [ ] 1. [ ] add and setup cadvisor
+	2. [ ] do image on and off for a day see the difference
+- [ ] complete readme file
+	1. [x] add function descriptions
+	2. [ ] setup guide
+	3. [x] lisence
 
 
 ## Planned
 
+- [ ] round robin multiple proxies?
+	https://brightdata.com/pricing/proxy-network/residential-proxies
+	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
+	1. [x] add container statistics to collect how much network I/O the container uses
+- [ ] 1. [ ] self hosted github runner
+	2. [ ] self hosted mongodb database setup
+	3. [ ] replication once I get a pi5 or sth
+- [ ] add verbose per item per item for sending pictures of failovers
 - [ ] 1. get logs is useless since it doesnt record the data unless it fails
 	2. it would be waay too many reads and writes to the DB, so that wouldnt be really anygood
 	3. maybe add it to an S3 bucket or sth but thats just waay too overly complicated
 		1. if i do do this i can send in the error images and html files as S3 urls
 	4. maybe ill do this once i get a mac mini that has an actual ssd in it
-- [ ] round robin multiple proxies?
-	https://brightdata.com/pricing/proxy-network/residential-proxies
-	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
-	1. add container statistics to collect how much network I/O the container uses
-- [ ] 1. [x] buy second pi, 4gb 60$ new
-		1. [x] wait for used
-	2. [x] buy switch with POE
-	3. [x] POE Cables
-	4. [x] SSD? Not rn
-	5. [x] SD card
-	6. [x] move pis into POE
-	7. [x] print enclosure for new PI + locks
-	8. [ ] mongoDump to rp1
-	9. [ ] mongoDump to rp2
-	10. [ ] change driver to use replication
-	11. [ ] nvm cant move mongo to rp4 it doesnt support the architecture, have to get a minipc or a 2 rp5s
-	12. [ ] once this migration is done also add selfhosted runners, compile times are ridiculous on github actions
 - [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
