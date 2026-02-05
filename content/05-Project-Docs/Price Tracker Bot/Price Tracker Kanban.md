@@ -51,6 +51,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] change proxyfailur defaultcrawler error to warn
 - [x] have a setprojection function for optimizing what fields to return for each specific function?
 - [x] channel summary for custom lengths
 - [x] maybe i should add a min price for ebay 3/4 of the new price?
@@ -370,6 +371,13 @@ kanban-plugin: board
 	1. [x] add function descriptions
 	2. [ ] setup guide
 	3. [x] lisence
+- [ ] add bid support
+	1. [ ] only keep track and notify when the time left is less than a day
+	2. [ ] and price is less than average?
+	3. [ ] DB Change
+	4. [ ] response module
+	5. [ ] formatter module
+	6. [ ] contains today i can just do that
 
 
 ## Planned

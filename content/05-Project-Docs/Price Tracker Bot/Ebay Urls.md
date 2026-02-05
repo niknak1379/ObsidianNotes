@@ -38,8 +38,10 @@ https://www.facebook.com/marketplace/107711145919004/search?query=fractal%20nort
 https://www.facebook.com/marketplace/107711145919004/search?maxPrice=120&query=fractal%20north&exact=false
 Distance calculator?
 Market places distance algo is dog shit
-
-
+No auction
+https://www.ebay.com/sch/i.html?_nkw=Radeon%20rx%209070%20xt&LH_ItemCondition=3000|2030|2020|2010|2000|1500|1000_udlo=200&rt=nc&_udhi=801&LH_BIN=1&_stpos=90274&_fcid=1
+all
+https://www.ebay.com/sch/i.html?_nkw=Radeon+rx+9070+xt&LH_ItemCondition=3000%7C2030%7C2020%7C2010%7C2000%7C1500%7C1000_udlo%3D200&_udhi=801&_stpos=90274&_fcid=1&rt=nc&LH_All=1
 # Depop URLS
 https://www.depop.com/search/?q=dr+martens+1460+11&_suggestion-type=recent
 https://www.depop.com/search/?q=dr+martens+1460+11&_suggestion-type=recent&priceMax=120
