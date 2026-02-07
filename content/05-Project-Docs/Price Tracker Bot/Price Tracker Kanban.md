@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] add request intercept blocking?
+- [x] for listings found, change the url to the items new url?
 - [x] add firsttime database setup?
 - [x] maybe also move normal aggregate to code blocks and see how it looks?
 - [x] aggregate report changes too much send an alert
@@ -51,6 +53,26 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] split actioon into two jobs
+- [x] complete readme file
+	1. [x] add function descriptions
+	2. [x] setup guide
+	3. [x] lisence
+- [x] add ebay failover proxy into the loop
+- [x] fix failover logs
+- [x] Cadvisor auto restart
+- [x] timer is off by 8 hours
+- [x] take out extra slog.info for ebay stuff
+- [x] okay time is messed up, add bids to ret arr of logs
+- [x] 1. [ ] add and setup cadvisor
+	2. [ ] do image on and off for a day see the difference
+- [x] add bid support
+	1. [ ] only keep track and notify when the time left is less than a day
+	2. [ ] and price is less than average?
+	3. [ ] DB Change
+	4. [ ] response module
+	5. [ ] formatter module
+	6. [ ] contains today i can just do that
 - [x] change proxyfailur defaultcrawler error to warn
 - [x] have a setprojection function for optimizing what fields to return for each specific function?
 - [x] channel summary for custom lengths
@@ -84,6 +106,7 @@ kanban-plugin: board
 - [x] edit timer still messy
 - [x] the second hand price wont take effect unless i also add it as a condition for the status change
 - [x] put a manual set price -> removes all trackers, setsup the last available price with the new requested price
+- [x] make facebook marketplace optional
 - [x] bug: listing history when array is null for aggregation pipeline, also recheck the update price history logic
 - [x] also add price increase notifications for normal trackers
 - [x] hero picture fall back for amazon?
@@ -365,19 +388,10 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] 1. [ ] add and setup cadvisor
-	2. [ ] do image on and off for a day see the difference
-- [ ] complete readme file
-	1. [x] add function descriptions
-	2. [ ] setup guide
-	3. [x] lisence
-- [ ] add bid support
-	1. [ ] only keep track and notify when the time left is less than a day
-	2. [ ] and price is less than average?
-	3. [ ] DB Change
-	4. [ ] response module
-	5. [ ] formatter module
-	6. [ ] contains today i can just do that
+- [ ] 1. [ ] self hosted github runner
+	2. [ ] self hosted mongodb database setup
+	3. [ ] replication once I get a pi5 or sth
+- [ ] time is still weird
 
 
 ## Planned
@@ -386,9 +400,6 @@ kanban-plugin: board
 	https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
 	1. [x] add container statistics to collect how much network I/O the container uses
-- [ ] 1. [ ] self hosted github runner
-	2. [ ] self hosted mongodb database setup
-	3. [ ] replication once I get a pi5 or sth
 - [ ] add verbose per item per item for sending pictures of failovers
 - [ ] 1. get logs is useless since it doesnt record the data unless it fails
 	2. it would be waay too many reads and writes to the DB, so that wouldnt be really anygood
