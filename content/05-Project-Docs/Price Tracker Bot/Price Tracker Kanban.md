@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] channel length still out of ssync
 - [x] add request intercept blocking?
 - [x] for listings found, change the url to the items new url?
 - [x] add firsttime database setup?
@@ -53,6 +54,12 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add remove alternative names at some point?,
+- [x] i did do the regex thing bc i wanted to use the boundries, if it causes any problems think of sth, 
+	
+	
+	ok i was using it bc was including loweer tier products like non xt versions
+- [x] and timer values to get item information
 - [x] split actioon into two jobs
 - [x] complete readme file
 	1. [x] add function descriptions
@@ -392,6 +399,7 @@ kanban-plugin: board
 	2. [ ] self hosted mongodb database setup
 	3. [ ] replication once I get a pi5 or sth
 - [ ] time is still weird
+- [ ] add readme pictures
 
 
 ## Planned
