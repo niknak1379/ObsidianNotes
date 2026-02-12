@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] 1.maybe have a last n failures and do that
 - [x] channel length still out of ssync
 - [x] add request intercept blocking?
 - [x] for listings found, change the url to the items new url?
@@ -54,6 +55,15 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add error incident recording
+- [x] double quote is being weird with how titlecorrectness do a fix
+	1. okay inch sign is different than double quotes
+	2. i still have to add double quote support so...
+- [x] comment and document code
+- [x] memory leak
+		https://medium.com/@bobzsj87/demist-the-memory-ghost-d6b7cf45dd2a
+	
+	not a real issue apparently, docker stats for memory are weird
 - [x] add remove alternative names at some point?,
 - [x] i did do the regex thing bc i wanted to use the boundries, if it causes any problems think of sth, 
 	
@@ -395,25 +405,24 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] 1. [ ] self hosted github runner
-	2. [ ] self hosted mongodb database setup
-	3. [ ] replication once I get a pi5 or sth
 - [ ] time is still weird
-- [ ] add readme pictures
+- [ ] add error aggregators to see what domains are failing the most, at what level
+	1. [x] sanitize url in
+	2. [ ] chart
+	3. [ ] table in code block?
+- [ ] do get logs files for the last 5 incidents
 
 
 ## Planned
 
+- [ ] 1. [ ] self hosted github runner
+	2. [ ] self hosted mongodb database setup
+	3. [ ] replication once I get a pi5 or sth
+- [ ] add readme pictures
 - [ ] round robin multiple proxies?
 	https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
 	1. [x] add container statistics to collect how much network I/O the container uses
-- [ ] add verbose per item per item for sending pictures of failovers
-- [ ] 1. get logs is useless since it doesnt record the data unless it fails
-	2. it would be waay too many reads and writes to the DB, so that wouldnt be really anygood
-	3. maybe add it to an S3 bucket or sth but thats just waay too overly complicated
-		1. if i do do this i can send in the error images and html files as S3 urls
-	4. maybe ill do this once i get a mac mini that has an actual ssd in it
 - [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
