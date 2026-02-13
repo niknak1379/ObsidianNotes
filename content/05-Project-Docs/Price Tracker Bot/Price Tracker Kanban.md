@@ -55,6 +55,18 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] noise control feature, basically when sth is down, only escalate it when its keeps being down and not a one off
+- [x] Formatted aggregat tables for comparison instead of returning separately?
+- [x] Added to new Server -> send init message
+- [x] error notification rate limit per crawler type and url
+- [x] add error aggregators to see what domains are failing the most, at what level
+	1. [x] sanitize url in
+	2. [x] chart
+	3. [x] table in code block?
+	4. [x] figure out which ones usefull and which ones are no t
+- [x] 1. Option 3: Proxy “switch” endpoint
+	- Glutun expose a control endpoint to switch servers
+	- trigger address change when too many requests are failing
 - [x] add error incident recording
 - [x] double quote is being weird with how titlecorrectness do a fix
 	1. okay inch sign is different than double quotes
@@ -406,30 +418,29 @@ kanban-plugin: board
 ## IP
 
 - [ ] time is still weird
-- [ ] add error aggregators to see what domains are failing the most, at what level
-	1. [x] sanitize url in
-	2. [ ] chart
-	3. [ ] table in code block?
-- [ ] do get logs files for the last 5 incidents
+- [ ] add readme pictures
+- [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
 
 
 ## Planned
 
-- [ ] 1. [ ] self hosted github runner
-	2. [ ] self hosted mongodb database setup
-	3. [ ] replication once I get a pi5 or sth
-- [ ] add readme pictures
+- [ ] 1. Option 4: Multiple proxy endpoints + app-side rotation
+	- Define multiple proxy URLs and rotate within the crawler, threw an input arg
+	- Requires the app to support selecting from a pool
+	- Most flexible but needs app changes
 - [ ] round robin multiple proxies?
 	https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
 	1. [x] add container statistics to collect how much network I/O the container uses
+- [ ] do get logs files for the last 5 incidents
+- [ ] 1. [ ] self hosted github runner
+	2. [ ] self hosted mongodb database setup
+	3. [ ] replication once I get a pi5 or sth
 - [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
 - [ ] it is approaching a MB now which isnt much at all
 - [ ] handler to reverse engineer market place tags if brittle
-- [ ] Added to new Server -> send init message
-- [ ] Formatted aggregat tables for comparison instead of returning separately?
 
 
 ***
