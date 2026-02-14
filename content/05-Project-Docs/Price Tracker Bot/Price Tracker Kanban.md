@@ -55,6 +55,13 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add multi proxy support to crawler and failure and proxy restartere + proxy rsetarter unable to
+	1. initialize each proxy
+	2. round robin to decide which one to use + failover on remaining
+- [x] take proxy management module into its own thing
+- [x] should I just pass in a proxy object instead of a proxy bool with the available proxies, and then just take them out if they get to an error, will have to add which specific proxy it is that is causing the incidents and restart that specific one
+- [x] refractor crawler module to be more readable, will do this after i figure out the proxy stuff
+- [x] split the types and put the proxy stuff and the incident stuff into their own modules?
 - [x] noise control feature, basically when sth is down, only escalate it when its keeps being down and not a one off
 - [x] Formatted aggregat tables for comparison instead of returning separately?
 - [x] Added to new Server -> send init message
@@ -419,19 +426,14 @@ kanban-plugin: board
 
 - [ ] time is still weird
 - [ ] add readme pictures
-- [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
+- [ ] add proxy rotation to depop
 
 
 ## Planned
 
-- [ ] 1. Option 4: Multiple proxy endpoints + app-side rotation
-	- Define multiple proxy URLs and rotate within the crawler, threw an input arg
-	- Requires the app to support selecting from a pool
-	- Most flexible but needs app changes
-- [ ] round robin multiple proxies?
-	https://brightdata.com/pricing/proxy-network/residential-proxies
-	its 4$ per gb, either block image rendering on normal requests to prevent extra network consumption to make this feasable bc rn it does like a gb of data per day
-	1. [x] add container statistics to collect how much network I/O the container uses
+- [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
+- [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
+	its 4$ per gb, residential IP worth it?
 - [ ] do get logs files for the last 5 incidents
 - [ ] 1. [ ] self hosted github runner
 	2. [ ] self hosted mongodb database setup
