@@ -424,9 +424,15 @@ kanban-plugin: board
 
 ## IP
 
+- [ ] 1. [ ] self hosted github runner
+	2. [ ] self hosted mongodb database setup
+	3. [ ] replication once I get a pi5 or sth
 - [ ] time is still weird
+- [ ] there is a case in bid where its min by itself6 bids · Time left5m left (Today 06:27 PM)
 - [ ] add readme pictures
 - [ ] add proxy rotation to depop
+- [ ] add second hand pictures to the listing url?
+- [ ] add mutex protection
 
 
 ## Planned
@@ -435,9 +441,6 @@ kanban-plugin: board
 - [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, residential IP worth it?
 - [ ] do get logs files for the last 5 incidents
-- [ ] 1. [ ] self hosted github runner
-	2. [ ] self hosted mongodb database setup
-	3. [ ] replication once I get a pi5 or sth
 - [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
