@@ -55,6 +55,8 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] auto complete when no results are there looks kindn of jank, return sth that has 0 value
+- [x] add proxy rotation to depop
 - [x] add multi proxy support to crawler and failure and proxy restartere + proxy rsetarter unable to
 	1. initialize each proxy
 	2. round robin to decide which one to use + failover on remaining
@@ -424,15 +426,16 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] 1. [ ] self hosted github runner
-	2. [ ] self hosted mongodb database setup
-	3. [ ] replication once I get a pi5 or sth
 - [ ] time is still weird
+- [ ] 1. [x] self hosted github runner
+	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
+	3. [ ] replication once I get a pi5 or sth
 - [ ] there is a case in bid where its min by itself6 bids · Time left5m left (Today 06:27 PM)
 - [ ] add readme pictures
-- [ ] add proxy rotation to depop
 - [ ] add second hand pictures to the listing url?
 - [ ] add mutex protection
+- [ ] maybe do a third backup for amazon used?
+- [ ] add testing for bid processing?
 
 
 ## Planned
