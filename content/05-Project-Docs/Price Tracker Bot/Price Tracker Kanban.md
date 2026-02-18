@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] add second hand pictures to the listing url?
 - [x] 1.maybe have a last n failures and do that
 - [x] channel length still out of ssync
 - [x] add request intercept blocking?
@@ -427,19 +428,24 @@ kanban-plugin: board
 ## IP
 
 - [ ] time is still weird
-- [ ] 1. [x] self hosted github runner
-	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
-	3. [ ] replication once I get a pi5 or sth
-- [ ] there is a case in bid where its min by itself6 bids · Time left5m left (Today 06:27 PM)
-- [ ] add readme pictures
-- [ ] add second hand pictures to the listing url?
-- [ ] add mutex protection
-- [ ] maybe do a third backup for amazon used?
 - [ ] add testing for bid processing?
+	1. mocking as a concept
+- [ ] refractor ebay bid processing into one function after testing is added
+- [ ] there is a case in bid where its min by itself6 bids · Time left5m left (Today 06:27 PM)
+- [ ] govcr for integration tests
+- [ ] i could separate the parsing from the network logic, refractor it so that chromedp just returns the html, this would also mean to change the way the proxy system works as well
+- [ ] do a walkthrough teacher /tutor skill for opencode
 
 
 ## Planned
 
+- [ ] 1. [x] self hosted github runner
+	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
+		1. [ ] apparently you can run atlas instances online and i didnt have to migrate off of mongo search but it is what it is
+	3. [ ] async replication with the atlas shard?
+- [ ] add readme pictures
+- [ ] add mutex protection
+- [ ] maybe do a third backup for amazon used?
 - [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
 - [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, residential IP worth it?
