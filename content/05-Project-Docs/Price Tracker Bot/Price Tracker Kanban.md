@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] at this point this is moving towards a full refractor of the crawler modules
 - [x] add second hand pictures to the listing url?
 - [x] 1.maybe have a last n failures and do that
 - [x] channel length still out of ssync
@@ -56,6 +57,18 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] the error function for incident recording is pure slop fix it
+- [x] add TLS fingerprint rotation for base http requests
+- [x] refractor defaultCrawler to also use the Ebay method, add curl as a last fallback?
+- [x] use wget then i guess fuck
+- [x] make a regex struct with all the different inputs this shit is fucking ugly
+- [x] also make record attempt a function since theres a lot of duplicate code there in between all the different crawlers
+- [x] refractor ebay colly logic to intake html file from chromeDP or colly?
+	
+	make chromeDP and colly Get HTML functions, have a different parser function that intakes the HTML
+- [x] do a walkthrough teacher /tutor skill for opencode
+- [x] refractor ebay bid processing into one function after testing is added
+- [x] there is a case in bid where its min by itself6 bids · Time left5m left (Today 06:27 PM)
 - [x] auto complete when no results are there looks kindn of jank, return sth that has 0 value
 - [x] add proxy rotation to depop
 - [x] add multi proxy support to crawler and failure and proxy restartere + proxy rsetarter unable to
@@ -427,18 +440,17 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] time is still weird
 - [ ] add testing for bid processing?
 	1. mocking as a concept
-- [ ] refractor ebay bid processing into one function after testing is added
-- [ ] there is a case in bid where its min by itself6 bids · Time left5m left (Today 06:27 PM)
 - [ ] govcr for integration tests
-- [ ] i could separate the parsing from the network logic, refractor it so that chromedp just returns the html, this would also mean to change the way the proxy system works as well
-- [ ] do a walkthrough teacher /tutor skill for opencode
+- [ ] maybe add a proxy setup function or put the proxy string into the init functions and move everything there
+- [ ] there is also a case were there is only day
 
 
 ## Planned
 
+- [ ] make anti bot, cloudflare measures with llm stuff
+- [ ] time in bids is a bit weird
 - [ ] 1. [x] self hosted github runner
 	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
 		1. [ ] apparently you can run atlas instances online and i didnt have to migrate off of mongo search but it is what it is
