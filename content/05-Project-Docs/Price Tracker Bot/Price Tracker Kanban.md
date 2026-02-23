@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] govcr for integration tests
 - [x] at this point this is moving towards a full refractor of the crawler modules
 - [x] add second hand pictures to the listing url?
 - [x] 1.maybe have a last n failures and do that
@@ -57,6 +58,11 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] there is also a case were there is only day
+- [x] add testing for bid processing?
+	1. mocking as a concept
+- [x] add success counters for each proxy, if it hits a certain limit auto rotate it
+- [x] maybe add a proxy setup function or put the proxy string into the init functions and move everything there
 - [x] the error function for incident recording is pure slop fix it
 - [x] add TLS fingerprint rotation for base http requests
 - [x] refractor defaultCrawler to also use the Ebay method, add curl as a last fallback?
@@ -440,33 +446,31 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add testing for bid processing?
-	1. mocking as a concept
-- [ ] govcr for integration tests
-- [ ] maybe add a proxy setup function or put the proxy string into the init functions and move everything there
-- [ ] there is also a case were there is only day
+- [ ] add mutex protection
+- [ ] add event bus for item change
+	1. might have to add UUIDs for each item to keep track of name change and such
 
 
 ## Planned
 
-- [ ] make anti bot, cloudflare measures with llm stuff
+- [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
+- [ ] bug: best buy also sometimes behaves very weird
+- [ ] do get logs files for the last 5 incidents
 - [ ] time in bids is a bit weird
+- [ ] make anti bot, cloudflare measures with llm stuff
 - [ ] 1. [x] self hosted github runner
 	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
 		1. [ ] apparently you can run atlas instances online and i didnt have to migrate off of mongo search but it is what it is
 	3. [ ] async replication with the atlas shard?
 - [ ] add readme pictures
-- [ ] add mutex protection
 - [ ] maybe do a third backup for amazon used?
-- [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
 - [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, residential IP worth it?
-- [ ] do get logs files for the last 5 incidents
-- [ ] bug: best buy also sometimes behaves very weird
 - [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
 - [ ] it is approaching a MB now which isnt much at all
 - [ ] handler to reverse engineer market place tags if brittle
+- [ ] move grafana stack to mac mini instead of pi
 
 
 ***
