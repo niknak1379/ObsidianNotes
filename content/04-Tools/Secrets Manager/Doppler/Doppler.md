@@ -13,7 +13,7 @@ creation date: 2025-11-27 16:41
 
 %% Begin Waypoint %%
 - **[[Doppler]]**
-	- [[Basics]]
+	- [[04-Tools/Secrets Manager/Doppler/Basics]]
 	- [[Doppler]]
 
 %% End Waypoint %%

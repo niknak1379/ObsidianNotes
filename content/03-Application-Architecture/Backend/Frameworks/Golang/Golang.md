@@ -1,5 +1,5 @@
 ---
-creation date: 2025-11-14 18:56
+creation date: 2026-02-24 12:23
 ---
 
 
@@ -12,11 +12,8 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[Frameworks]]**
-	- **[[ExpressJS]]**
-		- [[ExpressJS]]
-		- [[Routing]]
-	- [[Frameworks]]
-	- **[[Golang]]**
+- **[[Golang]]**
+	- [[Basics]]
+	- [[Golang]]
 
 %% End Waypoint %%
