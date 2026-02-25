@@ -33,7 +33,12 @@ Con: When stack needs to grow all data have to be copied which is slow
 **For data that Pointers point to**:
 1. Data must be a local variable whose data size is known at compile time. 
 2. The pointer cannot be returned from the function. If the pointer is passed into the function, the compiler has to ensure these conditions still hold(if the pointer is returned its data will be deallocated and the pointer will not be valid anymroe)
+because of this sometimes returning a struct is faster than returning a pointer to the struct, if theh object is not too big (i think the limit depends on the cpu but for an m1 chip it was around 100kb), basically copying it to the stack directly is faster than doing an alloc up on the heap and then copying its address to the stack. this will not be true as the struct grows bigger and bigger.  
 
-[The Tail at Scale](https://oreil.ly/cvLpa) for garbage collector analysis
+[Paper: The Tail at Scale](https://oreil.ly/cvLpa) for garbage collector analysis
 Heap Vs Stack Analysis and escape Analysis(the algorithm GCs use to determine what heap memory has no valid stack pointers to it)
 [paper 1](https://oreil.ly/juu44),[paper 2](https://oreil.ly/c_gvC)
+
+## nil structs
+Structs have two pointers: a type pointer and a data pointer and for a struct to be considred nil, both have to be nil. 
+
