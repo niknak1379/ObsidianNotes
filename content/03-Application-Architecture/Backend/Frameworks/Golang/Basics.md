@@ -42,3 +42,21 @@ Heap Vs Stack Analysis and escape Analysis(the algorithm GCs use to determine wh
 ## nil structs
 Structs have two pointers: a type pointer and a data pointer and for a struct to be considred nil, both have to be nil. 
 
+
+## Concurrency & Goroutines
+
+firstly you shouldnt really be using go routines unless its sth that takes a long time like I/O and network stuff, bc although the goroutines are managed by the go runtime scheduler and are not delegated to the OS scheduler like threads in other Programming languages, there is still overhead. So keep it concurrency free most of the time. 
+### Channel Blocking Behavior
+
+ | Operations | Unbuffered, Open | Unbuffered, Closed| Buffered, Open | buffered, closed | nil
+ |read | pause until written | return zero (have to use ,ok) | pause if buffer empty | return remainig in buffer, if buffer empty return zero | hang foerver |
+| write | pause until read | Panic | Panic if buffer full | Panic | Hang Forever |
+| Close | Works | Panic | works, buffered values still there | Panic | Panic |
+
+if reading from multiple channels inorder ot not get blocked use a for select statement
+
+### When To use Buffered Vs Unbuffered
+use buffered when you know how many go routines you have launched, or you want to limit the amount of work queued. 
+
+#### Implementing Backpressure
+You can limit the number of simultaneous requests in a system by using a buffered channel and a for select statement. 
