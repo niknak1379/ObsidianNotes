@@ -60,3 +60,8 @@ use buffered when you know how many go routines you have launched, or you want t
 
 #### Implementing Backpressure
 You can limit the number of simultaneous requests in a system by using a buffered channel and a for select statement. 
+
+## Testing
+### Stubs vs Mocks
+https://stackoverflow.com/questions/53360256/whats-the-difference-between-stub-and-mock-in-go-unit-testing
+
