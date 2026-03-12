@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] fix charts they get rediculous when their busy
+- [x] maybe do a third backup for amazon used?
 - [x] govcr for integration tests
 - [x] at this point this is moving towards a full refractor of the crawler modules
 - [x] add second hand pictures to the listing url?
@@ -58,6 +60,19 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] add mutex for channels Array?
+- [x] time in bids is a bit weird
+- [x] wget rewrite
+- [x] fix success for colly?
+	will have to move it to inside the crawlers, since there is false positiveis from the http client
+- [x] do get logs files for the last 5 incidents
+- [x] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
+- [x] revamp the whole log files its waaay too ugly rn
+- [x] change edit name to show operation success instead of returning the whole item
+- [x] add mutex protection for active routines
+- [x] make set custom price only for second hand and make sure it doesnt delete the trackers
+- [x] add event bus for item change
+	1. might have to add UUIDs for each item to keep track of name change and such
 - [x] there is also a case were there is only day
 - [x] add testing for bid processing?
 	1. mocking as a concept
@@ -446,31 +461,25 @@ kanban-plugin: board
 
 ## IP
 
-- [ ] add mutex protection
-- [ ] add event bus for item change
-	1. might have to add UUIDs for each item to keep track of name change and such
+- [ ] add readme pictures
 
 
 ## Planned
 
-- [ ] i wanted the html files to be there so that when best buy would do sth weird i could immediately see the html it was returning so that i could check it, i stopped saving them bc it was running out of memory or sth like that i think
+- [ ] add metric for how many no proxy requests were made
 - [ ] bug: best buy also sometimes behaves very weird
-- [ ] do get logs files for the last 5 incidents
-- [ ] time in bids is a bit weird
-- [ ] make anti bot, cloudflare measures with llm stuff
 - [ ] 1. [x] self hosted github runner
 	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
 		1. [ ] apparently you can run atlas instances online and i didnt have to migrate off of mongo search but it is what it is
 	3. [ ] async replication with the atlas shard?
-- [ ] add readme pictures
-- [ ] maybe do a third backup for amazon used?
+- [ ] K8 for centralization of logs deployment
+- [ ] move grafana stack to mac mini instead of pi
 - [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, residential IP worth it?
-- [ ] K8 for centralization of logs deployment
 - [ ] i think were done for now
-- [ ] it is approaching a MB now which isnt much at all
 - [ ] handler to reverse engineer market place tags if brittle
-- [ ] move grafana stack to mac mini instead of pi
+- [ ] make anti bot, cloudflare measures with llm stuff
+- [ ] it is approaching a MB now which isnt much at all
 
 
 ***

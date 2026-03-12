@@ -65,3 +65,20 @@ You can limit the number of simultaneous requests in a system by using a buffere
 ### Stubs vs Mocks
 https://stackoverflow.com/questions/53360256/whats-the-difference-between-stub-and-mock-in-go-unit-testing
 
+https://oreil.ly/nDkF
+
+
+## Memory?
+In go if you have a struct it wants to read the memory in same sized chunks so if a value is less it padds the memory(8 bytes)
+
+So a struct {
+int, bool}
+even though only 9 will have a size of 16 sinces its padding the bool to be 8.
+
+if you have a struct {
+
+bool,int, bool
+}
+this will be 24
+
+if you have a struct {int bool bool} this will be 16 since it will group the bools together and pad them in one block
