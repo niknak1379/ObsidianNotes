@@ -462,6 +462,8 @@ kanban-plugin: board
 ## IP
 
 - [ ] add readme pictures
+- [ ] 16" normalization doesnt work for exclusion
+	1. add test for it as well
 
 
 ## Planned
