@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] add metric for how many no proxy requests were made
 - [x] fix charts they get rediculous when their busy
 - [x] maybe do a third backup for amazon used?
 - [x] govcr for integration tests
@@ -60,6 +61,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] bug: best buy also sometimes behaves very weird - fixed
 - [x] add mutex for channels Array?
 - [x] time in bids is a bit weird
 - [x] wget rewrite
@@ -464,18 +466,19 @@ kanban-plugin: board
 - [ ] add readme pictures
 - [ ] 16" normalization doesnt work for exclusion
 	1. add test for it as well
+- [ ] integration tests
 
 
 ## Planned
 
-- [ ] add metric for how many no proxy requests were made
-- [ ] bug: best buy also sometimes behaves very weird
+- [ ] facebook crawling always times out now
 - [ ] 1. [x] self hosted github runner
 	2. [ ] self hosted mongodb database setup, no longer uses atlas search vectors so this shouldnt be an issue
 		1. [ ] apparently you can run atlas instances online and i didnt have to migrate off of mongo search but it is what it is
 	3. [ ] async replication with the atlas shard?
 - [ ] K8 for centralization of logs deployment
-- [ ] move grafana stack to mac mini instead of pi
+- [ ] move grafana stack to mac mini instead of pi 
+	- will have to backup the yaml for the dashboard
 - [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, residential IP worth it?
 - [ ] i think were done for now
