@@ -467,6 +467,8 @@ kanban-plugin: board
 - [ ] 16" normalization doesnt work for exclusion
 	1. add test for it as well
 - [ ] integration tests
+- [ ] change charts
+- [ ] add debug log toggle command
 
 
 ## Planned
