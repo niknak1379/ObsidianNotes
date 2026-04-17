@@ -14,6 +14,7 @@ r
 %% Begin Waypoint %%
 - **[[Linux]]**
 	- **[[Boot Process]]**
+	- [[COMPTIA LINUX+]]
 	- [[Cron Jobs]]
 	- [[Linux]]
 
