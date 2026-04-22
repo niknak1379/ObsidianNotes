@@ -12,17 +12,16 @@ creation date: 2025-11-14 18:56
 << ---------------------------------------------------------------- >>
 
 %% Begin Waypoint %%
-- **[[04-Tools/Leetcode/Questions/Questions]]**
+- **[[Questions]]**
 	- [[Arrays]]
 	- [[Backtracking]]
 	- [[Binary Search]]
 	- [[Dynamic Programming]]
 	- [[Graphs]]
 	- [[Greedy]]
-	- [[Heap-PriorityQueue]]
-	- [[index.md]]
+	- [[Heap-Priority Queue]]
 	- [[Linked List]]
-	- [[04-Tools/Leetcode/Questions/Questions]]
+	- [[Questions]]
 	- [[Sliding Window]]
 	- [[Stack]]
 	- [[Trees-Tries]]

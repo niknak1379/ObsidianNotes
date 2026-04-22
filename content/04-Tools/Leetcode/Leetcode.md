@@ -16,6 +16,6 @@ creation date: 2025-11-14 18:56
 	- **[[DSA]]**
 	- [[Leetcode Strategies]]
 	- [[Leetcode]]
-	- **[[04-Tools/Leetcode/Questions/Questions]]**
+	- **[[Questions]]**
 
 %% End Waypoint %%

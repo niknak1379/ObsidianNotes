@@ -375,10 +375,10 @@ creation date: 2026-04-16 14:16
 
 #### Text Editors
 
-|Editor|Description|Example|
-|---|---|---|
-|`vi`/`vim`|Modal terminal text editor — universal on all Unix/Linux|`vim /etc/nginx/nginx.conf`|
-|`nano`|Beginner-friendly modeless terminal text editor|`nano /etc/hosts`|
+| Editor     | Description                                              | Example                     |
+| ---------- | -------------------------------------------------------- | --------------------------- |
+| `vi`/`vim` | Modal terminal text editor — universal on all Unix/Linux | `vim /etc/nginx/nginx.conf` |
+| `nano`     | Beginner-friendly modeless terminal text editor          | `nano /etc/hosts`           |
 
 ---
 
