@@ -146,7 +146,7 @@ It is used for
 2. Big Computations: spark, mapReduce
 
 ### HDFS(Hadoop Distributed File System)
-The storage is rackaware instead of being hardware agnostic(hardware agnostic: it treats all the different hardwares the same), meaning that it knows the locations of the different file systems in order to minimize network latencies. 
+The storage is rack aware instead of being hardware agnostic(hardware agnostic: it treats all the different hardwares the same), meaning that it knows the locations of the different file systems in order to minimize network latencies. 
 
 It is Fault Tolerant. 
 
