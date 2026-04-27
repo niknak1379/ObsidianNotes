@@ -22,7 +22,7 @@ Faster reads/writes, prevents expensive and repetetive computations and queries 
 
 What do we cache
 1. DB results
-2. Computations done by application serviers
+2. Computations done by application servers
 3. popular static content
 
 

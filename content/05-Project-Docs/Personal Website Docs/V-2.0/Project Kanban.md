@@ -152,6 +152,7 @@ kanban-plugin: board
 - [ ] also open search is slow af, should def have an actual cache
 - [ ] OpenTelemtry for loggin and traces as a part of kubernetes?
 - [ ] move DB in house to mac mini
+- [ ] change data capture for database and opensearch sync instead of two step commit
 
 
 ***

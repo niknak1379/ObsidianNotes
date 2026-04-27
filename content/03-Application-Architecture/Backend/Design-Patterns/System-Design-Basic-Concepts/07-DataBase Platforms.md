@@ -190,7 +190,7 @@ This allows us to have linearizable storage with the write ahead log of the Name
 fundamental building block for a lot of distributed system. A lot of databases that will be following in the notes will be built on top of hadoop or big data processing done on hadoop.
 
 ## HBase
-A database build on top of Hadoop :)
+A database built on top of Hadoop :)
 
 1. allows for quick writes/key updates(even though hadoop is very slow on writes)
 	1. via LSM Trees

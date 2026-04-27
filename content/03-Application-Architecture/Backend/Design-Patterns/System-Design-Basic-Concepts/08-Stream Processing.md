@@ -38,7 +38,7 @@ If we the Producers and Consumers are directly connected with TCP connections th
 Fault tolerant brokers -> some disk persistance and replication, consumer acknowledgements, No more than Once Processing(two phase commit or idompotence(processing the message more than once is the same as processing once)). 
 
 ## Kafka Vs. RabbitMQ
-1. In memory message brokers: rabbitMQ, ActiveMQ, AmazonSQS
+1. In memory message brokers: rabbitMQ, ActiveMQ, Amazon SQS
 	1. You have a queue of messages that are sent to the consumer and after they are sent are taken out the queue temporarily once sent and then deleted once the acknowledgement from the consumer of processing is received. 
 	2. Results in a Round robin delivery(once a message is sent the one after it in the queue is immediately available to be sent to a different consumer) -> leads to more throughput but also possible out of order processing(if we want in order processing we need to **fan-out**:have a dedicated queue for each consumer).
 	3. Poor fault tolerance and no replayability

@@ -487,6 +487,7 @@ kanban-plugin: board
 - [ ] handler to reverse engineer market place tags if brittle
 - [ ] make anti bot, cloudflare measures with llm stuff
 - [ ] it is approaching a MB now which isnt much at all
+- [ ] map reduce and log ingestion for failure rate
 
 
 ***
