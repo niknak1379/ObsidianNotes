@@ -10,7 +10,31 @@ creation date: 2024-09-18 16:28
 # Sliding Window
 
 << ---------------------------------------------------------------- >>
+```python
+def longest_window(nums, condition):
+    i = 0
+    max_length = 0
+    result = None
 
+    for j in range(len(nums)):
+        # Expand the window
+        # Add nums[j] to the current window logic
+
+        # Shrink the window if the condition is violated
+        while not condition():  
+            # Shrink the window from the left
+            # Remove nums[i] from the current window logic
+            i += 1
+
+        # Update the result if the current window is larger
+        if j - i + 1 > max_length:
+            max_length = j - i + 1
+            # Add business logic to update result
+
+    return result
+```
+
+window length can be both dynamic and constant
 #### Best Time to Buy and Sell Stock - easy
 **Summary**: 
 have an array of prices, determine when to buy and sell return max profit
