@@ -7,6 +7,8 @@ kanban-plugin: board
 ## Archive
 
 **Complete**
+- [x] map reduce and log ingestion for failure rate
+- [x] handler to reverse engineer market place tags if brittle
 - [x] add metric for how many no proxy requests were made
 - [x] fix charts they get rediculous when their busy
 - [x] maybe do a third backup for amazon used?
@@ -61,6 +63,8 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] 16" normalization doesnt work for exclusion
+	1. add test for it as well
 - [x] bug: best buy also sometimes behaves very weird - fixed
 - [x] add mutex for channels Array?
 - [x] time in bids is a bit weird
@@ -464,8 +468,6 @@ kanban-plugin: board
 ## IP
 
 - [ ] add readme pictures
-- [ ] 16" normalization doesnt work for exclusion
-	1. add test for it as well
 - [ ] integration tests
 - [ ] change charts
 - [ ] add debug log toggle command
@@ -484,10 +486,8 @@ kanban-plugin: board
 - [ ] https://brightdata.com/pricing/proxy-network/residential-proxies
 	its 4$ per gb, residential IP worth it?
 - [ ] i think were done for now
-- [ ] handler to reverse engineer market place tags if brittle
 - [ ] make anti bot, cloudflare measures with llm stuff
 - [ ] it is approaching a MB now which isnt much at all
-- [ ] map reduce and log ingestion for failure rate
 
 
 ***
