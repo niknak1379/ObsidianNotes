@@ -471,6 +471,7 @@ kanban-plugin: board
 - [ ] integration tests
 - [ ] change charts
 - [ ] add debug log toggle command
+- [ ] amazon makes price weird now sometimes
 
 
 ## Planned
