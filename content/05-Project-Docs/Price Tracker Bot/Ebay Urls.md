@@ -21,7 +21,7 @@ https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000
 https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&_from=R40&LH_ItemCondition=4&_udhi=630&rt=nc&LH_All=1
 https://www.ebay.com/sch/i.html?_nkw=9070+xt+16gb&_sacat=0&LH_ItemCondition=3000&_udhi=630&rt=nc&LH_Auction=1
 https://www.ebay.com/sch/i.html?rt=nc&LH_ItemCondition=3000|2020|2010|1500&_udhi=603&_nkw=rtx+5070&LH_BIN=1&_stpos=07001&_fcid=1
-https://www.ebay.com/sch/i.html?_nkw=rtx%205070&LH_ItemCondition=3000|2020|2010|1500&_udhi=603&rt=nc&LH_BIN=1&_stpos=07001&_fcid=1
+https://www.ebay.com/sch/i.html?_nkw=rtx%205070&LH_ItemCondition=3000|2020|2010|1500&_udhi=603&rt=nc&_stpos=07001&_fcid=1&LH_BIN=1
 ## Paterns
 
 Used: &LH_ItemCondition=3000
